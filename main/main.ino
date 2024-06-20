@@ -1,102 +1,72 @@
-//espwroom32_v1.ino
+// espwroom32_v1.ino
 #include <WiFi.h>
 #include <WebServer.h>
-#include "HX711.h"
+#include "scale_sensor.h" // Renombrado de balanza.h a scale_sensor.h
 #include <EEPROM.h>
-#include <LiquidCrystal_I2C.h>
 #include <Wire.h>
-#include "wifi_setup.h"
-#include "balanza.h"
+#include "wifi_config.h"  // Renombrado de wifi_setup.h a wifi_config.h
 #include "motor_control.h"
+#include "interface.h" // Renombrado de interfaz.h a lcd_interface.h
+#include <ArduinoLog.h>    // Incluimos una librería de logging
 
 // Configura los pines de salida
 const int pinOutput_ENA = 18; // enciende el motor con LOW
 const int pinOutput_DIR = 19; // sentido de giro
 const int pinOutput_PUL = 13; // pulso,  debe tener 1000 microsegundos entre semiciclo positivo y negativo
-
-LiquidCrystal_I2C lcd(0x27, 16, 2);
-
-HX711 balanza;
-
 const int zero = 2;
-int DT = 4;
-int CLK = 5;
+int DT_hx711 = 4;
+int CLK_hx711 = 5;
+int peso_calibracion = 185; // Es el peso referencial a poner, en mi caso mi celular pesa 185g (SAMSUNG A20)
+long scaleFactor;
+int zero_button_state = 0;
+int last_zero_button_state = 0;
 
-int peso_calibracion = 185; // Es el peso referencial a poner, en mi caso mi celular pesa 185g (SAMSUMG A20)
-long escala;
-
-int state_zero = 0;
-int last_state_zero = 0;
+WebServer server(80);
 
 void handleRootRequest() {
-  float peso_mostrar;
-  peso_mostrar = balanza.get_units(10);
-  server.send(200, "text/plain", "ESP32 Web Server \n Peso: " + String(peso_mostrar) + " g");
+  float peso = getWeight(); // Función que obtiene el peso actual
+  String response_text = "ESP32 Web Server \n Peso: " + String(peso) + " g";
+  sendServerResponse(response_text);
 }
 
 void handleMotorForward() {
-  lcd.setCursor(0, 0);
-  lcd.print("Motor en avance ");
-  server.send(200, "text/plain", "Motor en Marcha");
-  runMotor(pinOutput_ENA, pinOutput_DIR, pinOutput_PUL, LOW); 
+  String lcd_display_text = "Motor en avance";
+  updateLCDStatus(lcd_display_text);
+  runMotor(pinOutput_ENA, pinOutput_DIR, pinOutput_PUL, LOW);
+  String response_text = "Motor en Marcha";
+  sendServerResponse(response_text);
 }
 
 void handleMotorReverse() {
-  lcd.setCursor(0, 0);
-  lcd.print("Motor en retroceso");
-  server.send(200, "text/plain", "Motor en Reversa");
-  runMotor(pinOutput_ENA, pinOutput_DIR, pinOutput_PUL, HIGH); 
+  String lcd_display_text = "Motor en reversa";
+  updateLCDStatus(lcd_display_text);
+  runMotor(pinOutput_ENA, pinOutput_DIR, pinOutput_PUL, HIGH);
+  String response_text = "Motor en reversa";
+  sendServerResponse(response_text);
 }
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(115200); // Iniciamos el serial para logs
+  Log.begin(LOG_LEVEL_VERBOSE, &Serial);
 
-  initializeWebServer(); // Configurar y conectar al WiFi con IP estática
-  setup_motor(pinOutput_ENA, pinOutput_DIR, pinOutput_PUL);
+  initializeLCD();
+  initializeWebServer();
+  setupMotor(pinOutput_ENA, pinOutput_DIR, pinOutput_PUL);
+  initializeScaleSensor();
+
   server.on("/", handleRootRequest);
   server.on("/ena_f", handleMotorForward);
   server.on("/ena_r", handleMotorReverse);
-
   server.begin();
-  Serial.println("HTTP server started"); //iniciando
 
-  balanza.begin(DT, CLK);//asigana los pines para el recibir el trama del pulsos que viene del modulo
-  pinMode(zero, INPUT);//declaramos el pin2 como entrada del pulsador
-  pinMode(13,OUTPUT);
-  lcd.init(); // Inicializamos el lcd
-  lcd.backlight(); // encendemos la luz de fondo del lcd
-
-  EEPROM.get(0, escala);//Lee el valor de la escala en la EEPROM
-  balanza.set_scale(escala); // Establecemos la escala
-  balanza.tare(20);  //El peso actual de la base es considerado zero.
-
+  Log.info("Setup completado\n");
 }
 
 void loop() {
   server.handleClient();
-
-  int state_zero = digitalRead(zero);
-  float peso;
-  peso = balanza.get_units(10);  //Mide el peso de la balanza
-
-  //Muestra el peso
-  lcd.setCursor(0, 1);
-  lcd.print("Peso: ");
-  lcd.print(peso, 0);
-  lcd.print(" g        ");
-  delay(500);
-
-  lcd.setCursor(0, 0);
-  lcd.print("Motor en espera ");
-
-  //Botón de zero, esto sirve para restar el peso de un recipiente 
-  if ( state_zero != last_state_zero) {
-    if (state_zero == LOW) {
-      balanza.tare(10);  //El peso actual es considerado zero.
-    }
-  }
-  last_state_zero = state_zero;
-
-  if (peso >= 500) digitalWrite(13, 1);
-  else if (peso <= 500) digitalWrite(13, 0);
+  zero_button_state = digitalRead(zero);
+  float peso = getWeight();
+  updateLCDWeight(peso);
+  tareScale(zero_button_state, last_zero_button_state);
+  last_zero_button_state = zero_button_state;
 }
