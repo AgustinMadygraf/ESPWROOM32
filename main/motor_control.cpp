@@ -1,13 +1,12 @@
-//motor_control.cpp
+// motor_control.cpp
 #include "motor_control.h"
 
-void setupMotor(int pinOutput_ENA, int pinOutput_DIR, int pinOutput_PUL) {
+void setup_motor(int pinOutput_ENA, int pinOutput_DIR, int pinOutput_PUL) {
     pinMode(pinOutput_ENA, OUTPUT);
     pinMode(pinOutput_DIR, OUTPUT);
     pinMode(pinOutput_PUL, OUTPUT);
     digitalWrite(pinOutput_ENA, HIGH);
     digitalWrite(pinOutput_DIR, LOW);
-    digitalWrite(pinOutput_PUL, LOW);
 }
 
 void runMotor(int pinOutput_ENA, int pinOutput_DIR, int pinOutput_PUL, int direction) {

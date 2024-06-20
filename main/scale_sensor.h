@@ -1,24 +1,18 @@
 // scale_sensor.h
+#ifndef SCALE_SENSOR_H
+#define SCALE_SENSOR_H
+
 #include "HX711.h"
+#include <EEPROM.h>
 
-HX711 balanza;
+extern HX711 balanza;
+extern int DT_hx711;
+extern int CLK_hx711;
+extern long scaleFactor;
+extern int zero;
 
-void initializeScaleSensor() {
-  balanza.begin(DT_hx711, CLK_hx711);
-  EEPROM.get(0, scaleFactor);
-  pinMode(zero, INPUT);
-  balanza.set_scale(scaleFactor);
-  balanza.tare(20);
-}
+void initializeScaleSensor();
+float getWeight();
+void tareScale(int zero_button_state, int last_zero_button_state);
 
-float getWeight() {
-  return balanza.get_units(10);
-}
-
-void tareScale(int zero_button_state, int last_zero_button_state) {
-  if (zero_button_state != last_zero_button_state) {
-    if (zero_button_state == LOW) {
-      balanza.tare(10);
-    }
-  }
-}
+#endif
