@@ -1,5 +1,5 @@
 // scale_sensor.cpp
-#include "scale_sensor.h"
+#include "hardware_control.h"
 
 HX711 balanza;
 int DT_hx711 = 4;

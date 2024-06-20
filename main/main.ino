@@ -5,8 +5,7 @@
 #include <Wire.h>
 #include <ArduinoLog.h>
 #include "wifi_config.h"
-#include "motor_control.h"
-#include "scale_sensor.h"
+#include "hardware_control.h"
 #include "interface.h"
 
 const int pinOutput_ENA = 18;
@@ -16,12 +15,14 @@ int zero_button_state = 0;
 int last_zero_button_state = 0;
 
 void handleRootRequest() {
+    Log.verbose("Handling root request");
     float peso = getWeight();
     String response_text = "ESP32 Web Server \n Peso: " + String(peso) + " g";
     sendServerResponse(response_text);
 }
 
 void handleMotorForward() {
+    Log.info("Motor moving forward");
     String lcd_display_text = "Motor en avance";
     updateLCDStatus(lcd_display_text);
     runMotor(pinOutput_ENA, pinOutput_DIR, pinOutput_PUL, LOW);
@@ -30,6 +31,7 @@ void handleMotorForward() {
 }
 
 void handleMotorReverse() {
+    Log.info("Motor moving reverse");
     String lcd_display_text = "Motor en reversa";
     updateLCDStatus(lcd_display_text);
     runMotor(pinOutput_ENA, pinOutput_DIR, pinOutput_PUL, HIGH);
@@ -38,9 +40,7 @@ void handleMotorReverse() {
 }
 
 void setup() {
-    Serial.begin(115200);
     Log.begin(LOG_LEVEL_VERBOSE, &Serial);
-
     initializeLCD();
     initializeWebServer();
     setup_motor(pinOutput_ENA, pinOutput_DIR, pinOutput_PUL);
@@ -55,6 +55,7 @@ void setup() {
 }
 
 void loop() {
+    Log.verbose("Loop running");
     server.handleClient();
     zero_button_state = digitalRead(zero);
     float peso = getWeight();

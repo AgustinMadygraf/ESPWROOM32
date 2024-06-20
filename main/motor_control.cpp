@@ -1,5 +1,5 @@
 // motor_control.cpp
-#include "motor_control.h"
+#include "hardware_control.h"
 
 void setup_motor(int pinOutput_ENA, int pinOutput_DIR, int pinOutput_PUL) {
     pinMode(pinOutput_ENA, OUTPUT);
