@@ -1,65 +1,68 @@
-// main.ino
 #include <WiFi.h>
-#include <WebServer.h>
-#include <EEPROM.h>
-#include <Wire.h>
-#include <ArduinoLog.h>
-#include "wifi_config.h"
-#include "hardware_control.h"
-#include "interface.h"
+#include <LiquidCrystal_I2C.h>
 
-const int pinOutput_ENA = 18;
-const int pinOutput_DIR = 19;
-const int pinOutput_PUL = 13;
-int zero_button_state = 0;
-int last_zero_button_state = 0;
-
-void handleRootRequest() {
-    Log.verbose("Handling root request");
-    float peso = getWeight();
-    String response_text = "ESP32 Web Server \n Peso: " + String(peso) + " g";
-    sendServerResponse(response_text);
-}
-
-void handleMotorForward() {
-    Log.info("Motor moving forward");
-    String lcd_display_text = "Motor en avance";
-    updateLCDStatus(lcd_display_text);
-    runMotor(pinOutput_ENA, pinOutput_DIR, pinOutput_PUL, LOW);
-    String response_text = "Motor en Marcha";
-    sendServerResponse(response_text);
-}
-
-void handleMotorReverse() {
-    Log.info("Motor moving reverse");
-    String lcd_display_text = "Motor en reversa";
-    updateLCDStatus(lcd_display_text);
-    runMotor(pinOutput_ENA, pinOutput_DIR, pinOutput_PUL, HIGH);
-    String response_text = "Motor en reversa";
-    sendServerResponse(response_text);
-}
+LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 void setup() {
-    Log.begin(LOG_LEVEL_VERBOSE, &Serial);
-    initializeLCD();
-    initializeWebServer();
-    setup_motor(pinOutput_ENA, pinOutput_DIR, pinOutput_PUL);
-    initializeScaleSensor();
+  // Iniciar la comunicación serial a 115200 baudios
+  Serial.begin(115200);
 
-    server.on("/", handleRootRequest);
-    server.on("/ena_f", handleMotorForward);
-    server.on("/ena_r", handleMotorReverse);
-    server.begin();
+  // Inicializar el LCD
+  lcd.init();
+  lcd.backlight();
+  lcd.setCursor(0, 0);
+  lcd.print("Conectando");
+  lcd.setCursor(0, 1);
+  lcd.print("a Wifi ...");
 
-    Log.info("Setup completado\n");
+  // Conectar a la red WiFi
+  connectToWiFi();
 }
 
 void loop() {
-    Log.verbose("Loop running");
-    server.handleClient();
-    zero_button_state = digitalRead(zero);
-    float peso = getWeight();
-    updateLCDWeight(peso);
-    tareScale(zero_button_state, last_zero_button_state);
-    last_zero_button_state = zero_button_state;
+  // Obtener y mostrar la dirección IP cada 5 segundos
+  printIPAddress();
+  delay(5000);
+}
+
+void connectToWiFi() {
+  // Configurar el SSID y la contraseña de tu red WiFi
+  const char* ssid = "aula tecnica";
+  const char* password = "Madygraf32";
+
+  Serial.print("Conectando a ");
+  Serial.println(ssid);
+
+  WiFi.begin(ssid, password);
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println("");
+  Serial.println("Conectado a la red WiFi");
+  Serial.println("Dirección IP: ");
+  Serial.println(WiFi.localIP());
+
+  lcd.setCursor(0, 0);
+  lcd.print("WiFi Conectado");
+  lcd.setCursor(0, 1);
+  lcd.print(WiFi.localIP());
+}
+
+void printIPAddress() {
+  static IPAddress previousIP;
+  IPAddress currentIP = WiFi.localIP();
+
+  if (currentIP != previousIP) {
+    lcd.setCursor(0, 1);
+    lcd.print("                "); // Limpiar línea anterior
+    lcd.setCursor(0, 1);
+    lcd.print(currentIP.toString().c_str()); // Mostrar la dirección IP en el LCD
+    previousIP = currentIP;
+
+    Serial.print("Dirección IP: ");
+    Serial.println(currentIP); // Mostrar la dirección IP en el monitor serial
+  }
 }
