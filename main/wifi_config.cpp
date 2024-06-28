@@ -6,8 +6,8 @@ WebServer server(80);
 const char* ssid = "Aula tecnica";
 const char* password = "Madygraf32";
 
-IPAddress local_IP(192, 168, 1, 184);
-IPAddress gateway(192, 168, 1, 1);
+IPAddress local_IP(192, 168, 0, 184);
+IPAddress gateway(192, 168, 0, 1);
 IPAddress subnet(255, 255, 255, 0);
 IPAddress primaryDNS(8, 8, 8, 8);
 IPAddress secondaryDNS(8, 8, 4, 4);

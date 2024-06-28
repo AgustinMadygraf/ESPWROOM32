@@ -55,7 +55,7 @@ void setup() {
 }
 
 void loop() {
-    Log.verbose("Loop running");
+    Log.verbose("Loop running\n");
     server.handleClient();
     zero_button_state = digitalRead(zero);
     float peso = getWeight();
