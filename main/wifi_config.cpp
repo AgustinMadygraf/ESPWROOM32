@@ -9,8 +9,8 @@ const char* password = "Madygraf32";
 IPAddress local_IP(192, 168, 0, 184);
 IPAddress gateway(192, 168, 0, 1);
 IPAddress subnet(255, 255, 255, 0);
-IPAddress primaryDNS(8, 8, 8, 8);
-IPAddress secondaryDNS(8, 8, 4, 4);
+IPAddress primaryDNS(10, 176, 60, 15);
+IPAddress secondaryDNS(10, 176, 60, 79);
 
 void initializeWebServer() {
     if (!WiFi.config(local_IP, gateway, subnet, primaryDNS, secondaryDNS)) {

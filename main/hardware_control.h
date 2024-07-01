@@ -21,4 +21,8 @@ void initializeScaleSensor();
 float getWeight();
 void tareScale(int zero_button_state, int last_zero_button_state);
 
+extern volatile int lapCounter;
+extern int sensorPin;
+void IRAM_ATTR onLapDetected();
+
 #endif
