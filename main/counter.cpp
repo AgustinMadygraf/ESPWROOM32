@@ -19,6 +19,12 @@ void IRAM_ATTR onLapDetected() {
     // Incrementar el contador de vueltas solo en el flanco ascendente
     if (currentState == HIGH && lastSensorState == LOW) {
         lapCounter++;
+        Log.info("Cambio de estado detectado\n");
+        Log.info("Contador: %d\n", lapCounter);
+        String lcd_display_text = "Contador: " + String(lapCounter);
+        updateLCDTop(lcd_display_text);
+        String response_text = "Contador: " + String(lapCounter);
+        sendServerResponse(response_text);
     }
     lastSensorState = currentState;
 }
