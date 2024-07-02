@@ -1,5 +1,7 @@
 //counter.cpp
 #include "counter.h"
+#include <ArduinoLog.h>
+#include "interface.h"
 
 // Variable global para almacenar el conteo de vueltas
 volatile int lapCounter = 0;
