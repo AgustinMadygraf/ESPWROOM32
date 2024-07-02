@@ -23,7 +23,7 @@ void IRAM_ATTR onLapDetected() {
         lapCounter++;
         Log.info("Cambio de estado detectado\n");
         Log.info("Contador: %d\n", lapCounter);
-        String lcd_display_text = "Contador: " + String(lapCounter);
+        String lcd_display_text = "Contador: " + String(lapCounter) + "   ";
         updateLCDTop(lcd_display_text);
         String response_text = "Contador: " + String(lapCounter);
         sendServerResponse(response_text);

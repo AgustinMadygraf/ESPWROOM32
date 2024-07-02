@@ -18,7 +18,9 @@ void updateLCDBot(float peso) {
 
 void updateLCDTop(String texto_LCD) {
     lcd.setCursor(0, 0);
-    lcd.print(texto_LCD);
+    lcd.print(texto_LCD);    
+    lcd.print("        ");
+
 }
 
 void sendServerResponse(String response_text) {
