@@ -9,8 +9,8 @@ extern LiquidCrystal_I2C lcd;
 extern WebServer server;
 
 void initializeLCD();
-void updateLCDWeight(float peso);
-void updateLCDStatus(String texto_LCD);
+void updateLCDBot(float peso);
+void updateLCDTop(String texto_LCD);
 void sendServerResponse(String response_text);
 
 #endif

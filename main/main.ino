@@ -35,7 +35,7 @@ void handleRootRequest() {
 void handleMotorForward() {
     Log.info("Motor moving forward\n");
     String lcd_display_text = "Motor en avance";
-    updateLCDStatus(lcd_display_text);
+    updateLCDTop(lcd_display_text);
     runMotor(pinOutput_ENA, pinOutput_DIR, pinOutput_PUL, LOW);
     String response_text = "Motor en Marcha";
     sendServerResponse(response_text);
@@ -47,7 +47,7 @@ void handleMotorForward() {
 void handleMotorReverse() {
     Log.info("Motor moving reverse\n");
     String lcd_display_text = "Motor en reversa";
-    updateLCDStatus(lcd_display_text);
+    updateLCDTop(lcd_display_text);
     runMotor(pinOutput_ENA, pinOutput_DIR, pinOutput_PUL, HIGH);
     String response_text = "Motor en reversa";
     sendServerResponse(response_text);
@@ -75,8 +75,8 @@ void loop() {
     server.handleClient();
     zero_button_state = digitalRead(zero);
     float peso = getWeight();
-    updateLCDWeight(peso);
+    updateLCDBot(peso);
     tareScale(zero_button_state, last_zero_button_state);
     last_zero_button_state = zero_button_state;
-    updateLCDStatus("Vueltas: " + String(lapCounter));
+    updateLCDTop("Vueltas: " + String(lapCounter));
 }

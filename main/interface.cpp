@@ -9,14 +9,14 @@ void initializeLCD() {
     lcd.backlight();
 }
 
-void updateLCDWeight(float peso) {
+void updateLCDBot(float peso) {
     lcd.setCursor(0, 1);
     lcd.print("Peso: ");
     lcd.print(peso, 0);
     lcd.print(" g        ");
 }
 
-void updateLCDStatus(String texto_LCD) {
+void updateLCDTop(String texto_LCD) {
     lcd.setCursor(0, 0);
     lcd.print(texto_LCD);
 }
