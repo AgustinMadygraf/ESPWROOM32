@@ -33,7 +33,7 @@ void handleRootRequest() {
  * Maneja la solicitud para mover el motor hacia adelante.
  */
 void handleMotorForward() {
-    Log.info("Motor moving forward");
+    Log.info("Motor moving forward\n");
     String lcd_display_text = "Motor en avance";
     updateLCDStatus(lcd_display_text);
     runMotor(pinOutput_ENA, pinOutput_DIR, pinOutput_PUL, LOW);
@@ -45,7 +45,7 @@ void handleMotorForward() {
  * Maneja la solicitud para mover el motor hacia atrás.
  */
 void handleMotorReverse() {
-    Log.info("Motor moving reverse");
+    Log.info("Motor moving reverse\n");
     String lcd_display_text = "Motor en reversa";
     updateLCDStatus(lcd_display_text);
     runMotor(pinOutput_ENA, pinOutput_DIR, pinOutput_PUL, HIGH);
@@ -63,12 +63,6 @@ void setup() {
     setup_motor(pinOutput_ENA, pinOutput_DIR, pinOutput_PUL);
     initializeScaleSensor();
     initializeCounter();  // Inicializar el contador de vueltas
-
-    server.on("/", handleRootRequest);
-    server.on("/ena_f", handleMotorForward);
-    server.on("/ena_r", handleMotorReverse);
-    server.begin();
-
     Log.info("Setup completado\n");
 }
 
