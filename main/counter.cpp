@@ -21,7 +21,7 @@ void onLapDetected() {
 
     bool currentState = digitalRead(induct);
     // Incrementar el contador de vueltas solo en el flanco ascendente
-    if (currentState == HIGH && lastSensorState == LOW) {
+    if (currentState == LOW && lastSensorState == HIGH ) {
         lapCounter++;
         Log.info("Cambio de estado detectado\n");
         Log.info("Contador: %d\n", lapCounter);
