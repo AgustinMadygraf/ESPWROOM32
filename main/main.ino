@@ -54,6 +54,19 @@ void handleMotorReverse() {
 }
 
 /**
+ * Tarea que maneja las detecciones de vueltas.
+ */
+void lapDetectionTask(void *pvParameters) {
+    int lapDetected;
+    for (;;) {
+        if (xQueueReceive(lapQueue, &lapDetected, portMAX_DELAY)) {
+            lapCounter++;
+            Log.info("Lap detected: %d\n", lapCounter);
+        }
+    }
+}
+
+/**
  * Configuración inicial del ESP32.
  */
 void setup() {
@@ -63,6 +76,7 @@ void setup() {
     setup_motor(pinOutput_ENA, pinOutput_DIR, pinOutput_PUL);
     initializeScaleSensor();
     initializeCounter();  // Inicializar el contador de vueltas
+    xTaskCreate(lapDetectionTask, "Lap Detection Task", 2048, NULL, 1, NULL); // Crear la tarea de detección de vueltas
     Log.info("Setup completado\n");
 }
 
@@ -79,5 +93,4 @@ void loop() {
     tareScale(zero_button_state, last_zero_button_state);
     last_zero_button_state = zero_button_state;
     updateLCDTop("Contador: " + String(lapCounter));
-    onLapDetected();
 }

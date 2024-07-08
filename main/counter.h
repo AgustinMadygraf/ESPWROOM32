@@ -13,6 +13,9 @@ extern const int induct;
 // Declaración de la variable para el estado anterior del sensor
 extern volatile bool lastSensorState;
 
+// Declaración de la cola para manejar detecciones de vueltas
+extern QueueHandle_t lapQueue;
+
 /**
  * Función de interrupción para detectar el flanco ascendente del sensor inductivo.
  */

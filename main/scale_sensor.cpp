@@ -6,6 +6,7 @@ int DT_hx711 = 4;
 int CLK_hx711 = 5;
 long scaleFactor;
 int zero = 12;
+int calibracion = 14;
 
 void initializeScaleSensor() {
     balanza.begin(DT_hx711, CLK_hx711);
