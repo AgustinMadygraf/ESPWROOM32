@@ -5,7 +5,7 @@ HX711 balanza;
 int DT_hx711 = 4;
 int CLK_hx711 = 5;
 long scaleFactor;
-int zero = 2;
+int zero = 12;
 
 void initializeScaleSensor() {
     balanza.begin(DT_hx711, CLK_hx711);

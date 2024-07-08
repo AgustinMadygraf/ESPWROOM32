@@ -37,7 +37,7 @@ void IRAM_ATTR onLapDetected() {
  */
 void initializeCounter() {
     // Configurar el pin del sensor inductivo como entrada con pull-up interno
-    pinMode(induct, INPUT_PULLUP);
+    pinMode(induct, INPUT);
     // Adjuntar la interrupción al pin del sensor para detectar cambios de estado
     attachInterrupt(digitalPinToInterrupt(induct), onLapDetected, CHANGE);
     // Inicializar el estado previo del sensor
