@@ -15,8 +15,11 @@ const int pinOutput_DIR = 19;
 const int pinOutput_PUL = 13;
 
 // Variables para el estado del botón de tara
-int zero_button_state = 0;
-int last_zero_button_state = 0;
+bool zero_button_state = LOW ;
+bool last_zero_button_state = LOW;
+
+bool calibrar_button_state = LOW;
+bool last_calibrar_button_state = LOW;
 
 /**
  * Maneja la solicitud raíz del servidor web.
@@ -91,6 +94,9 @@ void loop() {
     float peso = getWeight();
     updateLCDBot(peso);
     tareScale(zero_button_state, last_zero_button_state);
+    calibrar_button_state = digitalRead(calibracion);
+    funcion_calibrar(calibrar_button_state, last_calibrar_button_state);
+    last_calibrar_button_state = calibrar_button_state;
     last_zero_button_state = zero_button_state;
     updateLCDTop("Contador: " + String(lapCounter));
 }

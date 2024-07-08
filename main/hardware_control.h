@@ -16,12 +16,13 @@ extern int DT_hx711;
 extern int CLK_hx711;
 extern long scaleFactor;
 extern int zero;
-
+extern int calibracion;
 
 
 void initializeScaleSensor();
 float getWeight();
 void tareScale(int zero_button_state, int last_zero_button_state);
+void funcion_calibrar(int calibrar_button_state, int last_calibrar_button_state);
 
 extern volatile int lapCounter;
 extern int sensorPin;
