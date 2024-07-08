@@ -78,5 +78,6 @@ void loop() {
     updateLCDBot(peso);
     tareScale(zero_button_state, last_zero_button_state);
     last_zero_button_state = zero_button_state;
-    updateLCDTop("Vueltas: " + String(lapCounter));
+    updateLCDTop("Contador: " + String(lapCounter));
+    onLapDetected();
 }
