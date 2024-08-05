@@ -21,4 +21,4 @@ Este proyecto tiene como objetivo tomar datos de una máquina de producción, es
 
 ## Instalación y Configuración
 
-Los pasos detallados para la instalación y configuración inicial del proyecto se encuentran en el archivo [Installation.md](Installation.md).
+Los pasos detallados para la instalación y configuración inicial del proyecto se encuentran en el archivo [docs/Installation.md](docs/Installation.md).
