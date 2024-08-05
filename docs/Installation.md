@@ -7,7 +7,7 @@
 - **Sensor Inductivo**
 - **Módulo HX711**
 - **Salida de 4 Relés**
-- **Pantalla LCD I2C** (opcional)
+- **Pantalla LCD I2C**
 
 ### Software Necesario
 - **Arduino IDE**: Para compilar y cargar código en el ESPWROOM32. Puedes descargarlo desde [Arduino IDE](https://www.arduino.cc/en/software).
@@ -34,7 +34,7 @@
    - **Pin SCK**: Conectar a un pin digital del ESPWROOM32.
 3. **Salida de 4 Relés**:
    - Conectar las salidas de los relés a los pines digitales correspondientes del ESPWROOM32 según sea necesario para tu aplicación.
-4. **Pantalla LCD I2C** (opcional):
+4. **Pantalla LCD I2C**:
    - Conectar a los pines SDA y SCL del ESPWROOM32.
 
 **Nota**: Un diagrama de conexión detallado está pendiente de creación. Asegúrate de seguir las instrucciones de conexión de los componentes según las especificaciones del fabricante.
