@@ -21,7 +21,7 @@
   - `ArduinoLog`
   - `LiquidCrystal_I2C`
   - `HX711`
- ![Descripción de la imagen](docs/Img-3.png)
+ ![Descripción de la imagen](Img-3.png)
 
 
   Puedes instalar estas bibliotecas utilizando el gestor de bibliotecas del Arduino IDE.
