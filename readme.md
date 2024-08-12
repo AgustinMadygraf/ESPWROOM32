@@ -25,3 +25,4 @@ Los pasos detallados para la instalación y configuración inicial del proyecto 
 
 
 https://wokwi.com/projects/405770009265997825
+
