@@ -22,3 +22,6 @@ Este proyecto tiene como objetivo tomar datos de una máquina de producción, es
 ## Instalación y Configuración
 
 Los pasos detallados para la instalación y configuración inicial del proyecto se encuentran en el archivo [Installation.md](docs/Installation.md).
+
+
+https://wokwi.com/projects/405770009265997825
