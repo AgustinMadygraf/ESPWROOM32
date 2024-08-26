@@ -1,13 +1,13 @@
 <?php
 // ESPWROOM32/includes/header.php
 
-//$paginaActual = basename($_SERVER['PHP_SELF']);
-//$claseActiva = "class='active'";
+$paginaActual = basename($_SERVER['PHP_SELF']);
+$claseActiva = "class='active'";
 
 $navItems = [
     'index.php' => 'Inicio',
     'oee.php' => 'OEE',
-    '../phpMyAdmin/' => 'PHP MyAdmin'
+    '../phpMyAdmin/' => 'PHP MyAdmin' //abrir nueva pestaña
 ];
 ?>
 
@@ -27,7 +27,7 @@ $navItems = [
         <ul>
             <?php foreach ($navItems as $fileName => $title): ?>
                 <li>
-                    <a href="/ESPWROOM32/<?= $fileName ?>" <?= ($paginaActual == "ESPWROOM32/$fileName") ? $claseActiva : "" ?>>
+                    <a href="/ESPWROOM32/<?= $fileName ?>" <?= ($paginaActual == "ESPWROOM32/$fileName") ? $claseActiva : "" ?> <?= ($fileName == '../phpMyAdmin/') ? 'target="_blank"' : '' ?>>
                         <?= $title ?>
                     </a>
                 </li>
@@ -35,3 +35,5 @@ $navItems = [
         </ul>
     </div>
 </header>
+</body>
+</html>
