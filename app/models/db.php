@@ -1,5 +1,5 @@
 <?php
-// db.php
+// ESPWROOM32/app/modelsdb.php
 require '../vendor/autoload.php'; // Cargar Composer y phpdotenv
 
 // Cargar el archivo .env
