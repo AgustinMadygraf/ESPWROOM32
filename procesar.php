@@ -17,4 +17,3 @@ if (isset($_GET['balanza']) && isset($_GET['contador'])) {
 }
 // Cerrar conexión
 $conn->close();
-?>
