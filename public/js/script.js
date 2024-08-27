@@ -1,3 +1,4 @@
+// ESPWROOM32/public/js/script.js
 function fetchData() {
     fetch('get_data.php')
         .then(response => response.json())

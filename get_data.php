@@ -1,4 +1,5 @@
 <?php
+// ESPWROOM32/get_data.php
 include 'app/models/db.php';
 
 // Consultar el último valor de la balanza y el contador
