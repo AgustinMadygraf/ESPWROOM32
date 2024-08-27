@@ -1,6 +1,6 @@
 <?php
 // ESPWROOM32/app/modelsdb.php
-require '../vendor/autoload.php'; // Cargar Composer y phpdotenv
+require '../../../vendor/autoload.php'; // Cargar Composer y phpdotenv
 
 // Cargar el archivo .env
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);

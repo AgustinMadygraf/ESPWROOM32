@@ -1,6 +1,6 @@
 <?php
 // ESPWROOM32/get_data.php
-include 'app/models/db.php';
+include '../models/db.php';
 
 // Consultar el último valor de la balanza y el contador
 $sql = "SELECT balanza, contador FROM measurements ORDER BY id DESC LIMIT 1";

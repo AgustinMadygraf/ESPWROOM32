@@ -1,6 +1,6 @@
 // ESPWROOM32/public/js/script.js
 function fetchData() {
-    fetch('get_data.php')
+    fetch('/ESPWROOM32/app/controllers/get_data.php')
         .then(response => response.json())
         .then(data => {
             document.getElementById('balanza-value').innerText = `${parseFloat(data.balanza).toFixed(2)} kg`;
