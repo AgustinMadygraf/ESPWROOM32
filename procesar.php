@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'app/models/db.php';
 
 // Verificar si los parámetros están presentes
 if (isset($_GET['balanza']) && isset($_GET['contador'])) {
