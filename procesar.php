@@ -1,6 +1,6 @@
 <?php
-include 'app/models/db.php';
-
+include 'db_2.php';
+ECHO "Carga de datos<br>";
 // Verificar si los parámetros están presentes
 if (isset($_GET['balanza']) && isset($_GET['contador'])) {
     $balanza = $_GET['balanza'];
