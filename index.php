@@ -1,6 +1,6 @@
 <?php
 // index.php
-require 'header.php';
+require 'app/views/header.php';
 ?>
 
 <!DOCTYPE html>
