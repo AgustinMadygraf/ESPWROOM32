@@ -8,7 +8,7 @@ require "app/views/header.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eficiencia General de los Equipos (OEE)</title>
-    <link rel="stylesheet" href="oee.css">
+    <link rel="stylesheet" href="public/css/oee.css">
 </head>
 <body>
     <header>
