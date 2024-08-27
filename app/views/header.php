@@ -6,8 +6,12 @@ $claseActiva = "class='active'";
 
 $navItems = [
     'app/views/index.php' => 'Inicio',
+    'app/views/mantenimiento.php' => 'Mantenimiento',
+    'app/views/electronica.php' => 'Electrónica',
+    'app/views/sustentabilidad.php' => 'Sustentabilidad',
     'app/views/oee.php' => 'OEE',
-    '../phpMyAdmin/' => 'PHP MyAdmin' //abrir nueva pestaña
+    'app/views/computerVision.php' => 'Visión Artificial',
+    '../phpMyAdmin/' => 'PHP MyAdmin'
 ];
 ?>
 
