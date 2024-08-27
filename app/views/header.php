@@ -5,8 +5,8 @@ $paginaActual = basename($_SERVER['PHP_SELF']);
 $claseActiva = "class='active'";
 
 $navItems = [
-    'index.php' => 'Inicio',
-    'oee.php' => 'OEE',
+    'app/views/index.php' => 'Inicio',
+    'app/views/oee.php' => 'OEE',
     '../phpMyAdmin/' => 'PHP MyAdmin' //abrir nueva pestaña
 ];
 ?>
