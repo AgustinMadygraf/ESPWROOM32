@@ -11,4 +11,11 @@ require 'header.php';
     <title>Sustentabilidad</title>
     <link rel="stylesheet" href="../../public/css/styles.css">
 </head>
-<body></body>
+<body>
+
+La Sustentabilidad es la capacidad de mantenerse en el tiempo sin agotar los recursos naturales. 
+En el caso de la industria, la sustentabilidad se refiere a la capacidad de producir bienes y servicios sin dañar el medio ambiente.
+
+
+
+</body>
