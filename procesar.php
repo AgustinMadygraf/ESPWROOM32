@@ -1,5 +1,6 @@
 <?php
-include 'db_2.php';
+require '../vendor/autoload.php'; // Cargar Composer y phpdotenv
+include 'app/models/db.php';
 ECHO "Carga de datos<br>";
 // Verificar si los parámetros están presentes
 if (isset($_GET['balanza']) && isset($_GET['contador'])) {
