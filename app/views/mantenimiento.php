@@ -21,6 +21,9 @@ require 'header.php';
     El listado de equipos y maquinaria que requieren mantenimiento se puede obtener de la base de datos.<br>
     La definición de fallo técnico son aquellas situaciones en las que un equipo o maquinaria no funciona correctamente.<br>
     </h4>
+    <div style="text-align: center;">
+        <img src="../../public/images/mantenimiento.jpeg" alt="Plan de Mantenimiento">
+    </div>
     </main>
     <footer>
         <p>© 2024 madygraf</p>
