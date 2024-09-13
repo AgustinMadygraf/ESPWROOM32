@@ -1,5 +1,5 @@
 1. **Tarea**: Crear la estructura de directorios
-   **Archivo a modificar o crear**: Ninguno
+   **Archivo a modificar o crear**: Ninguno.
    **Descripción detallada**: Establecer directorios separados para [`views`].
 
 2. **Tarea**: Configurar el enrutador
