@@ -1,4 +1,4 @@
-//main.ino
+// main.ino
 #include <WiFi.h>
 #include <WebServer.h>
 #include <EEPROM.h>
@@ -15,7 +15,7 @@ const int pinOutput_DIR = 19;
 const int pinOutput_PUL = 13;
 
 // Variables para el estado del botón de tara
-bool zero_button_state = LOW ;
+bool zero_button_state = LOW;
 bool last_zero_button_state = LOW;
 
 bool calibrar_button_state = LOW;

@@ -1,4 +1,4 @@
-//counter.h
+// counter.h
 #ifndef COUNTER_H
 #define COUNTER_H
 

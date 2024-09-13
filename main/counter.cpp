@@ -1,4 +1,4 @@
-//counter.cpp
+// counter.cpp
 #include "counter.h"
 
 volatile int lapCounter = 0;
