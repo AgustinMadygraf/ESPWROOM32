@@ -7,13 +7,20 @@ volatile bool lastSensorState = false;
 QueueHandle_t lapQueue;
 
 void IRAM_ATTR onLapDetected() {
-    // Enviar un mensaje a la cola para indicar que se detectó una vuelta
-    int lapDetected = 1;
-    xQueueSendFromISR(lapQueue, &lapDetected, NULL);
+    static unsigned long lastInterruptTime = 0;
+    unsigned long interruptTime = millis();
+    
+    // Ignorar si la interrupción ocurre dentro de los primeros 50 ms
+    if (interruptTime - lastInterruptTime > 50) {
+        int lapDetected = 1;
+        xQueueSendFromISR(lapQueue, &lapDetected, NULL);
+    }
+    lastInterruptTime = interruptTime;
 }
 
+
 void initializeCounter() {
-    pinMode(induct, INPUT);
+    pinMode(induct, INPUT_PULLUP);
     lapQueue = xQueueCreate(10, sizeof(int));  // Crear una cola con tamaño 10
     attachInterrupt(digitalPinToInterrupt(induct), onLapDetected, RISING);
 }

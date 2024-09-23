@@ -3,11 +3,11 @@
 
 WebServer server(80);
 
-const char* ssid = "Aula tecnica";
+const char* ssid = "automatizacion_plus";
 const char* password = "Madygraf32";
 
-IPAddress local_IP(192, 168, 0, 184);
-IPAddress gateway(192, 168, 0, 1);
+IPAddress local_IP(192, 168, 10, 184);
+IPAddress gateway(192, 168, 10, 1);
 IPAddress subnet(255, 255, 255, 0);
 IPAddress primaryDNS(10, 176, 60, 15);
 IPAddress secondaryDNS(10, 176, 60, 79);

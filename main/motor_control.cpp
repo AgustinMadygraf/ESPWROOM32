@@ -12,7 +12,7 @@ void setup_motor(int pinOutput_ENA, int pinOutput_DIR, int pinOutput_PUL) {
 void runMotor(int pinOutput_ENA, int pinOutput_DIR, int pinOutput_PUL, int direction) {
     digitalWrite(pinOutput_ENA, LOW);
     digitalWrite(pinOutput_DIR, direction);
-    for (int i = 0; i < 200; i++) {
+    for (int i = 0; i < 2000; i++) {
         digitalWrite(pinOutput_PUL, HIGH);
         delayMicroseconds(1000);
         digitalWrite(pinOutput_PUL, LOW);
