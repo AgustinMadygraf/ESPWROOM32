@@ -15,7 +15,6 @@ Actualmente, el mantenimiento se gestiona de manera reactiva. No existe un plan 
 La lista de equipos en el Área Packaging se compone de diversas máquinas y sistemas involucrados en la fabricación, impresión, corte y empaquetado de las bolsas de papel. Cada uno de estos equipos desempeña un rol crítico en el proceso productivo y debe estar sujeto a un plan de mantenimiento adecuado. 
 
 
-|---------------|----------------------------------|--------------------------|------------------------------------------------|
 | Código Equipo | Equipo                           | Código Sistema Funcional | Sistema Funcional                              |
 |---------------|----------------------------------|--------------------------|------------------------------------------------|
 | 101PAPER      | Sistema de alimentación de papel | 101PAPER-FEED            | Alimentación de bobinas de papel               |
@@ -50,7 +49,6 @@ Podemos definir los modos de fallos como la cirscuntancias que acompañan un fal
 
 Podemos clasificar los fallos si queremos evitarlos u amortiguarlos.
 
-|------------|-------------|-------------------|---------------------------|----------------------------------------------|-------------------|
 | **Equipo** | **Sistema** | **Tipo de fallo** | **Descripción del fallo** |         **Descripción modo de fallo**        | **Clasificación** |
 |------------|-------------|-------------------|---------------------------|----------------------------------------------|-------------------|
 |            |             |                   |                           |                                              |                   |
@@ -78,7 +76,6 @@ Podemos clasificar los fallos si queremos evitarlos u amortiguarlos.
 En la siguiente tabla se estudian las medidas preventivas a adoptar para
 evitar o minimizar los efectos de cada unos de los modos de fallo detallados en el cuadro anterior. En la primera columna se indica el modo de fallo. La segunda columna recoge las tareas de mantenimiento que se han considerado aplicables. En la siguiente tabla se detallan posibles mejoras que podrían realizarse en la instalación. La cuarta columna detalla las indicaciones que habría que realizar al personal de producción. Y la quinta y última columna, las instrucciones de mantenimiento que habría que aplicar o mejorar.
 
-|-------------------|---------------------------------|----------------------------------------------------------------------------------------|
 | **Modo de Fallo** | **Tipo de Medidas Preventivas** |                         **Descripción de Medidas preventivas**                         | 
 |-------------------|---------------------------------|----------------------------------------------------------------------------------------|
 |                   |                                 |                                                                                        |
