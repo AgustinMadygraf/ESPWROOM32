@@ -19,13 +19,14 @@ La lista de equipos en el Área Packaging se compone de diversas máquinas y sis
 | Código Equipo | Equipo                           | Código Sistema Funcional | Sistema Funcional                              |
 |---------------|----------------------------------|--------------------------|------------------------------------------------|
 | 101PAPER      | Sistema de alimentación de papel | 101PAPER-FEED            | Alimentación de bobinas de papel               |
+|               |                                  |                          | Sistema de Impresión flexogfrafico en línea    |
 |               |                                  | 101PAPER-ALN             | Sistema de alineación de bobinas               |
 |---------------|----------------------------------|--------------------------|------------------------------------------------|
-| 102FLEXO      | Impresora Flexográfica           | 102FLEXO-PRT             | Sistema de impresión de tinta                  |
-|               |                                  | 102FLEXO-DRY             | Sistema de secado de tinta                     |
+| 102FLEXO      | Impresora Flexográfica 2         | 102FLEXO-PRT             | Sistema de impresión de tinta                  |
 |---------------|----------------------------------|--------------------------|------------------------------------------------|
 | 103HANDLE     | Máquina de confección de manijas | 103HANDLE-MNF            | Sistema de ensamblaje de manijas               |
-|               |                                  | 103HANDLE-ROPE           | Sistema de retorcimiento de cuerdas            |
+|---------------|----------------------------------|--------------------------|------------------------------------------------|
+| completar     | completar                        | 103HANDLE-ROPE           | Sistema de retorcimiento de cuerdas            |
 |---------------|----------------------------------|--------------------------|------------------------------------------------|
 | 104COMP       | Compresor de aire                | 104COMP-COMP             | Sistema de compresión de aire                  |
 |               |                                  | 104COMP-REF              | Sistema de refrigeración del compresor         |
