@@ -15,19 +15,19 @@ Actualmente, el mantenimiento se gestiona de manera reactiva. No existe un plan 
 La lista de equipos en el Área Packaging se compone de diversas máquinas y sistemas involucrados en la fabricación, impresión, corte y empaquetado de las bolsas de papel. Cada uno de estos equipos desempeña un rol crítico en el proceso productivo y debe estar sujeto a un plan de mantenimiento adecuado. 
 
 
-### 2.1. Equipo Confección e Impresión de Bolsa de Papel  
-#### 2.1.1 Sistema de alimentación de bobinas de papel.
-#### 2.1.2 Sistema de rodillos de impresión.
-#### 2.1.3 Sistema de secado de tinta.
-
-### 2.2 Impresora flexografica dos cuerpos
-### 2.3 Confeccion de manijas.
-### 2.4 Confeccion de cuerdas.
-#### 2.4.1 Rectorcimiento de cuerdas.
-#### 2.4.2 Desenrrollado de cuerdas.
-
-### 2.5 Equipo compresor de aire
-### 2.6 Fotovoltaico on-grid
+| Código Equipo | Equipo                           | Código Sistema Funcional | Sistema Funcional                              |
+|---------------|----------------------------------|--------------------------|------------------------------------------------|
+| 101PAPER      | Sistema de alimentación de papel | 101PAPER-FEED             | Alimentación de bobinas de papel               |
+|               |                                  | 101PAPER-ALN              | Sistema de alineación de bobinas               |
+| 102FLEXO      | Impresora Flexográfica           | 102FLEXO-PRT              | Sistema de impresión de tinta                  |
+|               |                                  | 102FLEXO-DRY              | Sistema de secado de tinta                     |
+| 103HANDLE     | Máquina de confección de manijas | 103HANDLE-MNF             | Sistema de ensamblaje de manijas               |
+|               |                                  | 103HANDLE-ROPE            | Sistema de retorcimiento de cuerdas            |
+| 104COMP       | Compresor de aire                | 104COMP-COMP              | Sistema de compresión de aire                  |
+|               |                                  | 104COMP-REF               | Sistema de refrigeración del compresor         |
+| 105SOLAR      | Sistema fotovoltaico on-grid     | 105SOLAR-INV              | Sistema inversor                              |
+|               |                                  | 105SOLAR-PAN              | Paneles solares                                |
+| 106PACK       | Máquina de empaquetado           | 106PACK-EMB               | Sistema de empaquetado y etiquetado            |
 
 ## 3. Análisis de equipos: criticidad y modelo de mantenimiento
 
