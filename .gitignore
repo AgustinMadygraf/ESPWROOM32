@@ -3,3 +3,5 @@ docs/00-Prompt-for-ProjectAnalysis.md
 main/docs/00-Prompt-for-ProjectAnalysis.md
 ESP32Project/__pycache__/
 .env
+vendor/
+composer.lock
