@@ -17,24 +17,49 @@ La lista de equipos en el Área Packaging se compone de diversas máquinas y sis
 
 | Código Equipo | Equipo                           | Código Sistema Funcional | Sistema Funcional                              |
 |---------------|----------------------------------|--------------------------|------------------------------------------------|
-| 101PAPER      | Sistema de alimentación de papel | 101PAPER-FEED            | Alimentación de bobinas de papel               |
-|               |                                  |                          | Sistema de Impresión flexogfrafico en línea    |
-|               |                                  | 101PAPER-ALN             | Sistema de alineación de bobinas               |
+|   PK-ICB      | Impresión y                      | 101PAPER-FEED            | Alimentación de bobinas de papel               |
+|               | Confección de                    |                          | Sistema de Impresión flexogfrafico en línea    |
+|               | Bolsas de papel                  | 101PAPER-ALN             | Sistema de alineación de bobinas               |
 |---------------|----------------------------------|--------------------------|------------------------------------------------|
-| 102FLEXO      | Impresora Flexográfica 2         | 102FLEXO-PRT             | Sistema de impresión de tinta                  |
+|    PK-CMa     | Confección                       | PK-CMa-xxx               | Sistema de Pegado inicial                      |
+|               | de                               | PK-CMa-xxx               | Sistema de Pegado final                        |
+|               | Manijas                          | PK-CMa-xxx               | Sistema de corte longitudinal                  |
+|               |                                  | PK-CMa-xxx               | Sistema de corte perpendicular                 |
+|               |                                  | PK-CMa-xxx               | Sistema de carga de bobinitas de papel         |
+|               |                                  | PK-CMa-xxx               | Sistema de carga de cuerdas de papel           |
+|               |                                  | PK-CMa-xxx               | Sistema de control                             |
+|               |                                  | PK-CMa-xxx               | Sistema Neumático                              |
+|               |                                  | PK-CMa-xxx               | Sistema de Seguridad                           |
 |---------------|----------------------------------|--------------------------|------------------------------------------------|
-| 103HANDLE     | Máquina de confección de manijas | 103HANDLE-MNF            | Sistema de ensamblaje de manijas               |
+| PK-IMP        | Máquina Impresión flexo          | PK-IMP-xxx               | Sistema eléctrico                              |
+|               |                                  | PK-IMP-xxx               | Sistema mecánico                               |
+|               |                                  | PK-IMP-xxx               | Sistema de control                             |
+|               |                                  | PK-IMP-xxx               | Sistema de seguridad                           |
+|               |                                  | PK-IMP-xxx               | Sistema de lubricación                         |
 |---------------|----------------------------------|--------------------------|------------------------------------------------|
-| completar     | completar                        | 103HANDLE-ROPE           | Sistema de retorcimiento de cuerdas            |
+| PK-RdC        | Retorcimiento de Cuerdas         | PK-RdC-xxx               | Sistema eléctrico                              |
+|               |                                  | PK-RdC-xxx               | Sistema mecánico                               |
+|               |                                  | PK-RdC-xxx               | Sistema de control                             |
+|               |                                  | PK-RdC-xxx               | Sistema de seguridad                           |
+|               |                                  | PK-RdC-xxx               | Sistema de lubricación                         |
 |---------------|----------------------------------|--------------------------|------------------------------------------------|
-| 104COMP       | Compresor de aire                | 104COMP-COMP             | Sistema de compresión de aire                  |
-|               |                                  | 104COMP-REF              | Sistema de refrigeración del compresor         |
+| PK-DCu        | Desenrrollado de Cuerdas         | PK-DCu-xxx               | Sistema eléctrico                              |
+|               |                                  | PK-DCu-xxx               | Sistema mecánico                               |
+|               |                                  | PK-DCu-xxx               | Sistema de control                             |
+|               |                                  | PK-DCu-xxx               | Sistema de seguridad                           |
+|               |                                  | PK-DCu-xxx               | Sistema de lubricación                         |
 |---------------|----------------------------------|--------------------------|------------------------------------------------|
-| 105SOLAR      | Sistema fotovoltaico on-grid     | 105SOLAR-INV             | Sistema inversor                               |
-|               |                                  | 105SOLAR-PAN             | Paneles solares                                |
+| EA-CO1        | Compresor de aire                | EA-CO1-xxx               | Sistema de compresión de aire                  |
 |---------------|----------------------------------|--------------------------|------------------------------------------------|
-| 106PACK       | Máquina de empaquetado           | 106PACK-EMB              | Sistema de empaquetado y etiquetado            |
+| EA-EFV        | Sistema fotovoltaico on-grid     | EA-EFV-xxx               | Sistema inversor                               |
 |---------------|----------------------------------|--------------------------|------------------------------------------------|
+| EA-xxx        | Autoelevador bobina              | EA-xxx-xxx               | Sistema de empaquetado y etiquetado            |
+|---------------|----------------------------------|--------------------------|------------------------------------------------|
+| EA-xxx        | Autoelevador gasoil              | EA-xxx-xxx               | Sistema de empaquetado y etiquetado            |
+|---------------|----------------------------------|--------------------------|------------------------------------------------|
+| EA-xxx        | Autoelevador electrico           | EA-xxx-xxx               | Sistema de empaquetado y etiquetado            |
+|---------------|----------------------------------|--------------------------|------------------------------------------------|
+
 
 ## 3. Análisis de equipos: criticidad y modelo de mantenimiento
 
