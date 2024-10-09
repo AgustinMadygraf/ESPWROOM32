@@ -1,0 +1,235 @@
+{
+    "Planta": {
+      "Nombre": "Planta de producción de bolsas de papel impresas con cuerdas retorcidas",
+      "Área": [{
+        "Nombre": "Área Packaging",
+        "codigo": "PK",
+        "Equipos": [
+          {
+            "CódigoEquipo": "PK-ICB",
+            "Nombre": "Impresión y Confección de Bolsas de papel",
+            "Sistemas": [
+              {
+                "CódigoSistema": "101PAPER-FEED",
+                "NombreSistema": "Alimentación de bobinas de papel",
+                "Elementos": []
+              },
+              {
+                "CódigoSistema": "101PAPER-ALN",
+                "NombreSistema": "Sistema de alineación de bobinas",
+                "Elementos": []
+              }
+            ]
+          },
+          {
+            "CódigoEquipo": "PK-CMa",
+            "Nombre": "Confección de Manijas",
+            "Sistemas": [
+              {
+                "CódigoSistema": "PK-CMa-xxx",
+                "NombreSistema": "Sistema de Pegado inicial",
+                "Elementos": []
+              },
+              {
+                "CódigoSistema": "PK-CMa-xxx",
+                "NombreSistema": "Sistema de Pegado final",
+                "Elementos": []
+              },
+              {
+                "CódigoSistema": "PK-CMa-xxx",
+                "NombreSistema": "Sistema de corte longitudinal",
+                "Elementos": []
+              },
+              {
+                "CódigoSistema": "PK-CMa-xxx",
+                "NombreSistema": "Sistema de corte perpendicular",
+                "Elementos": []
+              },
+              {
+                "CódigoSistema": "PK-CMa-xxx",
+                "NombreSistema": "Sistema de carga de bobinitas de papel",
+                "Elementos": []
+              },
+              {
+                "CódigoSistema": "PK-CMa-xxx",
+                "NombreSistema": "Sistema de carga de cuerdas de papel",
+                "Elementos": []
+              },
+              {
+                "CódigoSistema": "PK-CMa-xxx",
+                "NombreSistema": "Sistema de control",
+                "Elementos": []
+              },
+              {
+                "CódigoSistema": "PK-CMa-xxx",
+                "NombreSistema": "Sistema Neumático",
+                "Elementos": []
+              },
+              {
+                "CódigoSistema": "PK-CMa-xxx",
+                "NombreSistema": "Sistema de Seguridad",
+                "Elementos": []
+              }
+            ]
+          },
+          {
+            "CódigoEquipo": "PK-IMP",
+            "Nombre": "Máquina Impresión flexo",
+            "Sistemas": [
+              {
+                "CódigoSistema": "PK-IMP-xxx",
+                "NombreSistema": "Sistema eléctrico",
+                "Elementos": []
+              },
+              {
+                "CódigoSistema": "PK-IMP-xxx",
+                "NombreSistema": "Sistema mecánico",
+                "Elementos": []
+              },
+              {
+                "CódigoSistema": "PK-IMP-xxx",
+                "NombreSistema": "Sistema de control",
+                "Elementos": []
+              },
+              {
+                "CódigoSistema": "PK-IMP-xxx",
+                "NombreSistema": "Sistema de seguridad",
+                "Elementos": []
+              },
+              {
+                "CódigoSistema": "PK-IMP-xxx",
+                "NombreSistema": "Sistema de lubricación",
+                "Elementos": []
+              }
+            ]
+          },
+          {
+            "CódigoEquipo": "PK-RdC",
+            "Nombre": "Retorcimiento de Cuerdas",
+            "Sistemas": [
+              {
+                "CódigoSistema": "PK-RdC-xxx",
+                "NombreSistema": "Sistema eléctrico",
+                "Elementos": []
+              },
+              {
+                "CódigoSistema": "PK-RdC-xxx",
+                "NombreSistema": "Sistema mecánico",
+                "Elementos": []
+              },
+              {
+                "CódigoSistema": "PK-RdC-xxx",
+                "NombreSistema": "Sistema de control",
+                "Elementos": []
+              },
+              {
+                "CódigoSistema": "PK-RdC-xxx",
+                "NombreSistema": "Sistema de seguridad",
+                "Elementos": []
+              },
+              {
+                "CódigoSistema": "PK-RdC-xxx",
+                "NombreSistema": "Sistema de lubricación",
+                "Elementos": []
+              }
+            ]
+          },
+          {
+            "CódigoEquipo": "PK-DCu",
+            "Nombre": "Desenrrollado de Cuerdas",
+            "Sistemas": [
+              {
+                "CódigoSistema": "PK-DCu-xxx",
+                "NombreSistema": "Sistema eléctrico",
+                "Elementos": []
+              },
+              {
+                "CódigoSistema": "PK-DCu-xxx",
+                "NombreSistema": "Sistema mecánico",
+                "Elementos": []
+              },
+              {
+                "CódigoSistema": "PK-DCu-xxx",
+                "NombreSistema": "Sistema de control",
+                "Elementos": []
+              },
+              {
+                "CódigoSistema": "PK-DCu-xxx",
+                "NombreSistema": "Sistema de seguridad",
+                "Elementos": []
+              },
+              {
+                "CódigoSistema": "PK-DCu-xxx",
+                "NombreSistema": "Sistema de lubricación",
+                "Elementos": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Nombre": "Equipos Auxiliares",
+        "codigo": "EA",
+        "Equipos": [
+        {
+            "CódigoEquipo": "EA-CO1",
+            "Nombre": "Compresor de aire",
+            "Sistemas": [
+              {
+                "CódigoSistema": "EA-CO1-xxx",
+                "NombreSistema": "Sistema de compresión de aire",
+                "Elementos": []
+              }
+            ]
+          },
+          {
+            "CódigoEquipo": "EA-EFV",
+            "Nombre": "Sistema fotovoltaico on-grid",
+            "Sistemas": [
+              {
+                "CódigoSistema": "EA-EFV-xxx",
+                "NombreSistema": "Sistema inversor",
+                "Elementos": []
+              }
+            ]
+          },
+          {
+            "CódigoEquipo": "EA-xxx",
+            "Nombre": "Autoelevador bobina",
+            "Sistemas": [
+              {
+                "CódigoSistema": "EA-xxx-xxx",
+                "NombreSistema": "Sistema de empaquetado y etiquetado",
+                "Elementos": []
+              }
+            ]
+          },
+          {
+            "CódigoEquipo": "EA-xxx",
+            "Nombre": "Autoelevador gasoil",
+            "Sistemas": [
+              {
+                "CódigoSistema": "EA-xxx-xxx",
+                "NombreSistema": "Sistema de empaquetado y etiquetado",
+                "Elementos": []
+              }
+            ]
+          },
+          {
+            "CódigoEquipo": "EA-xxx",
+            "Nombre": "Autoelevador eléctrico",
+            "Sistemas": [
+              {
+                "CódigoSistema": "EA-xxx-xxx",
+                "NombreSistema": "Sistema de empaquetado y etiquetado",
+                "Elementos": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+    }
+  }
+  
+  
