@@ -17,37 +17,43 @@ La lista de equipos en el Área Packaging se compone de diversas máquinas y sis
 
 | Código Equipo | Equipo                           | Código Sistema Funcional | Sistema Funcional                              |
 |---------------|----------------------------------|--------------------------|------------------------------------------------|
-|   PK-ICB      | Impresión y                      | 101PAPER-FEED            | Alimentación de bobinas de papel               |
-|               | Confección de                    |                          | Sistema de Impresión flexogfrafico en línea    |
-|               | Bolsas de papel                  | 101PAPER-ALN             | Sistema de alineación de bobinas               |
+| PK-ICB        | Impresión y                      | PK-ICB-UCe               | Portabobinas Centrador de banda                |
+|               | Confección de                    | PK-ICB-UTe               | Portabobinas Control de Tensión                |
+|               | Bolsas de papel                  | PK-ICB-UHi               | Portabobinas Sistema Hidráulico                |
+|               |                                  | PK-ICB-Imp               | Sistema de Impresión                           |
+|               |                                  | PK-ICB-PgP               | Sistema de Pegado Lateral principal            |
+|               |                                  | PK-ICB-PgA               | Sistema de Pegado Lateral auxiliar             |
+|               |                                  | PK-ICB-Tub               | Sistema Formador de Tubo                       |
+|               |                                  | PK-ICB-Fon               | Sistema Formador de fondo cuadrado             |
+|               |                                  | PK-ICB-Col               | Sistema Colector de bolsas                     |
+|               |                                  | PK-ICB-Con               | Sistema de Control                             |
 |---------------|----------------------------------|--------------------------|------------------------------------------------|
-|    PK-CMa     | Confección                       | PK-CMa-xxx               | Sistema de Pegado inicial                      |
-|               | de                               | PK-CMa-xxx               | Sistema de Pegado final                        |
-|               | Manijas                          | PK-CMa-xxx               | Sistema de corte longitudinal                  |
-|               |                                  | PK-CMa-xxx               | Sistema de corte perpendicular                 |
-|               |                                  | PK-CMa-xxx               | Sistema de carga de bobinitas de papel         |
-|               |                                  | PK-CMa-xxx               | Sistema de carga de cuerdas de papel           |
-|               |                                  | PK-CMa-xxx               | Sistema de control                             |
-|               |                                  | PK-CMa-xxx               | Sistema Neumático                              |
-|               |                                  | PK-CMa-xxx               | Sistema de Seguridad                           |
+| PK-CMa        | Confección                       | PK-CMa-PeI               | Sistema de Pegado inicial                      |
+|               | de                               | PK-CMa-PeF               | Sistema de Pegado final                        |
+|               | Manijas                          | PK-CMa-CoL               | Sistema de corte longitudinal                  |
+|               |                                  | PK-CMa-CoP               | Sistema de corte perpendicular                 |
+|               |                                  | PK-CMa-SCB               | Sistema de carga de bobinitas de papel         |
+|               |                                  | PK-CMa-Con               | Sistema de control                             |
+|               |                                  | PK-CMa-Neu               | Sistema Neumático                              |
+|               |                                  | PK-CMa-Seg               | Sistema de Seguridad                           |
 |---------------|----------------------------------|--------------------------|------------------------------------------------|
-| PK-IMP        | Máquina Impresión flexo          | PK-IMP-xxx               | Sistema eléctrico                              |
-|               |                                  | PK-IMP-xxx               | Sistema mecánico                               |
-|               |                                  | PK-IMP-xxx               | Sistema de control                             |
-|               |                                  | PK-IMP-xxx               | Sistema de seguridad                           |
-|               |                                  | PK-IMP-xxx               | Sistema de lubricación                         |
+| PK-IMP        | Máquina Impresión flexo          | PK-IMP-Ele               | Sistema eléctrico                              |
+|               |                                  | PK-IMP-Mec               | Sistema mecánico                               |
+|               |                                  | PK-IMP-Con               | Sistema de control                             |
+|               |                                  | PK-IMP-Seg               | Sistema de seguridad                           |
+|               |                                  | PK-IMP-Lub               | Sistema de lubricación                         |
 |---------------|----------------------------------|--------------------------|------------------------------------------------|
-| PK-RdC        | Retorcimiento de Cuerdas         | PK-RdC-xxx               | Sistema eléctrico                              |
-|               |                                  | PK-RdC-xxx               | Sistema mecánico                               |
-|               |                                  | PK-RdC-xxx               | Sistema de control                             |
-|               |                                  | PK-RdC-xxx               | Sistema de seguridad                           |
-|               |                                  | PK-RdC-xxx               | Sistema de lubricación                         |
+| PK-RdC        | Retorcimiento de Cuerdas         | PK-RdC-Ele               | Sistema eléctrico                              |
+|               |                                  | PK-RdC-Mec               | Sistema mecánico                               |
+|               |                                  | PK-RdC-Con               | Sistema de control                             |
+|               |                                  | PK-RdC-Seg               | Sistema de seguridad                           |
+|               |                                  | PK-RdC-Lub               | Sistema de lubricación                         |
 |---------------|----------------------------------|--------------------------|------------------------------------------------|
-| PK-DCu        | Desenrrollado de Cuerdas         | PK-DCu-xxx               | Sistema eléctrico                              |
-|               |                                  | PK-DCu-xxx               | Sistema mecánico                               |
-|               |                                  | PK-DCu-xxx               | Sistema de control                             |
-|               |                                  | PK-DCu-xxx               | Sistema de seguridad                           |
-|               |                                  | PK-DCu-xxx               | Sistema de lubricación                         |
+| PK-DCu        | Desenrrollado de Cuerdas         | PK-DCu-Ele               | Sistema eléctrico                              |
+|               |                                  | PK-DCu-Mec               | Sistema mecánico                               |
+|               |                                  | PK-DCu-Con               | Sistema de control                             |
+|               |                                  | PK-DCu-Seg               | Sistema de seguridad                           |
+|               |                                  | PK-DCu-Lub               | Sistema de lubricación                         |
 |---------------|----------------------------------|--------------------------|------------------------------------------------|
 | EA-CO1        | Compresor de aire                | EA-CO1-xxx               | Sistema de compresión de aire                  |
 |---------------|----------------------------------|--------------------------|------------------------------------------------|
@@ -63,7 +69,8 @@ La lista de equipos en el Área Packaging se compone de diversas máquinas y sis
 
 ## 3. Análisis de equipos: criticidad y modelo de mantenimiento
 
-completar
+Equipo Importante.
+Modelo condicional de Mantenimiento.
 
 ## 4. Fallo funcionales, fallos tecnicos y modos de fallos
 El fallo funcional es aquel fallo que impide al equipo o al sistema analizado cumplir su funcion. Para determinar un fallo funcional, no tenemos mas que determinar la funcion que cumple y determinar el fallo como la anti funcion, como el no cumplimiento de su funcion.
@@ -73,6 +80,8 @@ El fallo tecnico es aquel que no impidiendo al equipo que cumpla su funcion, sup
 Podemos definir los modos de fallos como la cirscuntancias que acompañan un fallo concreto. Cada fallo funcional o tecnico puede presentar multiples modos de fallos. Es muy importante determinar todos los modos de fallos posibles, pues solo asi es posible realizar un analisis completo y exaustivo.
 
 Podemos clasificar los fallos si queremos evitarlos u amortiguarlos.
+El Tipo de fallo es Fallo funcional o fallo técnico.
+La clasificación es fallo a evitar o fallo a amortiguar.
 
 | **Equipo** | **Sistema** | **Tipo de fallo** | **Descripción del fallo** |         **Descripción modo de fallo**        | **Clasificación** |
 |------------|-------------|-------------------|---------------------------|----------------------------------------------|-------------------|
@@ -100,6 +109,7 @@ Podemos clasificar los fallos si queremos evitarlos u amortiguarlos.
 
 En la siguiente tabla se estudian las medidas preventivas a adoptar para
 evitar o minimizar los efectos de cada unos de los modos de fallo detallados en el cuadro anterior. En la primera columna se indica el modo de fallo. La segunda columna recoge las tareas de mantenimiento que se han considerado aplicables. En la siguiente tabla se detallan posibles mejoras que podrían realizarse en la instalación. La cuarta columna detalla las indicaciones que habría que realizar al personal de producción. Y la quinta y última columna, las instrucciones de mantenimiento que habría que aplicar o mejorar.
+El tipo de medida preventiva pueden ser "Tareas de Mantenimiento", "Mejoras", "Procedimientos de Producción" y "Producción de Mantenimiento"
 
 | **Modo de Fallo** | **Tipo de Medidas Preventivas** |                         **Descripción de Medidas preventivas**                         | 
 |-------------------|---------------------------------|----------------------------------------------------------------------------------------|
