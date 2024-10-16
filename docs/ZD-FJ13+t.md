@@ -18,3 +18,4 @@ Ensure that ink plate lift knob is swithched to drop mode ant install the ink pl
 
 ### 4.4.1 Main Structure of Tube Forming Component
 
+Tube forming component is constituted by tube forming machine frame (figure 7-4), forming mould component
