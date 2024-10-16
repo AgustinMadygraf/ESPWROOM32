@@ -2,7 +2,7 @@
 # Operation Manual
 
 
-4.2. Printing Component 
+## 4.2. Printing Component ##
 
 4.2.1. Structure of Inking Component 
 
