@@ -6,6 +6,10 @@ Tube forming component is constituted by tube forming machine frame (Figure 7-4)
 
 ![Figure 7. Schematic Diagram of Tube Forming Component](img/figure_07.png)
 
+<div style="text-align: center;">
+  <em>Figure 7. Schematic Diagram of Tube Forming Component</em>
+</div>
+
 1. Paper Pressing Pulley Component
 2. Forming Mould Component
 3. Locking Screw
