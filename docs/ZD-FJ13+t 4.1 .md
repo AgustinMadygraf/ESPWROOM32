@@ -35,3 +35,17 @@ When there is loose edge or tight edge of material on the dancer roller (Figure 
 Refer to Operation Manual of AXTEC Automatic Tension Controller for details.
 4.1.2.5. Deviation Rectification Adjustment of material roll.
 Refer to Operation Manual of AIBO EPC System for details.
+
+4.3. SMain Structure and Operation of Side ealing Frame Component
+4.3.1. Main Structure of Side Sealing Frame Component
+Side sealing frame component is mainly constituted by side sealing machine frame (Figure 2-2). side gluing component (Figure 5) and side gluing control system.
+1. Gluing Pulley
+2. Glue Transfer Pulley
+3. Adjusting Seat
+4. Adjusting Hand Wheel
+5. Clutch Cylinder
+6. Side Glue Plate
+7. Side Glue Scrapper
+8. Driving Gear for Side Gluing
+4.3.2. Operation of Side Gluing Component
+This machine adopts glue transfer method for side gluing (Figure 5). Glue transfer pulley dips into the side glue plate (Figure 5-6). The surplus glue is scrapped by side glue scrapper (Figure 5-7). then the remaining glue is transferred onto gluing pulley (Figure 5-1) and then transferred onto raw
