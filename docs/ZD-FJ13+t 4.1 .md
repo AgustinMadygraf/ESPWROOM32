@@ -2,13 +2,13 @@
 
 
 ## 4.1 
-    4.1.1. Main Structure of Unwinding Component
+   ### 4.1.1. Main Structure of Unwinding Component 
 
 Unwinding component is mainly constituted by unwinding machine frame (Figure 2-4), unwinding arms (Figure 2-5, 2-7), tension control system and electric control system.
 
-    4.1.2. Operation of Unwinding Component
+   ### 4.1.2. Operation of Unwinding Component
 
-    4.1.2.1. Function Description for Unwinding Operating Paneln of onwinding Operating Panel
+   ### 4.1.2.1. Function Description for Unwinding Operating Paneln of onwinding Operating Panel
 
 1. Automatic Tension Controller Panel: refer to Operation Manual of AXTEC Automatic Tension Controller for details of adjustment.
 2. Operating Side Folding Button: for folding of unwinding arm on operating side.
@@ -22,7 +22,7 @@ Unwinding component is mainly constituted by unwinding machine frame (Figure 2-4
 10. Material Frame Rising/Falling Knob: for selecting the function of rising or falling of unwinding arm.
 11. Transmission Side Folding Button: for folding of unwinding arm on transmission side.
 
-    4.1.2.2. Loading and Unloading of Material Reel
+    ### 4.1.2.2. Loading and Unloading of Material Reel
 
 a) It is appropriate to adjust the unwinding arms on operating side and transmission side properly when new reel is being installed for the first time, so as to make these two arms symmetrical with the center of unwinding frame. Ensure that the material reel can be in the middle of the machine after installation.
 b) Press Material Frame Jointly Unfolding Button according to the width of material reel (Figure 3-4), to adjust the unwinding arms to the positions where the material pushing cone head is slightly wider than the material reel core.
@@ -37,17 +37,17 @@ Unfolding Button (Figure 3-4) on the operating panel to make the material pushin
 In course of adjusting unwinding arms and loading/unloading material reel, the operation can be done only after ensuring that there are no personnel or articles in the moving range.
 When there is loose edge or tight edge of material on the dancer roller (Figure 4-3), the difference can be adjusted via the following specific operation procedure: first loosen locking handle (Figure 4-1); then turn eccentric shaft (Figure 4-2) to the appropriate position and finally fasten locking handle after adjustment (Figure 4-1).
 
-    4.1.2.4. Tension Adjustment of Material Reel
+   ### 4.1.2.4. Tension Adjustment of Material Reel
 
 Refer to Operation Manual of AXTEC Automatic Tension Controller for details.
 
-    4.1.2.5. Deviation Rectification Adjustment of material roll.
+   ### 4.1.2.5. Deviation Rectification Adjustment of material roll.
 
 Refer to Operation Manual of AIBO EPC System for details.
 
-    4.3. SMain Structure and Operation of Side ealing Frame Component
+   ### 4.3. SMain Structure and Operation of Side ealing Frame Component
 
-    4.3.1. Main Structure of Side Sealing Frame Component
+   ### 4.3.1. Main Structure of Side Sealing Frame Component
 
 Side sealing frame component is mainly constituted by side sealing machine frame (Figure 2-2). side gluing component (Figure 5) and side gluing control system.
 
@@ -60,7 +60,7 @@ Side sealing frame component is mainly constituted by side sealing machine frame
 7. Side Glue Scrapper
 8. Driving Gear for Side Gluing
 
-    4.3.2. Operation of Side Gluing Component
+   ### 4.3.2. Operation of Side Gluing Component
 
 This machine adopts glue transfer method for side gluing (Figure 5). Glue transfer pulley dips into the side glue plate (Figure 5-6). The surplus glue is scrapped by side glue scrapper (Figure 5-7). then the remaining glue is transferred onto gluing pulley (Figure 5-1) and then transferred onto raw paper. The driving operation is made by driving gear for side gluing (Figure 5-8).
 
@@ -73,7 +73,7 @@ The gluing position of gluing pulley (Figure 5-1) on raw paper can be adjusted b
 a) Avoid overfilling glue into side glue plate; the height of glue level should not exceed 2/3 of the height of glue plate.
 b) It is necessary to wash the side gluing components in case of getting off work or out of service for long time. First dismantle glue transfer pulley and side glue scrapper to wash; then wash gluing pulley on the machine; finally dismantle side glue plate to pour out the remainder glue, wash and properly place it for next usage.
 
-    4.3.3. Function Description of Side Gluing Panel.
+   ### 4.3.3. Function Description of Side Gluing Panel.
 
 1. Air Source Pressure Gauge: for indicating air source pressure.
 2. Side Gluing Mode Selection Knob: used to select a mode for side gluing (manually or automatically).
@@ -82,11 +82,11 @@ In automatic operation mode, clutch cylinder acts together with main machine. Wh
 The conversion between these two modes can be made at any time.
 3. Pressure Adjusting Knob: for adjusting the pressure of air source.
 
-    4.7. Main Structure and Operation of Control Component
+   ### 4.7. Main Structure and Operation of Control Component
 
 The operation for control part contains two sections. One section is the operation of touch screen, (refer to Touch Screen Operation Manual for details); the other section is the operation and description of operating buttons, which will be described in detail as follows.
 
-    4.7.1. Operation and Description of Control Cabinet Buttons
+   ### 4.7.1. Operation and Description of Control Cabinet Buttons
 
 1. Power Indicator Lamp: used to indicate the state of the machine power supply.
 2. Start Button: click Start Button, then the red, green, yellow lamps on the caution lamp will go
@@ -96,7 +96,7 @@ on at the same time and the buzzer will ring for 3 seconds; after the ring of bu
 the reset button on the touch screen.
 5. Touch Screen: used for inputting and displaying the parameters of the machine. Refer to Touch Screen Operation Manual for details.
 
-    4.7.2. Operation and Description of Front Panel Buttons
+   ### 4.7.2. Operation and Description of Front Panel Buttons
 
 1. Air Source Pressure Gauge: used for indicating the air source pressure of air cylinder on operating side of the second material traction pressing roller.
 2. Air Source Pressure Gauge: used for indicating the air source pressure of air cylinder on transmission side of the second material traction pressing roller.
@@ -116,7 +116,7 @@ the reset button on the touch screen.
 16. Conversion knob: used as clutch conversion knob of second traction roller.
 17. Pressure Adjusting Knob: for adjusting the air source pressure of air cylinder on operating side of the second material traction pressing roller.
 
-    4.7.3. Operation and Description of Rear Panel Buttons
+   ### 4.7.3. Operation and Description of Rear Panel Buttons
 
 1. Whole Machine Inching Button: click Whole Machine Inching Button, then the red, green, yellow lamps on the caution lamp will go on at the same time and the buzzer will ring for 3 seconds; after the ring of buzzer, the yellow lamp will go on within 2 seconds, which indicates the whole machine will run at the inching speed by pressing and holding this button within the two seconds, meanwhile the green lamp will go on while the yellow lamp will go out. If this button is released later, then the whole machine will stop, and the red lamp will go on while the green lamp will go out. This button is mainly used for inching the whole machine.
 2. Bottom Gluing Mode Selection Knob: used to select a mode for bottom gluing (manually or automatically). In manual operation mode, clutch cylinder acts to separate the gluing pulley and raw paper so that glue cannot be applied onto raw paper. This mode is mainly used for adjusting machine. In automatic operation mode, clutch cylinder acts together with main machine. When main machine starts up, clutch cylinder acts to make the gluing pulley close to raw paper and glue can be applied onto raw paper, when main machine stops, clutch cylinder acts to separate gluing pulley from raw paper, so that glue cannot be applied onto raw paper. This mode is mainly used for normal operation of the machine. The conversion between these two modes can be made at any time.
