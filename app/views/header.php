@@ -10,6 +10,7 @@ $navItems = [
     'app/views/electronica.php' => 'Electrónica',
     'app/views/sustentabilidad.php' => 'Sustentabilidad',
     'app/views/oee.php' => 'OEE',
+    'app/views/manualoperacion.php' => 'Manual de Operación',
     'app/views/computerVision.php' => 'Visión Artificial',
     '../phpMyAdmin/' => 'PHP MyAdmin'
 ];
