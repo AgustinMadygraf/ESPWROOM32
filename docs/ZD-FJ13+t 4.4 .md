@@ -1,3 +1,5 @@
+# Operation Manual
+
 ## 4.4. Main Structure and Operation of Tube Forming Component
 
 ### 4.4.1 Main Structure of Tube Forming Component
@@ -131,8 +133,10 @@ The position of the transfer pulley notch can be adjusted after loosening the ad
 
 #### 4.5.2.4. Operation of Line Pressing Part
 The adjusting method for pressure and horizontal position is same as that for transfer pulley.
+
 Adjustment of the iron plectrum should be done according to the size of paper tube to be made.
 The distance between two pressing lines is half of the bottom size of paper bag to be made. Specific adjusting method is: loosen the screw on the line pressing pulley; the position of the second line can be moved forwards or backwards to the dimension necessary; and then fasten the loose screw.
+
 The adjustment for the distance between the first pressing line and the action point of the first clamp is: loosen the fixing nut on the transmission side of the line pressing pulley; then the position of the first pressing line can be moved forwards or backwards (Figure 17).
 
 ![Figure 17. Schematic Diagram of Line Pressing Part](img/figure_17.png)
