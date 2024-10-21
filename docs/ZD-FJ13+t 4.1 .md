@@ -1,14 +1,46 @@
 # Operation Manual
 
+# 4 Main Structure and Operation of Machine
 
-## 4.1 
-   ### 4.1.1. Main Structure of Unwinding Component 
+![Figure 1. Schematic Diagram of Whole Machine](img/figure_01.png)
 
+<div style="text-align: center;">
+  <em>Figure 1. Schematic Diagram of Whole Machine</em><br>
+</div>
+
+1. Unwinding Component 
+2. Printing Component 
+3. Side Sealing Frame Component 
+4. Tube Forming Component 
+5. Main Machine Component 
+6. Bag Collection Component 
+7. Control Component 
+
+## 4.1. Main Structure and Operation of Unwinding Component
+
+![Figure 2. Schematic Diagram of Unwinding Component](img/figure_02.png)
+
+<div style="text-align: center;">
+  <em>Figure 2. Schematic Diagram of Unwinding Component</em><br>
+</div>
+
+1. Deviation Rectification Panel
+2. Side Gluing Frame 
+3. Unwinding Operating Panel 
+4. Unwinding Machine Frame 
+5. Unwinding Arm on Operating Side 
+6. Material Reel 
+7. Unwinding Arm on Transmission Side 
+8.  Side Gluing Operating Panel 
+9.  Dancer Roller 
+10. Tension Sensor 
+
+### 4.1.1. Main Structure of Unwinding Component 
 Unwinding component is mainly constituted by unwinding machine frame (Figure 2-4), unwinding arms (Figure 2-5, 2-7), tension control system and electric control system.
 
-   ### 4.1.2. Operation of Unwinding Component
+### 4.1.2. Operation of Unwinding Component
 
-   ### 4.1.2.1. Function Description for Unwinding Operating Paneln of onwinding Operating Panel
+### 4.1.2.1. Function Description for Unwinding Operating Paneln of onwinding Operating Panel
 
 1. Automatic Tension Controller Panel: refer to Operation Manual of AXTEC Automatic Tension Controller for details of adjustment.
 2. Operating Side Folding Button: for folding of unwinding arm on operating side.
