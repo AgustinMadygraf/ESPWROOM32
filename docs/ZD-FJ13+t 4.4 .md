@@ -33,11 +33,29 @@ First select a pair of forming moulds of certain size according to the width of 
 #### Operation of Side Tucking Discs:
 According to the adjusted forming mould, adjust the height of side tucking discs (Figure 7-7) (6 groups in total) so as to make it to be the middle position between upper and lower moulds. There is one screw on the lower end of the adjusting seat (Figure 9) for adjusting of the height of side tucking discs. According to the size of bags to be produced, use the adjusting hand wheel on the adjusting seat for adjusting the insertion depth of side tucking discs. The discs will break the paper tube in case of being inserted too deep while make tube forming bad in case of being inserted too shallow. In course of adjusting side tucking discs, the locking nut on the front of adjusting seat (Figure 7-8) should not be locked too tight; otherwise the discs will be unable to be adjusted; the locking nut should not be locked too loose, otherwise the adjustment will be inaccurate. After adjustment fasten the locking nut so as to avoid position deviation due to looseness of nut in course of operation of the equipment.
 
+![Figure 9. Schematic Diagram of Tube Forming Component (2)](img/figure_09.png)
+
+<div style="text-align: center;">
+  <em>Figure 9. Schematic Diagram of Tube Forming Component (2)</em><br>
+</div>
+
 #### Operation of Paper Pressing Pulleys:
 The forming of large and small edges of paper tube is made by stress from paper pressing pulleys (Figure 10). The position of paper pressing pulley is different according to the sizes of different paper bags to be produced; the position of the paper pressing pulley can be adjusted at will by loosening the adjusting handle on the paper pressing pulley; the clump weight on the paper pressing pulley can be increased or decreased according to actual requirements.
 
+![Figure 10. Schematic Diagram of Tube Forming Component (3)](img/figure_10.png)
+
+<div style="text-align: center;">
+  <em>Figure 10. Schematic Diagram of Tube Forming Component (3)</em><br>
+</div>
+
 #### Operation of Mould Fixing Bar:
 When the central line of the paper tube is not identical to that of the machine after the paper tube is output from the forming mould, the forming mould can be fixed onto the central line of the machine, by adjusting the nut on the mould fixing bar (Figure 11).
+
+![Figure 11. Schematic Diagram of Tube Forming Component (4)](img/figure_11.png)
+
+<div style="text-align: center;">
+  <em>Figure 11. Schematic Diagram of Tube Forming Component (4)</em><br>
+</div>
 
 ## 4.5. Main Structure and Operation of Main Machine Component
 
