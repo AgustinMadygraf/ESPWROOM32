@@ -62,16 +62,34 @@ When the central line of the paper tube is not identical to that of the machine 
 ### 4.5.1. Main Structure of Main Machine Component 
 Main machine component (Figure 12) is constituted by main machine frame, material traction part, cutting part, transfer pulley part, line pressing part, bottom opening part, bottom former part, square bottom forming part, bottom gluing part, bottom inserting part, bottom folding part and control part etc.
 
+![Figure 12. Schematic Diagram of Main Machine Component](img/figure_12.png)
+
+<div style="text-align: center;">
+  <em>Figure 12. Schematic Diagram of Main Machine Component</em><br>
+</div>
+
 ### 4.5.2. Operation of Main Machine Component
 
 #### 4.5.2.1. Operation of Material Traction Part 
 Material traction part is the power source for raw paper to be transferred from unwinding, edge gluing, and tube forming to main machine and is driven by servo motor. Material traction part is mainly constituted by material traction bottom roller and material traction pressing pulley. It is unnecessary to adjust the bottom roller and the adjustment of the pressing pulley (Figure 13-2) is determined by paper bag body width: loosen the locking screw (Figure 13-1) on the pressing pulley, and then transversely move the pressing pulley to make its external side edge be slightly more outside than the paper bag body side edge, and finally fasten the locking screw. Pressure of pressing pulleys are controlled by two air cylinders (Figure 13-3) and adjusted by pressure valve on the main machine panel. The pressure should be between 45-60Pa and adjusted according to different paper and requirements.
+
+![Figure 13. Schematic Diagram of Material Traction Part](img/figure_13.png)
+
+<div style="text-align: center;">
+  <em>Figure 13. Schematic Diagram of Material Traction Part</em><br>
+</div>
 
 1. Locking Screw 
 2. Material Traction Pressing Pulley 
 3. Air Cylinder
 
 #### 4.5.2.2. Operation of Cutting Part 
+
+![Figure 14. Schematic Diagram of Cutting Part (1)](img/figure_14.png)
+
+<div style="text-align: center;">
+  <em>Figure 14. Schematic Diagram of Cutting Part (1)</em><br>
+</div>
 
 1. Cutting Lower Roller 
 2. Cutting Upper Roller 
@@ -84,6 +102,12 @@ Loosen the locking block of gear on cutting upper roller, and then turn the cutt
 ##### Adjustment of Cutting Speed:
 The cutting speed is adjusted according to the cutting length of paper tube. The rotation speed of cutter is controlled by two eccentric gears. For each eccentric gear there is one point marker on its long shaft and short shaft respectively. When the point marker on the long shaft of driving eccentric gear coincides with the point marker on the short shaft of driven eccentric gear, the speed is highest; when the point marker on the short shaft of driving eccentric gear coincides with the point marker on the long shaft of driven eccentric gear, the speed is lowest. The position of eccentric gear can be adjusted by loosening the screw on the locking block of eccentric gear. Properly adjust the position of eccentric gear according to the cutting length of paper tube and fasten the locking screw (Figure 15).
 
+![Figure 15. Schematic Diagram of Cutting Part (2)](img/figure_15.png)
+
+<div style="text-align: center;">
+  <em>Figure 15. Schematic Diagram of Cutting Part (2)</em><br>
+</div>
+
 1. Locking Screw 
 2. Locking Block of Eccentric Gear 
 3. Eccentric Gear 
@@ -95,6 +119,12 @@ The pressure of the transfer pulley can be changed by adjusting slide blocks on 
 
 The position of the transfer pulley notch can be adjusted after loosening the adjusting gear (Figure 16-1).
 
+![Figure 16. Schematic Diagram of Transfer Pulley Part](img/figure_16.png)
+
+<div style="text-align: center;">
+  <em>Figure 16. Schematic Diagram of Transfer Pulley Part</em><br>
+</div>
+
 1. Adjusting Gear
 2. Lower Guiding Pulley
 3. Transfer Pulley
@@ -105,7 +135,19 @@ Adjustment of the iron plectrum should be done according to the size of paper tu
 The distance between two pressing lines is half of the bottom size of paper bag to be made. Specific adjusting method is: loosen the screw on the line pressing pulley; the position of the second line can be moved forwards or backwards to the dimension necessary; and then fasten the loose screw.
 The adjustment for the distance between the first pressing line and the action point of the first clamp is: loosen the fixing nut on the transmission side of the line pressing pulley; then the position of the first pressing line can be moved forwards or backwards (Figure 17).
 
+![Figure 17. Schematic Diagram of Line Pressing Part](img/figure_17.png)
+
+<div style="text-align: center;">
+  <em>Figure 17. Schematic Diagram of Line Pressing Part</em><br>
+</div>
+
 #### 4.5.2.5. Operation of Bottom Opening Part 
+
+![Figure 18. Schematic Diagram of Bottom Opening Part](img/figure_18.png)
+
+<div style="text-align: center;">
+  <em>Figure 18. Schematic Diagram of Bottom Opening Part</em><br>
+</div>
 
 1. Horizontal Locking Screw on Bottom Opening Rattler 
 2. Paper Pressing Bar 
@@ -126,17 +168,35 @@ The method for adjusting the position of bottom opening clamp is: loosen the gea
 Adjustment of side guiding board: select appropriate side guiding board according to different bag Width. The adjusting principle is that horizontal width should be same as the width of paper bag and the upper part should cover the underside turned over (Figure 19). 
 Adjustment of middle guiding bar: the middle guiding bar cannot block the bottom turned over; otherwise the underside will not be unfolded. If the space is too small, one guiding bar shall be enough. 
 
+![Figure 19. Schematic Diagram of Bottom Former Part](img/figure_19.png)
+
+<div style="text-align: center;">
+  <em>Figure 19. Schematic Diagram of Bottom Former Part</em><br>
+</div>
+
 1. Side Guiding Board 
 2. Middle Guiding Bar
 
 #### 4.5.2.7. Operation of Square Bottom Forming Part 
- 
+
+![Figure 20. Schematic Diagram of Square Bottom Forming Part](img/figure_20.png)
+
+<div style="text-align: center;">
+  <em>Figure 20. Schematic Diagram of Square Bottom Forming Part</em><br>
+</div>
+
 1. Central Clamp 
 2. Side Clamp 
 3. First Clamp 
 4. Second Clamp 
 
 Adjustment of central clamp: the position of the base plate where central clamp (Figure 20-1) is installed can be adjusted forwards or backwards by loosening the locking screw on the base plate. The adjusting principle is: the distance between the front end of central clamp and first clamp is approximately the folding length of paper bag bottom deducting 3-4mm (Figure 21). The unfolding height of central clamp can be adjusted by loosening the adjusting arm at one end of central clamp. The adjusting principle is: the height between central clamp and drum pulley surface is about from 16mm to 19mm. The releasing time point of central clamp can be adjusted by two groups of cams on the wallboard on operating side, and will determine the quality of the four corners of bag bottom. 
+
+![Figure 21. Schematic Diagram of Central Clamp](img/figure_21.png)
+
+<div style="text-align: center;">
+  <em>Figure 21. Schematic Diagram of Central Clamp</em><br>
+</div>
 
 1. Paper Bag 
 2. Central Clamp 
@@ -148,12 +208,24 @@ First clamp is the criterion and it is unnecessary to adjust its position. It is
 
 Adjustment of second clamp: the distance between the second clamp and the first clamp can be adjusted by loosening the locking screw on the base plate of second clamp. The adjusting principle is: the distance between the second clamp and the first clamp should be about 12mm shorter than the bottom width of paper bag. The opening width of second clamp is usually about 8mm. This width of second clamp can be adjusted by loosening the screw on the adjusting arm at one end of second clamp (Figure 22). 
 
+![Figure 22. Schematic Diagram of Clamps for Bottom Forming](img/figure_22.png)
+
+<div style="text-align: center;">
+  <em>Figure 22. Schematic Diagram of Clamps for Bottom Forming</em><br>
+</div>
+
 1. First Clamp 
 2. Side Clamp 
 3. Second Clamp 
 
 #### 4.5.2.8. Operation of Bottom Gluing Part 
 Stick rubber board for gluing before bottom gluing; the size and position of rubber board should be determined by the bag body width and bottom width of paper bag. Shear the rubber board and stick it with double sided tape onto gluing pulley (Figure 23-3). The relative position between the stuck rubber board and paper bag bottom can be changed by adjusting the gear at the end of gluing pulley. The bottom gluing can be started after the completion of adjusting the relative positions of glue dipping pulley. glue transfer pulley, gluing pulley and large hub. The quantity of glue to be applied onto the paper bag bottom should be adjusted by the gaps between different pulleys. 
+
+![Figure 23. Schematic Diagram of Bottom Gluing Part](img/figure_23.png)
+
+<div style="text-align: center;">
+  <em>Figure 23. Schematic Diagram of Bottom Gluing Part</em><br>
+</div>
 
 1. Glue Dipping Pulley 
 2. Glue Transfer Pulley 
@@ -171,6 +243,12 @@ The insertion depth of the second slotting tool is about 13mm and the width shou
 
 As for the changes of paper quality, the insertion depths of slotting tools may change. So sometimes itis necessary to change the depths of slotting tools as per different paper. 
 
+![Figure 24. Schematic Diagram of Bottom Inserting Part](img/figure_24.png)
+
+<div style="text-align: center;">
+  <em>Figure 24. Schematic Diagram of Bottom Inserting Part</em><br>
+</div>
+
 1. First Slotting Tool 
 2. Second Slotting Tool 
 #### 4.5.2.10. Operation of Bottom Folding Part 
@@ -178,10 +256,22 @@ The position of bottom folding rod can be adjusted by loosening the locking bloc
 
 The bottom folding rod is combined by several short nylon bars according to a certain needed width. This width should not be larger than the distance between two protective rods. (There are two protective rods installed below slotting tools to prevent paper bag from falling down when the clamps are released.) Otherwise this bottom folding rod will break these two protective rods.
 
+![Figure 25. Schematic Diagram of Bottom Folding Part](img/figure_25.png)
+
+<div style="text-align: center;">
+  <em>Figure 25. Schematic Diagram of Bottom Folding Part</em><br>
+</div>
+
 1. Bottom Folding Bar 
 2. Bottom Folding Board 
 
 Adjustment of bottom folding board (Figure 26-3) can be made by loosening the locking screw on bottom folding board. The adjusting principle is: when bottom folding bar has pressed the second folded edge onto the bottom and left from the second folded edge, bottom folding board should touch the first folded edge and press it onto the bottom. 
+
+![Figure 26. Side Diagram of Bottom Folding Part](img/figure_26.png)
+
+<div style="text-align: center;">
+  <em>Figure 26. Side Diagram of Bottom Folding Part</em><br>
+</div>
 
 1. Clutch Cylinder 
 2. Clutch Board 
@@ -195,4 +285,11 @@ Adjustment of the horizontal position of delivery pulley: loosen the locking scr
 Adjustment of the pressure of delivery pulley: turn the clutch switch of delivery pulley and put the pulley down, then adjust the limit screws on the pulley to some suitable positions. Note that the limits screws on both sides of the pulley should be adjusted at the same time to make sure the balance of the pressure on both side edges of the paper bag. After the adjustment, there should be a certain resistance among the paper bag, delivery pulley and large hub, so that the paper bag cannot be pulled out easily. 
 
 ## 4.6. Main Structure and Operation of Bag Collection Component 
+
+![Figure 27. Schematic Diagram of Bag Collection Component](img/figure_27.png)
+
+<div style="text-align: center;">
+  <em>Figure 27. Schematic Diagram of Bag Collection Component</em><br>
+</div>
+
 Paper bags are delivered by belt, and collected on the side workbench, which is controlled by separate servo motor. Its counting method is that accelerating the belt suddenly when a certain number of bags are collected to make an obvious gap between every two contiguous batches of bags, which is very convenient for collection. Refer to Touch Screen Operation Manual for details. 
