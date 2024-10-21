@@ -79,7 +79,8 @@ Note:
     -each printing cylinder should have the plate mounted with the cross marks at the exactly same positions. 
 
 (F) Positioning in Longitudinal Direction: rotate the printing cylinder slowly and carefully after the printing plate has been positioned in transverse direction (the monitor of the plate mounting machine can display the images of the two cross marks at the same time). 
-Note: 
+Note:
+
     -The pasted plate must be flat and straight;
     -Any air bubble and wrinkle is prohibited;
     -it is advised to fix the corner of the plate to be round to avoid lifting edge;
