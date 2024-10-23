@@ -120,6 +120,7 @@ This machine adopts glue transfer method for side gluing (Figure 5). Glue transf
 The separation and reunion between gluing pulley (Figure 5-1) and raw paper are controlled by clutch cylinder (Figure 5-5).
 
 The gluing position of gluing pulley (Figure 5-1) on raw paper can be adjusted by adjusting hand wheel (Figure 5-4).
+
 Note:
 
 (A) Avoid overfilling glue into side glue plate; the height of glue level should not exceed 2/3 of the height of glue plate.
