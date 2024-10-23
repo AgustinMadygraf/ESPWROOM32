@@ -1,226 +1,227 @@
-# Operation Manual
+# Manual de Operación
 
-## 4.4. Main Structure and Operation of Tube Forming Component
+## 4.4. Estructura Principal y Operación del Componente de Formación de Tubos
 
-### 4.4.1 Main Structure of Tube Forming Component
+### 4.4.1 Estructura Principal del Componente de Formación de Tubos
 
-Tube forming component is constituted by tube forming machine frame (Figure 7-4), forming mould component (Figure 7-7) and paper presing pulley component (Figure 7-1)
+El componente de formación de tubos está constituido por el marco de la máquina formadora de tubos (Figura 7-4), el componente del molde formador (Figura 7-7) y el componente de la polea de prensado de papel (Figura 7-1).
 
-![Figure 7. Schematic Diagram of Tube Forming Component](img/figure_07.png)
-
-<div style="text-align: center;">
-  <em>Figure 7. Schematic Diagram of Tube Forming Component</em><br>
-</div>
-
-1. Paper Pressing Pulley Component
-2. Forming Mould Component
-3. Locking Screw
-4. Tube Forming Machine Frame
-5. Contrast Sensor
-6. Mould Fixing Bar
-7. Side Tucking Disc Component
-8. Side Tucking Disc Adjusting Seat
-
-### 4.4.2 Operation of Tube Forming Component
-
-#### Operations of Tube Forming Moulds:
-First select a pair of forming moulds of certain size according to the width of bags to be produced and install the forming moulds onto the center of the machine. Then loosen the locking screw (Figure 7-3) on Tube Forming Machine Frame (Figure 7-4), and adjust the position of the lower forming mould to be tangent to material traction pulley (Figure 8). Finally fasten the locking screw after the adjustment (Figure 7-3).
-
-![Figure 8. Schematic Diagram of Tube Forming Component (1)](img/figure_08.png)
+![Figura 7. Diagrama Esquemático del Componente de Formación de Tubos](img/figure_07.png)
 
 <div style="text-align: center;">
-  <em>Figure 8. Schematic Diagram of Tube Forming Component (1)</em><br>
+  <em>Figura 7. Diagrama Esquemático del Componente de Formación de Tubos</em><br>
 </div>
 
-#### Operation of Side Tucking Discs:
-According to the adjusted forming mould, adjust the height of side tucking discs (Figure 7-7) (6 groups in total) so as to make it to be the middle position between upper and lower moulds. There is one screw on the lower end of the adjusting seat (Figure 9) for adjusting of the height of side tucking discs. According to the size of bags to be produced, use the adjusting hand wheel on the adjusting seat for adjusting the insertion depth of side tucking discs. The discs will break the paper tube in case of being inserted too deep while make tube forming bad in case of being inserted too shallow. In course of adjusting side tucking discs, the locking nut on the front of adjusting seat (Figure 7-8) should not be locked too tight; otherwise the discs will be unable to be adjusted; the locking nut should not be locked too loose, otherwise the adjustment will be inaccurate. After adjustment fasten the locking nut so as to avoid position deviation due to looseness of nut in course of operation of the equipment.
+1. Componente de la Polea de Prensado de Papel
+2. Componente del Molde Formador
+3. Tornillo de Bloqueo
+4. Marco de la Máquina Formadora de Tubos
+5. Sensor de Contraste
+6. Barra de Fijación del Molde
+7. Componente del Disco de Pliegue Lateral
+8. Asiento de Ajuste del Disco de Pliegue Lateral
 
-![Figure 9. Schematic Diagram of Tube Forming Component (2)](img/figure_09.png)
+### 4.4.2 Operación del Componente de Formación de Tubos
+
+#### Operaciones de los Moldes de Formación de Tubos:
+Primero seleccione un par de moldes de formación de un tamaño específico de acuerdo con el ancho de las bolsas a producir e instale los moldes de formación en el centro de la máquina. Luego, afloje el tornillo de bloqueo (Figura 7-3) en el marco de la máquina formadora de tubos (Figura 7-4) y ajuste la posición del molde inferior para que sea tangente a la polea de tracción del material (Figura 8). Finalmente, apriete el tornillo de bloqueo después del ajuste (Figura 7-3).
+
+![Figura 8. Diagrama Esquemático del Componente de Formación de Tubos (1)](img/figure_08.png)
 
 <div style="text-align: center;">
-  <em>Figure 9. Schematic Diagram of Tube Forming Component (2)</em><br>
+  <em>Figura 8. Diagrama Esquemático del Componente de Formación de Tubos (1)</em><br>
 </div>
 
-#### Operation of Paper Pressing Pulleys:
-The forming of large and small edges of paper tube is made by stress from paper pressing pulleys (Figure 10). The position of paper pressing pulley is different according to the sizes of different paper bags to be produced; the position of the paper pressing pulley can be adjusted at will by loosening the adjusting handle on the paper pressing pulley; the clump weight on the paper pressing pulley can be increased or decreased according to actual requirements.
+#### Operación de los Discos de Pliegue Lateral:
+De acuerdo con el molde de formación ajustado, ajuste la altura de los discos de pliegue lateral (Figura 7-7) (6 grupos en total) para que estén en la posición intermedia entre los moldes superior e inferior. Hay un tornillo en el extremo inferior del asiento de ajuste (Figura 9) para ajustar la altura de los discos de pliegue lateral. Según el tamaño de las bolsas a producir, use la rueda de ajuste en el asiento de ajuste para ajustar la profundidad de inserción de los discos de pliegue lateral. Los discos romperán el tubo de papel si se insertan demasiado profundo, y la formación del tubo será deficiente si se insertan demasiado superficialmente. Durante el ajuste de los discos de pliegue lateral, la tuerca de bloqueo en la parte frontal del asiento de ajuste (Figura 7-8) no debe estar demasiado apretada, de lo contrario, los discos no podrán ajustarse; tampoco debe estar demasiado suelta, ya que el ajuste sería inexacto. Después de ajustar, apriete la tuerca de bloqueo para evitar que la posición se desvíe debido a la holgura de la tuerca durante la operación del equipo.
 
-![Figure 10. Schematic Diagram of Tube Forming Component (3)](img/figure_10.png)
+![Figura 9. Diagrama Esquemático del Componente de Formación de Tubos (2)](img/figure_09.png)
 
 <div style="text-align: center;">
-  <em>Figure 10. Schematic Diagram of Tube Forming Component (3)</em><br>
+  <em>Figura 9. Diagrama Esquemática del Componente de Formación de Tubos (2)</em><br>
 </div>
 
-#### Operation of Mould Fixing Bar:
-When the central line of the paper tube is not identical to that of the machine after the paper tube is output from the forming mould, the forming mould can be fixed onto the central line of the machine, by adjusting the nut on the mould fixing bar (Figure 11).
+#### Operación de las Poleas de Prensado de Papel:
+La formación de los bordes grandes y pequeños del tubo de papel se realiza mediante la presión de las poleas de prensado de papel (Figura 10). La posición de la polea de prensado de papel varía según el tamaño de las bolsas de papel a producir; se puede ajustar la posición de la polea de prensado de papel aflojando la manija de ajuste en la polea. El peso en la polea de prensado de papel se puede aumentar o disminuir según los requisitos.
 
-![Figure 11. Schematic Diagram of Tube Forming Component (4)](img/figure_11.png)
+![Figura 10. Diagrama Esquemático del Componente de Formación de Tubos (3)](img/figure_10.png)
 
 <div style="text-align: center;">
-  <em>Figure 11. Schematic Diagram of Tube Forming Component (4)</em><br>
+  <em>Figura 10. Diagrama Esquemático del Componente de Formación de Tubos (3)</em><br>
 </div>
 
-## 4.5. Main Structure and Operation of Main Machine Component
+#### Operación de la Barra de Fijación del Molde:
+Cuando la línea central del tubo de papel no es idéntica a la de la máquina después de que el tubo de papel es expulsado del molde de formación, se puede fijar el molde de formación en la línea central de la máquina ajustando la tuerca en la barra de fijación del molde (Figura 11).
 
-### 4.5.1. Main Structure of Main Machine Component 
-Main machine component (Figure 12) is constituted by main machine frame, material traction part, cutting part, transfer pulley part, line pressing part, bottom opening part, bottom former part, square bottom forming part, bottom gluing part, bottom inserting part, bottom folding part and control part etc.
-
-![Figure 12. Schematic Diagram of Main Machine Component](img/figure_12.png)
+![Figura 11. Diagrama Esquemático del Componente de Formación de Tubos (4)](img/figure_11.png)
 
 <div style="text-align: center;">
-  <em>Figure 12. Schematic Diagram of Main Machine Component</em><br>
+  <em>Figura 11. Diagrama Esquemático del Componente de Formación de Tubos (4)</em><br>
 </div>
 
-### 4.5.2. Operation of Main Machine Component
 
-#### 4.5.2.1. Operation of Material Traction Part 
-Material traction part is the power source for raw paper to be transferred from unwinding, edge gluing, and tube forming to main machine and is driven by servo motor. Material traction part is mainly constituted by material traction bottom roller and material traction pressing pulley. It is unnecessary to adjust the bottom roller and the adjustment of the pressing pulley (Figure 13-2) is determined by paper bag body width: loosen the locking screw (Figure 13-1) on the pressing pulley, and then transversely move the pressing pulley to make its external side edge be slightly more outside than the paper bag body side edge, and finally fasten the locking screw. Pressure of pressing pulleys are controlled by two air cylinders (Figure 13-3) and adjusted by pressure valve on the main machine panel. The pressure should be between 45-60Pa and adjusted according to different paper and requirements.
+## 4.5. Estructura Principal y Operación del Componente de la Máquina Principal
 
-![Figure 13. Schematic Diagram of Material Traction Part](img/figure_13.png)
+### 4.5.1. Estructura Principal del Componente de la Máquina Principal
+El componente de la máquina principal (Figura 12) está constituido por el marco de la máquina principal, la parte de tracción de material, la parte de corte, la parte de la polea de transferencia, la parte de prensado de líneas, la parte de apertura de fondo, la parte formadora de fondo, la parte formadora de fondo cuadrado, la parte de pegado del fondo, la parte de inserción del fondo, la parte de plegado del fondo y la parte de control, etc.
+
+![Figura 12. Diagrama Esquemático del Componente de la Máquina Principal](img/figure_12.png)
 
 <div style="text-align: center;">
-  <em>Figure 13. Schematic Diagram of Material Traction Part</em><br>
+  <em>Figura 12. Diagrama Esquemático del Componente de la Máquina Principal</em><br>
 </div>
 
-1. Locking Screw 
-2. Material Traction Pressing Pulley 
-3. Air Cylinder
 
-#### 4.5.2.2. Operation of Cutting Part 
+### 4.5.2. Operación del Componente Principal de la Máquina
 
-![Figure 14. Schematic Diagram of Cutting Part (1)](img/figure_14.png)
+#### 4.5.2.1. Operación de la Parte de Tracción del Material
+La parte de tracción del material es la fuente de energía que permite transferir el papel crudo desde el desenrollado, encolado de bordes y formación de tubos hacia la máquina principal, y es impulsada por un motor servo. La parte de tracción del material está constituida principalmente por el rodillo inferior de tracción del material y la polea de presión de tracción del material. No es necesario ajustar el rodillo inferior, y el ajuste de la polea de presión (Figura 13-2) se determina según el ancho del cuerpo de la bolsa de papel: afloje el tornillo de bloqueo (Figura 13-1) en la polea de presión, luego mueva transversalmente la polea de presión para que su borde lateral externo esté ligeramente más afuera que el borde lateral del cuerpo de la bolsa de papel, y finalmente apriete el tornillo de bloqueo. La presión de las poleas de presión es controlada por dos cilindros de aire (Figura 13-3) y se ajusta mediante la válvula de presión en el panel de la máquina principal. La presión debe estar entre 45-60Pa y debe ajustarse según el tipo de papel y los requisitos.
+
+![Figura 13. Diagrama Esquemático de la Parte de Tracción del Material](img/figure_13.png)
 
 <div style="text-align: center;">
-  <em>Figure 14. Schematic Diagram of Cutting Part (1)</em><br>
+  <em>Figura 13. Diagrama Esquemático de la Parte de Tracción del Material</em><br>
 </div>
 
-1. Cutting Lower Roller 
-2. Cutting Upper Roller 
-3. Cutter Seat 
-4. Cutter 
+1. Tornillo de Bloqueo  
+2. Polea de Presión de Tracción del Material  
+3. Cilindro de Aire  
 
-##### Adjustment of Cutter Position:
-Loosen the locking block of gear on cutting upper roller, and then turn the cutting upper roller and lower roller to make the cutter on the upper roller aim at the center of the cutter groove on the lower roller; finally fasten the locking block of gear on cutting upper roller (Figure 14).
+#### 4.5.2.2. Operación de la Parte de Corte
 
-##### Adjustment of Cutting Speed:
-The cutting speed is adjusted according to the cutting length of paper tube. The rotation speed of cutter is controlled by two eccentric gears. For each eccentric gear there is one point marker on its long shaft and short shaft respectively. When the point marker on the long shaft of driving eccentric gear coincides with the point marker on the short shaft of driven eccentric gear, the speed is highest; when the point marker on the short shaft of driving eccentric gear coincides with the point marker on the long shaft of driven eccentric gear, the speed is lowest. The position of eccentric gear can be adjusted by loosening the screw on the locking block of eccentric gear. Properly adjust the position of eccentric gear according to the cutting length of paper tube and fasten the locking screw (Figure 15).
-
-![Figure 15. Schematic Diagram of Cutting Part (2)](img/figure_15.png)
+![Figura 14. Diagrama Esquemático de la Parte de Corte (1)](img/figure_14.png)
 
 <div style="text-align: center;">
-  <em>Figure 15. Schematic Diagram of Cutting Part (2)</em><br>
+  <em>Figura 14. Diagrama Esquemático de la Parte de Corte (1)</em><br>
 </div>
 
-1. Locking Screw 
-2. Locking Block of Eccentric Gear 
-3. Eccentric Gear 
+1. Rodillo Inferior de Corte  
+2. Rodillo Superior de Corte  
+3. Asiento del Cortador  
+4. Cortador  
 
-#### 4.5.2.3. Operation of Transfer Pulley Part
+##### Ajuste de la Posición del Cortador:
+Afloje el bloque de bloqueo del engranaje en el rodillo superior de corte y luego gire el rodillo superior e inferior de corte para alinear el cortador en el rodillo superior con el centro de la ranura del cortador en el rodillo inferior; finalmente, apriete el bloque de bloqueo del engranaje en el rodillo superior de corte (Figura 14).
 
-##### Adjustment of Transfer Pulley Pressure:
-The pressure of the transfer pulley can be changed by adjusting slide blocks on its two sides. The pressure must be adjusted appropriately and can be tested by pulling material with hand under the principle of being unable to pull. The horizontal position of the transfer pulley should be adjusted according to the paper -tube width. In principle, the edge of the transfer pulley should not touch the folded part of each side edge of paper tube. 
+##### Ajuste de la Velocidad de Corte:
+La velocidad de corte se ajusta según la longitud de corte del tubo de papel. La velocidad de rotación del cortador está controlada por dos engranajes excéntricos. Para cada engranaje excéntrico, hay un marcador en su eje largo y otro en su eje corto, respectivamente. Cuando el marcador en el eje largo del engranaje excéntrico conductor coincide con el marcador en el eje corto del engranaje excéntrico conducido, la velocidad es máxima; cuando el marcador en el eje corto del engranaje excéntrico conductor coincide con el marcador en el eje largo del engranaje excéntrico conducido, la velocidad es mínima. La posición del engranaje excéntrico se puede ajustar aflojando el tornillo en el bloque de bloqueo del engranaje excéntrico. Ajuste adecuadamente la posición del engranaje excéntrico según la longitud de corte del tubo de papel y apriete el tornillo de bloqueo (Figura 15).
 
-The position of the transfer pulley notch can be adjusted after loosening the adjusting gear (Figure 16-1).
-
-![Figure 16. Schematic Diagram of Transfer Pulley Part](img/figure_16.png)
+![Figura 15. Diagrama Esquemático de la Parte de Corte (2)](img/figure_15.png)
 
 <div style="text-align: center;">
-  <em>Figure 16. Schematic Diagram of Transfer Pulley Part</em><br>
+  <em>Figura 15. Diagrama Esquemático de la Parte de Corte (2)</em><br>
 </div>
 
-1. Adjusting Gear
-2. Lower Guiding Pulley
-3. Transfer Pulley
+1. Tornillo de Bloqueo  
+2. Bloque de Bloqueo del Engranaje Excéntrico  
+3. Engranaje Excéntrico  
 
-#### 4.5.2.4. Operation of Line Pressing Part
-The adjusting method for pressure and horizontal position is same as that for transfer pulley.
+#### 4.5.2.3. Operación de la Parte de la Polea de Transferencia
 
-Adjustment of the iron plectrum should be done according to the size of paper tube to be made.
-The distance between two pressing lines is half of the bottom size of paper bag to be made. Specific adjusting method is: loosen the screw on the line pressing pulley; the position of the second line can be moved forwards or backwards to the dimension necessary; and then fasten the loose screw.
+##### Ajuste de la Presión de la Polea de Transferencia:
+La presión de la polea de transferencia se puede modificar ajustando los bloques deslizantes en sus dos lados. La presión debe ajustarse de manera adecuada, y se puede probar tirando del material a mano, bajo el principio de que no se pueda tirar. La posición horizontal de la polea de transferencia debe ajustarse según el ancho del tubo de papel. En principio, el borde de la polea de transferencia no debe tocar la parte plegada de cada borde lateral del tubo de papel.
 
-The adjustment for the distance between the first pressing line and the action point of the first clamp is: loosen the fixing nut on the transmission side of the line pressing pulley; then the position of the first pressing line can be moved forwards or backwards (Figure 17).
+La posición de la muesca de la polea de transferencia se puede ajustar aflojando el engranaje de ajuste (Figura 16-1).
 
-![Figure 17. Schematic Diagram of Line Pressing Part](img/figure_17.png)
+![Figura 16. Diagrama Esquemático de la Parte de la Polea de Transferencia](img/figure_16.png)
 
 <div style="text-align: center;">
-  <em>Figure 17. Schematic Diagram of Line Pressing Part</em><br>
+  <em>Figura 16. Diagrama Esquemático de la Parte de la Polea de Transferencia</em><br>
 </div>
 
-#### 4.5.2.5. Operation of Bottom Opening Part 
+1. Engranaje de Ajuste  
+2. Polea Guía Inferior  
+3. Polea de Transferencia  
 
-![Figure 18. Schematic Diagram of Bottom Opening Part](img/figure_18.png)
+#### 4.5.2.4. Operación de la Parte de Presión de Líneas
+El método de ajuste para la presión y la posición horizontal es el mismo que para la polea de transferencia.
+
+El ajuste del plectro de hierro debe realizarse según el tamaño del tubo de papel que se va a fabricar. La distancia entre dos líneas de presión es la mitad del tamaño del fondo de la bolsa de papel que se va a fabricar. El método específico de ajuste es: aflojar el tornillo en la polea de presión de líneas; la posición de la segunda línea se puede mover hacia adelante o hacia atrás hasta la dimensión necesaria; y luego apretar el tornillo suelto.
+
+El ajuste de la distancia entre la primera línea de presión y el punto de acción de la primera abrazadera es: aflojar la tuerca de fijación en el lado de transmisión de la polea de presión de líneas; luego, la posición de la primera línea de presión se puede mover hacia adelante o hacia atrás (Figura 17).
+
+![Figura 17. Diagrama Esquemático de la Parte de Presión de Líneas](img/figure_17.png)
 
 <div style="text-align: center;">
-  <em>Figure 18. Schematic Diagram of Bottom Opening Part</em><br>
+  <em>Figura 17. Diagrama Esquemático de la Parte de Presión de Líneas</em><br>
 </div>
 
-1. Horizontal Locking Screw on Bottom Opening Rattler 
-2. Paper Pressing Bar 
-3. Bottom Opening Rattler 
-4. Bottom Opening Clamp 
-5. Adjusting Handle for Releasing Time Point of Bottom Opening Clamp 
+#### 4.5.2.5. Operación de la Parte de Apertura de Fondo
 
-The horizontal position of bottom opening rattler (Figure 18-4) should be adjusted according to the width of paper tube. To make this adjustment, loosen the horizontal locking screw (Figure 18-1) on bottom opening rattler, adjust the rattler’s position horizontally until the edge of the rattler is fundamentally consistent with the edge of paper tube, and then fasten the locking screw. 
-
-There are several kinds of paper pressing bars (Figure 18-2). Select appropriate paper pressing bar according to different paper tube width. Make sure that the height of paper pressing bar does not execed that of bottom opening rattler. 
-
-Releasing time point of bottom opening clamp (Figure 18-4) can be adjusted by the handle_? (Figure 18-5) on two pieces of screws. It becomes later when tuming clockwise while becomes carllcr‘wht:‘n turning anticlockwise. The time is adjusted according to the paper bag bottom width. If the time is too short, the bottom opening will be finished badly; if the time is too long, the bag bottom corner Will be broken due to pulling. 
-
-The method for adjusting the position of bottom opening clamp is: loosen the gear nut on transmission side, and then adjust the bottom opening clamp forwards and backwards until the clamp nips right on the position of the first pressing line. By doing so, there will be perfect bag bottom produced. And finally, fasten the gear nut for normal production. 
-
-#### 4.5.2.6. Operation of Bottom Former Part 
-
-Adjustment of side guiding board: select appropriate side guiding board according to different bag Width. The adjusting principle is that horizontal width should be same as the width of paper bag and the upper part should cover the underside turned over (Figure 19). 
-Adjustment of middle guiding bar: the middle guiding bar cannot block the bottom turned over; otherwise the underside will not be unfolded. If the space is too small, one guiding bar shall be enough. 
-
-![Figure 19. Schematic Diagram of Bottom Former Part](img/figure_19.png)
+![Figura 18. Diagrama Esquemático de la Parte de Apertura de Fondo](img/figure_18.png)
 
 <div style="text-align: center;">
-  <em>Figure 19. Schematic Diagram of Bottom Former Part</em><br>
+  <em>Figura 18. Diagrama Esquemático de la Parte de Apertura de Fondo</em><br>
 </div>
 
-1. Side Guiding Board 
-2. Middle Guiding Bar
+1. Tornillo de Bloqueo Horizontal en el Agitador de Apertura de Fondo  
+2. Barra de Presión de Papel  
+3. Agitador de Apertura de Fondo  
+4. Abrazadera de Apertura de Fondo  
+5. Manija de Ajuste para el Punto de Liberación de la Abrazadera de Apertura de Fondo  
 
-#### 4.5.2.7. Operation of Square Bottom Forming Part 
+La posición horizontal del agitador de apertura de fondo (Figura 18-4) debe ajustarse según el ancho del tubo de papel. Para realizar este ajuste, afloje el tornillo de bloqueo horizontal (Figura 18-1) en el agitador de apertura de fondo, ajuste la posición del agitador horizontalmente hasta que el borde del agitador coincida fundamentalmente con el borde del tubo de papel, y luego apriete el tornillo de bloqueo.
 
-![Figure 20. Schematic Diagram of Square Bottom Forming Part](img/figure_20.png)
+Existen varios tipos de barras de presión de papel (Figura 18-2). Seleccione la barra de presión adecuada según el ancho del tubo de papel. Asegúrese de que la altura de la barra de presión no exceda la del agitador de apertura de fondo.
+
+El punto de liberación de la abrazadera de apertura de fondo (Figura 18-4) se puede ajustar con la manija (Figura 18-5) en dos tornillos. Gira en el sentido de las agujas del reloj para retrasar el tiempo, o en sentido antihorario para adelantarlo. El tiempo se ajusta según el ancho del fondo de la bolsa de papel. Si el tiempo es demasiado corto, la apertura del fondo no se realizará correctamente; si es demasiado largo, las esquinas del fondo de la bolsa se romperán debido a la tensión.
+
+El método para ajustar la posición de la abrazadera de apertura de fondo es: aflojar la tuerca del engranaje en el lado de transmisión, y luego ajustar la abrazadera hacia adelante o hacia atrás hasta que esta sujete correctamente la primera línea de presión. Al hacerlo, se producirá un fondo de bolsa perfecto. Finalmente, apriete la tuerca del engranaje para la producción normal.
+
+#### 4.5.2.6. Operación de la Parte Formadora de Fondo
+
+Ajuste de la placa de guía lateral: seleccione la placa de guía lateral adecuada según el ancho de la bolsa. El principio de ajuste es que el ancho horizontal debe ser el mismo que el ancho de la bolsa de papel y la parte superior debe cubrir el lado inferior volteado (Figura 19).  
+Ajuste de la barra de guía central: la barra de guía central no debe bloquear el fondo volteado; de lo contrario, el lado inferior no se desplegará. Si el espacio es muy pequeño, una sola barra de guía será suficiente.
+
+![Figura 19. Diagrama Esquemático de la Parte Formadora de Fondo](img/figure_19.png)
 
 <div style="text-align: center;">
-  <em>Figure 20. Schematic Diagram of Square Bottom Forming Part</em><br>
+  <em>Figura 19. Diagrama Esquemático de la Parte Formadora de Fondo</em><br>
 </div>
 
-1. Central Clamp 
-2. Side Clamp 
-3. First Clamp 
-4. Second Clamp 
+1. Placa de Guía Lateral  
+2. Barra de Guía Central  
 
-Adjustment of central clamp: the position of the base plate where central clamp (Figure 20-1) is installed can be adjusted forwards or backwards by loosening the locking screw on the base plate. The adjusting principle is: the distance between the front end of central clamp and first clamp is approximately the folding length of paper bag bottom deducting 3-4mm (Figure 21). The unfolding height of central clamp can be adjusted by loosening the adjusting arm at one end of central clamp. The adjusting principle is: the height between central clamp and drum pulley surface is about from 16mm to 19mm. The releasing time point of central clamp can be adjusted by two groups of cams on the wallboard on operating side, and will determine the quality of the four corners of bag bottom. 
+#### 4.5.2.7. Operación de la Parte de Formación de Fondo Cuadrado
 
-![Figure 21. Schematic Diagram of Central Clamp](img/figure_21.png)
+![Figura 20. Diagrama Esquemático de la Parte de Formación de Fondo Cuadrado](img/figure_20.png)
 
 <div style="text-align: center;">
-  <em>Figure 21. Schematic Diagram of Central Clamp</em><br>
+  <em>Figura 20. Diagrama Esquemático de la Parte de Formación de Fondo Cuadrado</em><br>
 </div>
 
-1. Paper Bag 
-2. Central Clamp 
-3. Adjusting Arm of Central Clamp 
+1. Pinza Central  
+2. Pinza Lateral  
+3. Primera Pinza  
+4. Segunda Pinza  
 
-Adjustment of side clamp: horizontal position of the base plate where side clamp is installed can be adjusted forwards or backwards by loosening the locking block on the base plate. The adjusting principle is: the intersection point between the edge of side clamp and the opening mouth of first clamp should be 3mm more inside than the nearest paper bag side edge. Remember to lock the locking screw after adjustment. The height of side clamp can be adjusted by eccentric shaft on the mounting seat for side clamp. The opening width of side clamp should be larger than the width of paper bag. 
+**Ajuste de la pinza central**: la posición de la placa base donde se instala la pinza central (Figura 20-1) puede ajustarse hacia adelante o hacia atrás aflojando el tornillo de bloqueo en la placa base. El principio de ajuste es que la distancia entre el extremo delantero de la pinza central y la primera pinza sea aproximadamente la longitud de plegado del fondo de la bolsa de papel, restando 3-4 mm (Figura 21). La altura de despliegue de la pinza central se puede ajustar aflojando el brazo de ajuste en un extremo de la pinza central. El principio de ajuste es que la altura entre la pinza central y la superficie de la polea tambor esté entre 16 mm y 19 mm. El punto de liberación de la pinza central puede ajustarse mediante dos grupos de levas en la pared lateral del lado operativo, lo que determinará la calidad de las cuatro esquinas del fondo de la bolsa.
 
-First clamp is the criterion and it is unnecessary to adjust its position. It is only necessary to adjust its opening width, which is usually about 6.5mm. The opening width of first clamp can be adjusted by loosening the screw on the adjusting arm at one end of first clamp. 
-
-Adjustment of second clamp: the distance between the second clamp and the first clamp can be adjusted by loosening the locking screw on the base plate of second clamp. The adjusting principle is: the distance between the second clamp and the first clamp should be about 12mm shorter than the bottom width of paper bag. The opening width of second clamp is usually about 8mm. This width of second clamp can be adjusted by loosening the screw on the adjusting arm at one end of second clamp (Figure 22). 
-
-![Figure 22. Schematic Diagram of Clamps for Bottom Forming](img/figure_22.png)
+![Figura 21. Diagrama Esquemático de la Pinza Central](img/figure_21.png)
 
 <div style="text-align: center;">
-  <em>Figure 22. Schematic Diagram of Clamps for Bottom Forming</em><br>
+  <em>Figura 21. Diagrama Esquemático de la Pinza Central</em><br>
 </div>
 
-1. First Clamp 
-2. Side Clamp 
-3. Second Clamp 
+1. Bolsa de Papel  
+2. Pinza Central  
+3. Brazo de Ajuste de la Pinza Central  
+
+**Ajuste de la pinza lateral**: la posición horizontal de la placa base donde se instala la pinza lateral puede ajustarse hacia adelante o hacia atrás aflojando el bloque de bloqueo en la placa base. El principio de ajuste es que el punto de intersección entre el borde de la pinza lateral y la boca de apertura de la primera pinza debe estar 3 mm más adentro que el borde lateral más cercano de la bolsa de papel. Recuerde bloquear el tornillo de bloqueo después del ajuste. La altura de la pinza lateral se puede ajustar mediante el eje excéntrico en el asiento de montaje de la pinza lateral. El ancho de apertura de la pinza lateral debe ser mayor que el ancho de la bolsa de papel.
+
+La primera pinza es el punto de referencia y no es necesario ajustar su posición. Solo es necesario ajustar su ancho de apertura, que generalmente es de unos 6,5 mm. El ancho de apertura de la primera pinza se puede ajustar aflojando el tornillo en el brazo de ajuste en un extremo de la primera pinza.
+
+**Ajuste de la segunda pinza**: la distancia entre la segunda pinza y la primera pinza puede ajustarse aflojando el tornillo de bloqueo en la placa base de la segunda pinza. El principio de ajuste es que la distancia entre la segunda pinza y la primera pinza debe ser aproximadamente 12 mm más corta que el ancho del fondo de la bolsa de papel. El ancho de apertura de la segunda pinza es generalmente de unos 8 mm. Este ancho se puede ajustar aflojando el tornillo en el brazo de ajuste en un extremo de la segunda pinza (Figura 22).
+
+![Figura 22. Diagrama Esquemático de las Pinzas para la Formación de Fondo](img/figure_22.png)
+
+<div style="text-align: center;">
+  <em>Figura 22. Diagrama Esquemático de las Pinzas para la Formación de Fondo</em><br>
+</div>
+
+1. Primera Pinza  
+2. Pinza Lateral  
+3. Segunda Pinza  
 
 #### 4.5.2.8. Operation of Bottom Gluing Part 
 Stick rubber board for gluing before bottom gluing; the size and position of rubber board should be determined by the bag body width and bottom width of paper bag. Shear the rubber board and stick it with double sided tape onto gluing pulley (Figure 23-3). The relative position between the stuck rubber board and paper bag bottom can be changed by adjusting the gear at the end of gluing pulley. The bottom gluing can be started after the completion of adjusting the relative positions of glue dipping pulley. glue transfer pulley, gluing pulley and large hub. The quantity of glue to be applied onto the paper bag bottom should be adjusted by the gaps between different pulleys. 
