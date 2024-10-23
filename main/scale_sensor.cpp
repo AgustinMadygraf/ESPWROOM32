@@ -2,8 +2,8 @@
 #include "hardware_control.h"
 
 HX711 balanza;
-int DT_hx711 = 4;
-int CLK_hx711 = 5;
+int DT_hx711 = 25;
+int CLK_hx711 = 33;
 long scaleFactor;
 int zero = 12;
 int calibracion = 14;
