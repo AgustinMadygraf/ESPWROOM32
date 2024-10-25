@@ -2,7 +2,7 @@
 
 # 4 Main Structure and Operation of Machine
 
-![Figure 1. Schematic Diagram of Whole Machine](img/figure_01.png)
+![Figure 1. Schematic Diagram of Whole Machine](../../docs/img/figure_01.png)
 
 <div style="text-align: center;">
   <em>Figure 1. Schematic Diagram of Whole Machine</em><br>
@@ -18,7 +18,7 @@
 
 ## 4.1. Main Structure and Operation of Unwinding Component
 
-![Figure 2. Schematic Diagram of Unwinding Component](img/figure_02.png)
+![Figure 2. Schematic Diagram of Unwinding Component](../../docs/img/figure_02.png)
 
 <div style="text-align: center;">
   <em>Figure 2. Schematic Diagram of Unwinding Component</em><br>
