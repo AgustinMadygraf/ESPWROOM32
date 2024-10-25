@@ -10,23 +10,40 @@ Este sistema contiene una placa entintadora, rodillo entintador, cuchilla raspad
 
 # 4.2.2. Installation of Inking Plate 
 
-Ensure that Ink Plate Lift Knob is switched to Drop Mode and install the ink plate o the support. And then turn the knob to Lift Mode and make sure that the ink plate doesn't affect the working of inking roller and anilox roller. 
+Ensure that Ink Plate Lift Knob is switched to Drop Mode,
+ and install the ink plate on the support. 
+ And then turn the knob to Lift Mode and make sure that the ink plate doesn't affect the working of inking roller and anilox roller. 
 
-# 4.2.3. Installation of Inking Roller 
-Lift the inking roller until the bearings on the both sides of inking roller exactly engages into the installation groove. 
+Asegúrese de que el selector de la funcion de entintado no esté puesto, y luego 
+e instale la placa de tinta en el soporte. 
+Y luego gire la perilla al modo de elevación y asegúrese de que la placa de tinta no afecte el funcionamiento del rodillo entintador y del rodillo anilox.
 
-# 4.2.4. Adjustment of Inking Roller 
-Install the inking roller and anilox roller onto the machine, and adjust the gap adjusting hand wheel for these two rollers, to make sure that the inking roller is close to the anilox roller properly and the ink can be transferred from the inking roller to the anilox roller evenly. Note that too big gap will cause too much ink on the anilox roller, too small gap will cause too little ink on the anilox roller. For a printing machine which adopts scraping ink on inking roller, its inking amount on anilox roller depends on the following factors: 
-    Distance between Inking Roller and Anilox Roller: closer inking roller to anilox roller, less inking amount. 
-    Solidity of Inking Roller Surface: higher solidity, less inking amount. 
-    Printing Speed: slower speed, less inking amount. 
-    Ink Quality: lower viscosity, less inking amount. 
-    Anilox Roller Resolution: higher resolution, less inking amount per ink unit on anilox roller. 
+# 4.2.3. Funcion del rodillo entintador
+
+Levante el rodillo entintador hasta que los cojinetes de ambos lados del rodillo entintador encajen exactamente en la ranura de instalación.
+
+# 4.2.4. Ajuste del rodillo entintador
+
+Pongan la funcion del rodillo entintador y el rodillo anilox en la máquina, 
+y ajuste manualmente la rueda de luz entre estos dos rodillos, para asegurarse de que el rodillo entintador esté cerca del rodillo anilox correctamente y que la tinta se pueda transferir desde el rodillo entintador al anilox.  
+Tenga en cuenta que un espacio demasiado grande provocará demasiada tinta en el rodillo anilox, y un espacio demasiado pequeño provocará muy poca tinta en el rodillo anilox. 
+
+Para una máquina de impresión que adopta tinta raspadora en un rodillo entintador, la cantidad de tinta en el rodillo anilox depende de los siguientes factores: 
+1. **Distancia entre el rodillo entintador y el rodillo anilox:** más cerca del rodillo entintador al rodillo anilox, menos cantidad de entintado. 
+2. **Solidez de la superficie del rodillo entintador:** mayor solidez, menor cantidad de tinta. 
+3. **Velocidad de impresión:** velocidad más lenta, menos cantidad de tinta. 
+4. **Calidad de la tinta:** menor viscosidad, menor cantidad de tinta. 
+5. **Resolución del rodillo anilox:** mayor resolución, menor cantidad de tinta por unidad de tinta en el rodillo anilox.
 
 # 4.2.5. Installation of Anilox Roller 
 Anilox roller can be installed if and only if Anilox Idling Knob is turned to OFF and the machine is stopped: loosen the locking block and screw on the anilox roller support in printing unit, and move the anilox roller onto the support and fastern the block and. screw, then adjust anilox roller support adjusting wheel to make the anilox roller be parallel; later rotate the roller by hands to check its position precision, and remove its protection layer. 
     Note: knocking the anilox roller against other metal surface is forbidden while loading or unloading the anilox roller. Because of the special material, the anilox roller is very easy to be damaged permanently once its surface is knocked. 
 During production, the installation positions (orders) and specification of anilox rollers are determined by the printing content and quality requirements. The installation positions depends on the color orders, thus it is very common to change the positions. 
+
+El rodillo anilox se puede instalar si y solo si la perilla de ralentí Anilox está en APAGADO y la máquina está parada: afloje el bloque de bloqueo y atornille el soporte del rodillo anilox en la unidad de impresión, mueva el rodillo anilox sobre el soporte y apriete el bloque y . atornille, luego ajuste la rueda de ajuste del soporte del rodillo anilox para que el rodillo anilox quede paralelo; posteriormente gire el rodillo con las manos para comprobar la precisión de su posición y retire su capa protectora. 
+    Nota: está prohibido golpear el rodillo anilox contra otra superficie metálica mientras se carga o descarga el
+    rodillo anilox. Debido al material especial, es muy fácil que el rodillo anilox se dañe permanentemente una vez que se golpea su superficie. 
+Durante la producción, las posiciones de instalación (pedidos) y las especificaciones de los rodillos anilox están determinadas por el contenido de impresión y los requisitos de calidad. Las posiciones de instalación dependen de los órdenes de color, por lo que es muy común cambiar las posiciones.
 
 # 4.2.6. Selection of Anilox Roller 
 As the core of flexographic printing, anilox roller plays a very important role during the production. It determines the inking amount and affects the printing quality directly. Users must make themselves clear about the relationship between anilox roller LPI and printing plate LPI: usually the former should be 4-5 times the latter, otherwise the printed image will have blank point or color missing, which may cause bad printing quality. 
