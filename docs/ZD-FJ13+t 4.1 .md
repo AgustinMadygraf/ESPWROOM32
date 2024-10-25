@@ -1,6 +1,6 @@
-# Operation Manual
+# Manual de operación
 
-# 4 Main Structure and Operation of Machine
+# 4 Estructura principal y operación de maquina
 
 <div style="text-align: center;">
     <img src="../../docs/img/figure_01.png" alt="Figure 1. Schematic Diagram of Whole Machine" />
@@ -8,37 +8,37 @@
     <em>Figure 1. Schematic Diagram of Whole Machine</em>
 </div>
 
-1. Unwinding Component 
-2. Printing Component 
-3. Side Sealing Frame Component 
-4. Tube Forming Component 
-5. Main Machine Component 
-6. Bag Collection Component 
-7. Control Component 
+1. sistema de desenrrollado 
+2. sistema de impresión 
+3. sistema de marco de sellado lateral
+4. sistema formador de tubo
+5. sistema de maquina principal
+6. sistema de colector de bolsas
+7. sistema de control
 
-## 4.1. Main Structure and Operation of Unwinding Component
+## 4.1. Estructura principal y operación de sistema de desenrrollado
 
 <div style="text-align: center;">
-    <img src="../../docs/img/figure_02.png" alt="Figure 2. Schematic Diagram of Unwinding Component" />
+    <img src="../../docs/img/figure_02.png" alt="Figure 2. Schematic Diagram of Unwinding sistema" />
     <br>
-    <em>Figure 2. Schematic Diagram of Unwinding Component</em>
+    <em>Figure 2. Schematic Diagram of Unwinding sistema</em>
 </div>
 
-1. Deviation Rectification Panel
-2. Side Gluing Frame 
-3. Unwinding Operating Panel 
-4. Unwinding Machine Frame 
-5. Unwinding Arm on Operating Side 
-6. Material Reel 
-7. Unwinding Arm on Transmission Side 
-8.  Side Gluing Operating Panel 
-9.  Dancer Roller 
+1. Panel de correccion de desviación
+2. Marco de pegado lateral 
+3. Panel de operación de desenrrollado
+4. Marco de maquina de desenrrollado 
+5. Brazo de desenrrollado en lado operativo 
+6. Bobina de material 
+7. Brazo de desenrrollado en lado de transmisión 
+8. Panel de operación de pegado de lateral 
+9. Rodillo bailarin
 10. Tension Sensor 
 
-### 4.1.1. Main Structure of Unwinding Component 
-Unwinding component is mainly constituted by unwinding machine frame (Figure 2-4), unwinding arms (Figure 2-5, 2-7), tension control system and electric control system.
+### 4.1.1. Main Structure of Unwinding sistema 
+Unwinding sistema is mainly constituted by unwinding machine frame (Figure 2-4), unwinding arms (Figure 2-5, 2-7), tension control system and electric control system.
 
-### 4.1.2. Operation of Unwinding Component
+### 4.1.2. Operation of Unwinding sistema
 
 #### 4.1.2.1. Function Description for Unwinding Operating Paneln of onwinding Operating Panel
 
@@ -66,7 +66,7 @@ Unwinding component is mainly constituted by unwinding machine frame (Figure 2-4
 (B) Press Material Frame Jointly Unfolding Button according to the width of material reel (Figure 3-4), to adjust the unwinding arms to the positions where the material pushing cone head is slightly wider than the material reel core.
 (C) Measure the distance from the center of material reel to be installed to the ground; press Material Frame Rising/Falling Knob (Figure 3-10) to make the height of the material pushing cone head of unwinding arm from the ground be the distance measured.
 (D) Press Material Frame Jointly Folding Button (Figure 3-3) on the operating panel to make the material pushing cone head push tightly the material reel core.
-(E) Make the material pass through the machine according to Material Feeding Diagram in Chapter 9; then bags can be produced normally if other components are also ready for production.
+(E) Make the material pass through the machine according to Material Feeding Diagram in Chapter 9; then bags can be produced normally if other sistemas are also ready for production.
 (F) When the material reel is fully used up, stop the machine and press Material Frame Jointly
 Unfolding Button (Figure 3-4) on the operating panel to make the material pushing cone head quit from the material reel core.
 
@@ -92,16 +92,16 @@ Refer to Operation Manual of AXTEC Automatic Tension Controller for details.
 
 Refer to Operation Manual of AIBO EPC System for details.
 
-### 4.3. Main Structure and Operation of Side ealing Frame Component
+### 4.3. Main Structure and Operation of Side ealing Frame sistema
 
-#### 4.3.1. Main Structure of Side Sealing Frame Component
+#### 4.3.1. Main Structure of Side Sealing Frame sistema
 
-Side sealing frame component is mainly constituted by side sealing machine frame (Figure 2-2). side gluing component (Figure 5) and side gluing control system.
+Side sealing frame sistema is mainly constituted by side sealing machine frame (Figure 2-2). side gluing sistema (Figure 5) and side gluing control system.
 
 <div style="text-align: center;">
-    <img src="../../docs/img/figure_05.png" alt="Figure 5. Schematic Diagram of Side Gluing Component" />
+    <img src="../../docs/img/figure_05.png" alt="Figure 5. Schematic Diagram of Side Gluing sistema" />
     <br>
-    <em>Figure 5. Schematic Diagram of Side Gluing Component</em>
+    <em>Figure 5. Schematic Diagram of Side Gluing sistema</em>
 </div>
 
 1. Gluing Pulley
@@ -113,7 +113,7 @@ Side sealing frame component is mainly constituted by side sealing machine frame
 7. Side Glue Scrapper
 8. Driving Gear for Side Gluing
 
-#### 4.3.2. Operation of Side Gluing Component
+#### 4.3.2. Operation of Side Gluing sistema
 
 This machine adopts glue transfer method for side gluing (Figure 5). Glue transfer pulley dips into the side glue plate (Figure 5-6). The surplus glue is scrapped by side glue scrapper (Figure 5-7). then the remaining glue is transferred onto gluing pulley (Figure 5-1) and then transferred onto raw paper. The driving operation is made by driving gear for side gluing (Figure 5-8).
 
@@ -125,7 +125,7 @@ Note:
 
 (A) Avoid overfilling glue into side glue plate; the height of glue level should not exceed 2/3 of the height of glue plate.
 
-(B) It is necessary to wash the side gluing components in case of getting off work or out of service for long time. First dismantle glue transfer pulley and side glue scrapper to wash; then wash gluing pulley on the machine; finally dismantle side glue plate to pour out the remainder glue, wash and properly place it for next usage.
+(B) It is necessary to wash the side gluing sistemas in case of getting off work or out of service for long time. First dismantle glue transfer pulley and side glue scrapper to wash; then wash gluing pulley on the machine; finally dismantle side glue plate to pour out the remainder glue, wash and properly place it for next usage.
 
 #### 4.3.3. Function Description of Side Gluing Panel.
 
@@ -142,7 +142,7 @@ In automatic operation mode, clutch cylinder acts together with main machine. Wh
 The conversion between these two modes can be made at any time.
 3. **Pressure Adjusting Knob:** for adjusting the pressure of air source.
 
-### 4.7. Main Structure and Operation of Control Component
+### 4.7. Main Structure and Operation of Control sistema
 
 The operation for control part contains two sections. One section is the operation of touch screen, (refer to Touch Screen Operation Manual for details); the other section is the operation and description of operating buttons, which will be described in detail as follows.
 
