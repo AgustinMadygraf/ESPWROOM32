@@ -2,10 +2,10 @@
 
 # 4 Main Structure and Operation of Machine
 
-![Figure 1. Schematic Diagram of Whole Machine](../../docs/img/figure_01.png)
-
 <div style="text-align: center;">
-  <em>Figure 1. Schematic Diagram of Whole Machine</em><br>
+    <img src="../../docs/img/figure_01.png" alt="Figure 1. Schematic Diagram of Whole Machine" />
+    <br>
+    <em>Figure 1. Schematic Diagram of Whole Machine</em>
 </div>
 
 1. Unwinding Component 
@@ -18,10 +18,10 @@
 
 ## 4.1. Main Structure and Operation of Unwinding Component
 
-![Figure 2. Schematic Diagram of Unwinding Component](../../docs/img/figure_02.png)
-
 <div style="text-align: center;">
-  <em>Figure 2. Schematic Diagram of Unwinding Component</em><br>
+    <img src="../../docs/img/figure_02.png" alt="Figure 2. Schematic Diagram of Unwinding Component" />
+    <br>
+    <em>Figure 2. Schematic Diagram of Unwinding Component</em>
 </div>
 
 1. Deviation Rectification Panel
@@ -42,10 +42,10 @@ Unwinding component is mainly constituted by unwinding machine frame (Figure 2-4
 
 #### 4.1.2.1. Function Description for Unwinding Operating Paneln of onwinding Operating Panel
 
-![Figure 3. Schematic Diagram of Unwinding Operating Panel](../../docs/img/figure_03.png)
-
 <div style="text-align: center;">
-  <em>Figure 3. Schematic Diagram of Unwinding Operating Panel</em><br>
+    <img src="../../docs/img/figure_03.png" alt="Figure 3. Schematic Diagram of Unwinding Operating Panel" />
+    <br>
+    <em>Figure 3. Schematic Diagram of Unwinding Operating Panel</em>
 </div>
 
 1. **Automatic Tension Controller Panel:** refer to Operation Manual of AXTEC Automatic Tension Controller for details of adjustment.
@@ -76,10 +76,10 @@ In course of adjusting unwinding arms and loading/unloading material reel, the o
 
 #### 4.1.2.3 Operation of Dancer Roller
 
-![Figure 4. Schematic Diagram of Dance Roller](../../docs/img/figure_04.png)
-
 <div style="text-align: center;">
-  <em>Figure 4. Schematic Diagram of Dance Roller</em><br>
+    <img src="../../docs/img/figure_04.png" alt="Figure 4. Schematic Diagram of Dance Roller" />
+    <br>
+    <em>Figure 4. Schematic Diagram of Dance Roller</em>
 </div>
 
 When there is loose edge or tight edge of material on the dancer roller (Figure 4-3), the difference can be adjusted via the following specific operation procedure: first loosen locking handle (Figure 4-1); then turn eccentric shaft (Figure 4-2) to the appropriate position and finally fasten locking handle after adjustment (Figure 4-1).
@@ -98,10 +98,10 @@ Refer to Operation Manual of AIBO EPC System for details.
 
 Side sealing frame component is mainly constituted by side sealing machine frame (Figure 2-2). side gluing component (Figure 5) and side gluing control system.
 
-![Figure 5. Schematic Diagram of Side Gluing Component](../../docs/img/figure_05.png)
-
 <div style="text-align: center;">
-  <em>Figure 5. Schematic Diagram of Side Gluing Component</em><br>
+    <img src="../../docs/img/figure_05.png" alt="Figure 5. Schematic Diagram of Side Gluing Component" />
+    <br>
+    <em>Figure 5. Schematic Diagram of Side Gluing Component</em>
 </div>
 
 1. Gluing Pulley
@@ -129,10 +129,10 @@ Note:
 
 #### 4.3.3. Function Description of Side Gluing Panel.
 
-![Figure 6. Schematic Diagram of Side Gluing Panel](../../docs/img/figure_06.png)
-
 <div style="text-align: center;">
-  <em>Figure 6. Schematic Diagram of Side Gluing Panel</em><br>
+    <img src="../../docs/img/figure_06.png" alt="Figure 6. Schematic Diagram of Side Gluing Panel" />
+    <br>
+    <em>Figure 6. Schematic Diagram of Side Gluing Panel</em>
 </div>
 
 1. **Air Source Pressure Gauge:** for indicating air source pressure.
@@ -148,10 +148,10 @@ The operation for control part contains two sections. One section is the operati
 
 #### 4.7.1. Operation and Description of Control Cabinet Buttons
 
-![Figure 28. Schematic Diagram of Touch Screen](../../docs/img/figure_28.png)
-
 <div style="text-align: center;">
-  <em>Figure 28. Schematic Diagram of Touch Screen</em><br>
+    <img src="../../docs/img/figure_28.png" alt="Figure 28. Schematic Diagram of Touch Screen" />
+    <br>
+    <em>Figure 28. Schematic Diagram of Touch Screen</em>
 </div>
 
 1. **Power Indicator Lamp:** used to indicate the state of the machine power supply.
@@ -164,10 +164,10 @@ the reset button on the touch screen.
 
 ### 4.7.2. Operation and Description of Front Panel Buttons
 
-![Figure 29. Schematic Diagram of Front Panel](../../docs/img/figure_29.png)
-
 <div style="text-align: center;">
-  <em>Figure 29. Schematic Diagram of Front Panel</em><br>
+    <img src="../../docs/img/figure_29.png" alt="Figure 29. Schematic Diagram of Front Panel" />
+    <br>
+    <em>Figure 29. Schematic Diagram of Front Panel</em>
 </div>
 
 1. **Air Source Pressure Gauge:** used for indicating the air source pressure of air cylinder on operating side of the second material traction pressing roller.
@@ -190,10 +190,10 @@ the reset button on the touch screen.
 
 ### 4.7.3. Operation and Description of Rear Panel Buttons
 
-![Figure 30. Schematic Diagram of Rear Panel](../../docs/img/figure_30.png)
-
 <div style="text-align: center;">
-  <em>Figure 30. Schematic Diagram of Rear Panel</em><br>
+    <img src="../../docs/img/figure_30.png" alt="Figure 30. Schematic Diagram of Rear Panel" />
+    <br>
+    <em>Figure 30. Schematic Diagram of Rear Panel</em>
 </div>
 
 1. **Whole Machine Inching Button:** click Whole Machine Inching Button, then the red, green, yellow lamps on the caution lamp will go on at the same time and the buzzer will ring for 3 seconds; after the ring of buzzer, the yellow lamp will go on within 2 seconds, which indicates the whole machine will run at the inching speed by pressing and holding this button within the two seconds, meanwhile the green lamp will go on while the yellow lamp will go out. If this button is released later, then the whole machine will stop, and the red lamp will go on while the green lamp will go out. This button is mainly used for inching the whole machine.
