@@ -2,7 +2,7 @@
 
 # 4 Main Structure and Operation of Machine
 
-![Figure 1. Schematic Diagram of Whole Machine](img/figure_01.png)
+![Figure 1. Schematic Diagram of Whole Machine](../../docs/img/figure_01.png)
 
 <div style="text-align: center;">
   <em>Figure 1. Schematic Diagram of Whole Machine</em><br>
@@ -18,7 +18,7 @@
 
 ## 4.1. Main Structure and Operation of Unwinding Component
 
-![Figure 2. Schematic Diagram of Unwinding Component](img/figure_02.png)
+![Figure 2. Schematic Diagram of Unwinding Component](../../docs/img/figure_02.png)
 
 <div style="text-align: center;">
   <em>Figure 2. Schematic Diagram of Unwinding Component</em><br>
@@ -42,7 +42,7 @@ Unwinding component is mainly constituted by unwinding machine frame (Figure 2-4
 
 #### 4.1.2.1. Function Description for Unwinding Operating Paneln of onwinding Operating Panel
 
-![Figure 3. Schematic Diagram of Unwinding Operating Panel](img/figure_03.png)
+![Figure 3. Schematic Diagram of Unwinding Operating Panel](../../docs/img/figure_03.png)
 
 <div style="text-align: center;">
   <em>Figure 3. Schematic Diagram of Unwinding Operating Panel</em><br>
@@ -76,7 +76,7 @@ In course of adjusting unwinding arms and loading/unloading material reel, the o
 
 #### 4.1.2.3 Operation of Dancer Roller
 
-![Figure 4. Schematic Diagram of Dance Roller](img/figure_04.png)
+![Figure 4. Schematic Diagram of Dance Roller](../../docs/img/figure_04.png)
 
 <div style="text-align: center;">
   <em>Figure 4. Schematic Diagram of Dance Roller</em><br>
@@ -98,7 +98,7 @@ Refer to Operation Manual of AIBO EPC System for details.
 
 Side sealing frame component is mainly constituted by side sealing machine frame (Figure 2-2). side gluing component (Figure 5) and side gluing control system.
 
-![Figure 5. Schematic Diagram of Side Gluing Component](img/figure_05.png)
+![Figure 5. Schematic Diagram of Side Gluing Component](../../docs/img/figure_05.png)
 
 <div style="text-align: center;">
   <em>Figure 5. Schematic Diagram of Side Gluing Component</em><br>
@@ -129,7 +129,7 @@ Note:
 
 #### 4.3.3. Function Description of Side Gluing Panel.
 
-![Figure 6. Schematic Diagram of Side Gluing Panel](img/figure_06.png)
+![Figure 6. Schematic Diagram of Side Gluing Panel](../../docs/img/figure_06.png)
 
 <div style="text-align: center;">
   <em>Figure 6. Schematic Diagram of Side Gluing Panel</em><br>
@@ -148,7 +148,7 @@ The operation for control part contains two sections. One section is the operati
 
 #### 4.7.1. Operation and Description of Control Cabinet Buttons
 
-![Figure 28. Schematic Diagram of Touch Screen](img/figure_28.png)
+![Figure 28. Schematic Diagram of Touch Screen](../../docs/img/figure_28.png)
 
 <div style="text-align: center;">
   <em>Figure 28. Schematic Diagram of Touch Screen</em><br>
@@ -164,7 +164,7 @@ the reset button on the touch screen.
 
 ### 4.7.2. Operation and Description of Front Panel Buttons
 
-![Figure 29. Schematic Diagram of Front Panel](img/figure_29.png)
+![Figure 29. Schematic Diagram of Front Panel](../../docs/img/figure_29.png)
 
 <div style="text-align: center;">
   <em>Figure 29. Schematic Diagram of Front Panel</em><br>
@@ -190,7 +190,7 @@ the reset button on the touch screen.
 
 ### 4.7.3. Operation and Description of Rear Panel Buttons
 
-![Figure 30. Schematic Diagram of Rear Panel](img/figure_30.png)
+![Figure 30. Schematic Diagram of Rear Panel](../../docs/img/figure_30.png)
 
 <div style="text-align: center;">
   <em>Figure 30. Schematic Diagram of Rear Panel</em><br>
