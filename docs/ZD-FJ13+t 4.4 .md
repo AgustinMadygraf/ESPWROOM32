@@ -250,9 +250,9 @@ La profundidad de inserción de la segunda herramienta de ranurado es de aproxim
 En cuanto a los cambios de calidad del papel, las profundidades de inserción de las herramientas de ranurado pueden cambiar. Por lo tanto, a veces es necesario cambiar las profundidades de las herramientas de ranurado según el papel.
 
 <div style="text-align: center;">
-    <img src="../../docs/img/figure_24.png" alt="Figure 24. Schematic Diagram of Bottom Inserting Part" />
+    <img src="../../docs/img/figure_24.png" alt="Figura 24. Diagrama esquemático de la parte de inserción inferior" />
     <br>
-    <em>Figure 24. Schematic Diagram of Bottom Inserting Part</em>
+    <em>Figura 24. Diagrama esquemático de la parte de inserción inferior</em>
 </div>
 
 1. Primera herramienta de ranurado 
@@ -264,15 +264,15 @@ La posición de la barra de doblado inferior se puede ajustar aflojando el bloqu
 La varilla de doblado de fondo se combina con varias barras cortas de nailon acorde al ancho requerido. Este ancho no deberia ser mayor a la distancia entre las dos varillas protectoras. (se hallan dos varillas protectoras debajo de las herramientas de ranurado para prevenir que la bolsa de papel se caiga cuando la abrazadera se abre.) de otro modo la varilla .
 
 <div style="text-align: center;">
-    <img src="../../docs/img/figure_25.png" alt="Figure 25. Schematic Diagram of Bottom Folding Part" />
+    <img src="../../docs/img/figure_25.png" alt="Figura 25. Diagrama esquemático de la parte de plegado inferior" />
     <br>
-    <em>Figure 25. Schematic Diagram of Bottom Folding Part</em>
+    <em>Figura 25. Diagrama esquemático de la parte de plegado inferior</em>
 </div>
 
-1. Bottom Folding Bar 
-2. Bottom Folding Board 
+1. Barra de plegado inferior
+2. Tablero de plegado inferior
 
-Adjustment of bottom folding board (Figure 26-3) can be made by loosening the locking screw on bottom folding board. The adjusting principle is: when bottom folding bar has pressed the second folded edge onto the bottom and left from the second folded edge, bottom folding board should touch the first folded edge and press it onto the bottom. 
+El ajuste del tablero de plegado inferior (Figura 26-3) se puede realizar aflojando el tornillo de bloqueo en el tablero de plegado inferior. El principio de ajuste es el siguiente: cuando la barra de plegado inferior ha presionado el segundo borde plegado hacia el fondo y a la izquierda del segundo borde plegado, el tablero de plegado inferior debe tocar el primer borde plegado y presionarlo hacia el fondo.
 
 <div style="text-align: center;">
     <img src="../../docs/img/figure_26.png" alt="Figure 26. Side Diagram of Bottom Folding Part" />
