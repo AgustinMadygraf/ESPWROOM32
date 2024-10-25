@@ -63,7 +63,7 @@ Cuando la línea central del tubo de papel no es idéntica a la de la máquina d
 ## 4.5. Estructura Principal y Operación del Componente de la Máquina Principal
 
 ### 4.5.1. Estructura Principal del Componente de la Máquina Principal
-El componente de la máquina principal (Figura 12) está constituido por el marco de la máquina principal, la parte de tracción de material, la parte de corte, la parte de la polea de transferencia, la parte de prensado de líneas, la parte de apertura de fondo, la parte formadora de fondo, la parte formadora de fondo cuadrado, la parte de pegado del fondo, la parte de inserción del fondo, la parte de plegado del fondo y la parte de control, etc.
+El componente de la máquina principal (Figura 12) está constituido por el marco de la máquina principal, la parte de tracción de material, la parte de corte, la parte de la polea de transferencia, la parte de prensado de líneas, la parte de apertura de fondo, la parte formadora de fondo, la parte formadora de fondo cuadrado, la parte de pegado del fondo, la parte de inserción del fondo, la parte de doblado del fondo y la parte de control, etc.
 
 ![Figura 12. Diagrama Esquemático del Componente de la Máquina Principal](../../docs/img/figure_12.png)
 
@@ -72,9 +72,9 @@ El componente de la máquina principal (Figura 12) está constituido por el marc
 </div>
 
 
-### 4.5.2. Operación del Componente Principal de la Máquina
+### 4.4.2. Operación del Componente Principal de la Máquina
 
-#### 4.5.2.1. Operación de la Parte de Tracción del Material
+#### 4.4.2.1. Operación de la Parte de Tracción del Material
 La parte de tracción del material es la fuente de energía que permite transferir el papel crudo desde el desenrollado, encolado de bordes y formación de tubos hacia la máquina principal, y es impulsada por un motor servo. La parte de tracción del material está constituida principalmente por el rodillo inferior de tracción del material y la polea de presión de tracción del material. No es necesario ajustar el rodillo inferior, y el ajuste de la polea de presión (Figura 13-2) se determina según el ancho del cuerpo de la bolsa de papel: afloje el tornillo de bloqueo (Figura 13-1) en la polea de presión, luego mueva transversalmente la polea de presión para que su borde lateral externo esté ligeramente más afuera que el borde lateral del cuerpo de la bolsa de papel, y finalmente apriete el tornillo de bloqueo. La presión de las poleas de presión es controlada por dos cilindros de aire (Figura 13-3) y se ajusta mediante la válvula de presión en el panel de la máquina principal. La presión debe estar entre 45-60Pa y debe ajustarse según el tipo de papel y los requisitos.
 
 ![Figura 13. Diagrama Esquemático de la Parte de Tracción del Material](../../docs/img/figure_13.png)
@@ -87,7 +87,7 @@ La parte de tracción del material es la fuente de energía que permite transfer
 2. Polea de Presión de Tracción del Material  
 3. Cilindro de Aire  
 
-#### 4.5.2.2. Operación de la Parte de Corte
+#### 4.4.2.2. Operación de la Parte de Corte
 
 ![Figura 14. Diagrama Esquemático de la Parte de Corte (1)](../../docs/img/figure_14.png)
 
@@ -116,7 +116,7 @@ La velocidad de corte se ajusta según la longitud de corte del tubo de papel. L
 2. Bloque de Bloqueo del Engranaje Excéntrico  
 3. Engranaje Excéntrico  
 
-#### 4.5.2.3. Operación de la Parte de la Polea de Transferencia
+#### 4.4.2.3. Operación de la Parte de la Polea de Transferencia
 
 ##### Ajuste de la Presión de la Polea de Transferencia:
 La presión de la polea de transferencia se puede modificar ajustando los bloques deslizantes en sus dos lados. La presión debe ajustarse de manera adecuada, y se puede probar tirando del material a mano, bajo el principio de que no se pueda tirar. La posición horizontal de la polea de transferencia debe ajustarse según el ancho del tubo de papel. En principio, el borde de la polea de transferencia no debe tocar la parte plegada de cada borde lateral del tubo de papel.
@@ -133,7 +133,7 @@ La posición de la muesca de la polea de transferencia se puede ajustar aflojand
 2. Polea Guía Inferior  
 3. Polea de Transferencia  
 
-#### 4.5.2.4. Operación de la Parte de Presión de Líneas
+#### 4.4.2.4. Operación de la Parte de Presión de Líneas
 El método de ajuste para la presión y la posición horizontal es el mismo que para la polea de transferencia.
 
 El ajuste del plectro de hierro debe realizarse según el tamaño del tubo de papel que se va a fabricar. La distancia entre dos líneas de presión es la mitad del tamaño del fondo de la bolsa de papel que se va a fabricar. El método específico de ajuste es: aflojar el tornillo en la polea de presión de líneas; la posición de la segunda línea se puede mover hacia adelante o hacia atrás hasta la dimensión necesaria; y luego apretar el tornillo suelto.
@@ -146,7 +146,7 @@ El ajuste de la distancia entre la primera línea de presión y el punto de acci
   <em>Figura 17. Diagrama Esquemático de la Parte de Presión de Líneas</em><br>
 </div>
 
-#### 4.5.2.5. Operación de la Parte de Apertura de Fondo
+#### 4.4.2.5. Operación de la Parte de Apertura de Fondo
 
 ![Figura 18. Diagrama Esquemático de la Parte de Apertura de Fondo](../../docs/img/figure_18.png)
 
@@ -168,7 +168,7 @@ El punto de liberación de la abrazadera de apertura de fondo (Figura 18-4) se p
 
 El método para ajustar la posición de la abrazadera de apertura de fondo es: aflojar la tuerca del engranaje en el lado de transmisión, y luego ajustar la abrazadera hacia adelante o hacia atrás hasta que esta sujete correctamente la primera línea de presión. Al hacerlo, se producirá un fondo de bolsa perfecto. Finalmente, apriete la tuerca del engranaje para la producción normal.
 
-#### 4.5.2.6. Operación de la Parte Formadora de Fondo
+#### 4.4.2.6. Operación de la Parte Formadora de Fondo
 
 Ajuste de la placa de guía lateral: seleccione la placa de guía lateral adecuada según el ancho de la bolsa. El principio de ajuste es que el ancho horizontal debe ser el mismo que el ancho de la bolsa de papel y la parte superior debe cubrir el lado inferior volteado (Figura 19).  
 Ajuste de la barra de guía central: la barra de guía central no debe bloquear el fondo volteado; de lo contrario, el lado inferior no se desplegará. Si el espacio es muy pequeño, una sola barra de guía será suficiente.
@@ -182,7 +182,7 @@ Ajuste de la barra de guía central: la barra de guía central no debe bloquear 
 1. Placa de Guía Lateral  
 2. Barra de Guía Central  
 
-#### 4.5.2.7. Operación de la Parte de Formación de Fondo Cuadrado
+#### 4.4.2.7. Operación de la Parte de Formación de Fondo Cuadrado
 
 ![Figura 20. Diagrama Esquemático de la Parte de Formación de Fondo Cuadrado](../../docs/img/figure_20.png)
 
@@ -195,7 +195,7 @@ Ajuste de la barra de guía central: la barra de guía central no debe bloquear 
 3. Primera Pinza  
 4. Segunda Pinza  
 
-**Ajuste de la pinza central**: la posición de la placa base donde se instala la pinza central (Figura 20-1) puede ajustarse hacia adelante o hacia atrás aflojando el tornillo de bloqueo en la placa base. El principio de ajuste es que la distancia entre el extremo delantero de la pinza central y la primera pinza sea aproximadamente la longitud de plegado del fondo de la bolsa de papel, restando 3-4 mm (Figura 21). La altura de despliegue de la pinza central se puede ajustar aflojando el brazo de ajuste en un extremo de la pinza central. El principio de ajuste es que la altura entre la pinza central y la superficie de la polea tambor esté entre 16 mm y 19 mm. El punto de liberación de la pinza central puede ajustarse mediante dos grupos de levas en la pared lateral del lado operativo, lo que determinará la calidad de las cuatro esquinas del fondo de la bolsa.
+**Ajuste de la pinza central**: la posición de la placa base donde se instala la pinza central (Figura 20-1) puede ajustarse hacia adelante o hacia atrás aflojando el tornillo de bloqueo en la placa base. El principio de ajuste es que la distancia entre el extremo delantero de la pinza central y la primera pinza sea aproximadamente la longitud de doblado del fondo de la bolsa de papel, restando 3-4 mm (Figura 21). La altura de despliegue de la pinza central se puede ajustar aflojando el brazo de ajuste en un extremo de la pinza central. El principio de ajuste es que la altura entre la pinza central y la superficie de la polea tambor esté entre 16 mm y 19 mm. El punto de liberación de la pinza central puede ajustarse mediante dos grupos de levas en la pared lateral del lado operativo, lo que determinará la calidad de las cuatro esquinas del fondo de la bolsa.
 
 ![Figura 21. Diagrama Esquemático de la Pinza Central](../../docs/img/figure_21.png)
 
@@ -223,7 +223,7 @@ La primera pinza es el punto de referencia y no es necesario ajustar su posició
 2. Pinza Lateral  
 3. Segunda Pinza  
 
-#### 4.5.2.8. Funcionamiento de la pieza de pegado inferior
+#### 4.4.2.8. Funcionamiento de la pieza de pegado inferior
 Pegue la placa de goma antes de pegar la parte inferior; el tamaño y la posición de la placa de goma deben determinarse según el ancho del cuerpo de la bolsa y el ancho de la parte inferior de la bolsa de papel. Corte la placa de goma y péguela con cinta adhesiva de doble cara a la polea de pegado (Figura 23-3). La posición relativa entre la placa de goma pegada y la parte inferior de la bolsa de papel se puede cambiar ajustando el engranaje en el extremo de la polea de pegado. El pegado de la parte inferior se puede iniciar después de completar el ajuste de las posiciones relativas de la polea de inmersión de pegamento. Polea de transferencia de pegamento, polea de pegado y cubo grande. La cantidad de pegamento que se aplicará en la parte inferior de la bolsa de papel se debe ajustar según los espacios entre las diferentes poleas.
 
 ![Figure 23. Schematic Diagram of Bottom Gluing Part](../../docs/img/figure_23.png)
@@ -237,7 +237,7 @@ Pegue la placa de goma antes de pegar la parte inferior; el tamaño y la posici�
 3. Polea de pegado
 4. Placa de goma de pegado
 
-#### 4.5.2.9. Funcionamiento de la pieza de inserción inferior
+#### 4.4.2.9. Funcionamiento de la pieza de inserción inferior
 Ajuste de la primera herramienta de ranurado: gire el eje grande hasta que la boca de apertura de la primera abrazadera esté en la línea de conexión entre el eje de la herramienta de ranurado y el eje central del eje grande. Luego afloje el tornillo de bloqueo en el brazo de soporte de la primera herramienta de ranurado y gire la primera herramienta de ranurado hasta que la cuchilla de la primera herramienta de ranurado se inserte en la boca de apertura de la primera abrazadera. Finalmente, bloquee el tornillo para evitar que se afloje.
 
 El método de ajuste de la segunda herramienta de ranurado es el mismo que el anterior. Por lo general, no es necesario volver a ajustar la primera herramienta de ranurado después de que se haya ajustado correctamente (cuando la posición no cambia), mientras que la segunda herramienta de ranurado debe ajustarse de acuerdo con la posición de la segunda abrazadera.
@@ -256,10 +256,11 @@ En cuanto a los cambios de calidad del papel, las profundidades de inserción de
 
 1. Primera herramienta de ranurado 
 2. Segunda herramienta de ranurado
-#### 4.5.2.10. Funcionamiento del plegado de fondo
-La posición de la barra de plegado inferior se puede ajustar aflojando el bloque de bloqueo de la rueda de cadena en el extremo del eje de inserción inferior. El principio de ajuste es: cuando se despliega la segunda abrazadera, la barra de plegado inferior debe colocarse justo en la posición de la segunda abrazadera, de modo que se pueda plegar la parte inferior de la bolsa.
 
-The bottom folding rod is combined by several short nylon bars according to a certain needed width. This width should not be larger than the distance between two protective rods. (There are two protective rods installed below slotting tools to prevent paper bag from falling down when the clamps are released.) Otherwise this bottom folding rod will break these two protective rods.
+#### 4.4.2.10. Funcionamiento del doblado de fondo
+La posición de la barra de doblado inferior se puede ajustar aflojando el bloque de bloqueo de la rueda de cadena en el extremo del eje de inserción inferior. El principio de ajuste es: cuando se despliega la segunda abrazadera, la barra de doblado inferior debe colocarse justo en la posición de la segunda abrazadera, de modo que se pueda plegar la parte inferior de la bolsa.
+
+La varilla de doblado de fondo se combina con varias barras cortas de nailon acorde al ancho requerido. Este ancho no deberia ser mayor a la distancia entre las dos varillas protectoras. (se hallan dos varillas protectoras debajo de las herramientas de ranurado para prevenir que la bolsa de papel se caiga cuando la abrazadera se abre.) de otro modo la varilla .
 
 ![Figure 25. Schematic Diagram of Bottom Folding Part](../../docs/img/figure_25.png)
 
