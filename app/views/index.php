@@ -13,7 +13,7 @@ require 'header.php';
 </head>
 <body>
     <div class="container">
-        <h1>Visualización de la Balanza y Contador Industrial</h1>
+        <h1>Visualización de Balanza y Contador Industrial</h1>
         <div class="display">
             <div class="display-item">
                 <h2>Balanza</h2>

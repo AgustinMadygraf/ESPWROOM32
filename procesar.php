@@ -5,8 +5,6 @@
 require_once __DIR__ . '/vendor/autoload.php'; 
 require_once __DIR__ . '/app/models/db.php';
 
-echo "Carga de datos<br>";
-
 // Verificar si los parámetros están presentes
 if (isset($_GET['balanza']) && isset($_GET['contador'])) {
     $balanza = $_GET['balanza'];
@@ -18,12 +16,32 @@ if (isset($_GET['balanza']) && isset($_GET['contador'])) {
         echo "Datos insertados correctamente<br>";
         echo "Balanza: $balanza<br>";
         echo "Contador: $contador";
+        
+        // Redireccionar a index.php después de 5 segundos
+        header("refresh:5;url=index.php");
+        echo "<br>Serás redirigido a la página principal en 5 segundos...";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
 } else {
     echo "Faltan parámetros";
+    echo '<form method="GET" action="procesar.php">
+            <table>
+                <tr>
+                    <td>Balanza:</td>
+                    <td><input type="text" name="balanza"></td>
+                </tr>
+                <tr>
+                    <td>Contador:</td>
+                    <td><input type="text" name="contador"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Enviar"></td>
+                </tr>
+            </table>
+          </form>';
 }
 
 // Cerrar conexión
 $conn->close();
+?>
