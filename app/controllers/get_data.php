@@ -1,16 +1,20 @@
 <?php
 // automatizacion/app/controllers/get_data.php
 
+// Establece un nivel de error que solo reporta errores críticos
+error_reporting(E_ERROR | E_PARSE);
+ob_start(); // Captura toda la salida, incluso advertencias
+
 require_once '../../vendor/autoload.php';
 include '../models/db.php';
 
-header('Content-Type: application/json'); // Aseguramos que la salida será JSON
+header('Content-Type: application/json'); // Asegura que la salida será JSON
 
 try {
     // Verificar si el archivo .env existe
     $envPath = '../../.env';
     if (!file_exists($envPath)) {
-        // Enviar un mensaje de error específico cuando falta el archivo .env
+        ob_end_clean(); // Limpiar el buffer antes de la respuesta
         echo json_encode([
             'error' => true,
             'message' => 'Falta el archivo de configuración',
@@ -19,20 +23,20 @@ try {
         exit();
     }
 
-    // Conexión a la base de datos realizada en db.php
+    // Verificar conexión a la base de datos
     if ($conn->connect_error) {
         throw new Exception("Conexión fallida a la base de datos: " . $conn->connect_error);
     }
 
-    // Consultar el último valor de la balanza y el contador
-    $sql = "SELECT balanza, contador FROM measurements ORDER BY id DESC LIMIT 1";
+    // Ejecutar consulta SQL
+    $sql = "SELECT balanza, contador FROM dm_measurements ORDER BY id DESC LIMIT 1";
     $result = $conn->query($sql);
 
     if ($result === false) {
         throw new Exception("Error en la consulta SQL: " . $conn->error);
     }
 
-    // Comprobar si hay resultados y devolver datos o mensaje de vacío
+    // Preparar datos para la respuesta JSON
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
         $data = [
@@ -49,9 +53,11 @@ try {
     $result->free();
     $conn->close();
 
+    ob_end_clean(); // Limpiar el buffer antes de la salida JSON
     echo json_encode(['error' => false, 'data' => $data]);
 
 } catch (Exception $e) {
+    ob_end_clean(); // Limpiar el buffer si ocurre un error
     echo json_encode([
         'error' => true,
         'message' => 'Se ha producido un error al obtener los datos.',
