@@ -5,26 +5,29 @@ let intervalId;
 function fetchData() {
     fetch('/automatizacion/app/controllers/get_data.php')
         .then(response => {
-            console.log("Respuesta recibida:", response.status);
+            const status = response.status;
             if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+                throw new Error(`HTTP error! status: ${status}`);
             }
             return response.text().then(text => {
-                console.log("Texto de respuesta:", text);
                 if (text === "") {
                     throw new Error("La respuesta está vacía.");
                 }
                 try {
-                    return JSON.parse(text);
+                    const data = JSON.parse(text);
+                    // Unificar todos los mensajes en un solo log
+                    console.log(`Respuesta completa:
+                        Estado: ${status},
+                        Texto de respuesta: ${text},
+                        Datos recibidos:`, data);
+                    return data;
                 } catch (e) {
                     throw new Error("Error de formato JSON en la respuesta.");
                 }
             });
         })
         .then(responseData => {
-            console.log("Datos recibidos:", responseData);
             if (responseData.error) {
-                // Detecta cualquier mensaje de error que mencione ".env" y redirige
                 if (responseData.details && responseData.details.includes(".env")) {
                     console.log("Redireccionando a setup/install.php debido a falta de .env");
                     window.location.href = '/automatizacion/setup/install.php';

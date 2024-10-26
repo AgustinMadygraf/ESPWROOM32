@@ -10,8 +10,8 @@ require 'header.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualización de Balanza y Contador Industrial</title>
     <link rel="stylesheet" href="../../public/css/styles.css">
-    <link rel="icon" href="../../public/images/favicon.ico" type="image/x-icon">
-</head>
+    <link rel="icon" href="/automatizacion/public/images/favicon.ico" type="image/x-icon">
+    </head>
 <body>
     <div class="container">
         <h1>Visualización de Balanza y Contador Industrial</h1>

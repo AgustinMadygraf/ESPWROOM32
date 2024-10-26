@@ -83,6 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         $conn->close();
         echo "Configuración completada con éxito. Elimina este archivo por seguridad.";
+        header("refresh:5;url=../index.php");
     } catch (Exception $e) {
         echo "Error: " . $e->getMessage();
         exit();
