@@ -1,4 +1,7 @@
 // automatizacion/public/js/script.js
+
+let intervalId;
+
 function fetchData() {
     fetch('/automatizacion/app/controllers/get_data.php')
         .then(response => {
@@ -25,17 +28,25 @@ function fetchData() {
             const data = responseData.data;
             document.getElementById('balanza-value').innerText = `${parseFloat(data.balanza).toFixed(2)} kg`;
             document.getElementById('contador-value').innerText = data.contador;
+
+            // Reiniciar el intervalo solo si la actualización fue exitosa
+            if (!intervalId) {
+                intervalId = setInterval(fetchData, 1000);
+            }
         })
         .catch(error => {
             // Unificar mensajes de error en una sola salida
             console.error(error.message);
             document.getElementById('balanza-value').innerText = "Error de conexión";
             document.getElementById('contador-value').innerText = "Error de conexión";
+
+            // Detener el intervalo en caso de error
+            if (intervalId) {
+                clearInterval(intervalId);
+                intervalId = null;
+            }
         });
 }
-
-// Llama a fetchData cada segundo
-setInterval(fetchData, 1000);
 
 // Llama a fetchData inmediatamente para cargar los datos al inicio
 fetchData();
