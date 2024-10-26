@@ -5,3 +5,4 @@ ESP32Project/__pycache__/
 .env
 vendor/
 composer.lock
+composer.phar
