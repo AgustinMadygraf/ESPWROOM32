@@ -49,7 +49,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         } else {
             throw new Exception("Error al crear la base de datos: " . $conn->error);
         }
-        
+
+        // Seleccionar la base de datos
+        $conn->select_db($dbDatabase);
+
+        // Crear la tabla measurements si no existe
+        $createTableQuery = "
+        CREATE TABLE IF NOT EXISTS `measurements` (
+          `id` int(11) NOT NULL AUTO_INCREMENT,
+          `balanza` float NOT NULL,
+          `contador` int(11) NOT NULL,
+          `timestamp` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+          PRIMARY KEY (`id`)
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+        ";
+
+        if ($conn->query($createTableQuery) === TRUE) {
+            echo "Tabla 'measurements' creada exitosamente o ya existente.<br>";
+        } else {
+            throw new Exception("Error al crear la tabla 'measurements': " . $conn->error);
+        }
+
         $conn->close();
         echo "Configuración completada con éxito. Elimina este archivo por seguridad.";
     } catch (Exception $e) {
