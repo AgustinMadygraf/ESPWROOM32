@@ -1,5 +1,5 @@
 <?php
-// ESPWROOM32/includes/header.php
+// automatizacion/includes/header.php
 
 $paginaActual = basename($_SERVER['PHP_SELF']);
 $claseActiva = "class='active'";
@@ -32,7 +32,7 @@ $navItems = [
         <ul>
             <?php foreach ($navItems as $fileName => $title): ?>
                 <li>
-                    <a href="/ESPWROOM32/<?= $fileName ?>" <?= ($paginaActual == "ESPWROOM32/$fileName") ? $claseActiva : "" ?> <?= ($fileName == '../phpMyAdmin/') ? 'target="_blank"' : '' ?>>
+                    <a href="/automatizacion/<?= $fileName ?>" <?= ($paginaActual == "automatizacion/$fileName") ? $claseActiva : "" ?> <?= ($fileName == '../phpMyAdmin/') ? 'target="_blank"' : '' ?>>
                         <?= $title ?>
                     </a>
                 </li>

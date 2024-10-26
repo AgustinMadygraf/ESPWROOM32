@@ -59,7 +59,7 @@ Para mantener un código coherente y de alta calidad, sigue estas normas de codi
 
 ## Reporte de Problemas
 
-- Si encuentras algún problema, por favor abre un [issue](https://github.com/AgustinMadygraf/ESPWROOM32/issues) y proporciona información detallada para ayudarnos a reproducir y resolver el problema.
+- Si encuentras algún problema, por favor abre un [issue](https://github.com/AgustinMadygraf/automatizacion/issues) y proporciona información detallada para ayudarnos a reproducir y resolver el problema.
 
 ## Contacto
 

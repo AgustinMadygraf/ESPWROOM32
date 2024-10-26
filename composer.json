@@ -1,8 +1,8 @@
 {
-    "name": "maq-bolsas/espwroom32",
+    "name": "maq-bolsas/automatizacion",
     "autoload": {
         "psr-4": {
-            "MaqBolsas\\Espwroom32\\": "src/"
+            "MaqBolsas\\automatizacion\\": "src/"
         }
     },
     "authors": [

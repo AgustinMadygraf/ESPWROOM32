@@ -1,5 +1,5 @@
 <?php
-// ESPWROOM32/app/models/db.php
+// automatizacion/app/models/db.php
 
 // Cargar el archivo .env
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);

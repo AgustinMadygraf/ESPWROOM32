@@ -1,5 +1,5 @@
 <?php
-// ESPWROOM32/get_data.php
+// automatizacion/get_data.php
 require '../../../vendor/autoload.php'; // Cargar Composer y phpdotenv
 include '../models/db.php';
 
