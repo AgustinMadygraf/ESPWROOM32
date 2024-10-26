@@ -70,6 +70,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             throw new Exception("Error al crear la tabla 'measurements': " . $conn->error);
         }
 
+        // Insertar un registro inicial con la hora actual
+        $insertInitialRecordQuery = "
+        INSERT INTO `measurements` (`balanza`, `contador`, `timestamp`) VALUES (0, 0, NOW());
+        ";
+
+        if ($conn->query($insertInitialRecordQuery) === TRUE) {
+            echo "Registro inicial insertado exitosamente en 'measurements' con la hora actual.<br>";
+        } else {
+            throw new Exception("Error al insertar el registro inicial en 'measurements': " . $conn->error);
+        }
+
         $conn->close();
         echo "Configuración completada con éxito. Elimina este archivo por seguridad.";
     } catch (Exception $e) {

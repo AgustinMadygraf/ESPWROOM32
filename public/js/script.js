@@ -16,12 +16,13 @@ function fetchData() {
                 }
             });
         })
-        .then(data => {
-            if (data.error) {
-                throw new Error(`Error fetching data: ${data.message} - Detalles: ${data.details || "No hay detalles adicionales"}`);
+        .then(responseData => {
+            if (responseData.error) {
+                throw new Error(`Error fetching data: ${responseData.message} - Detalles: ${responseData.details || "No hay detalles adicionales"}`);
             }
 
-            // Si no hay errores, muestra los datos
+            // Acceso correcto a los datos anidados
+            const data = responseData.data;
             document.getElementById('balanza-value').innerText = `${parseFloat(data.balanza).toFixed(2)} kg`;
             document.getElementById('contador-value').innerText = data.contador;
         })
