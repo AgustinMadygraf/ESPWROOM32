@@ -25,6 +25,6 @@ require 'header.php';
             </div>
         </div>
     </div>
-    <script src="../../public/js/script.js"></script>
+    <script src="../../public/js/script.js?v=<?php echo time(); ?>"></script>
 </body>
 </html>
