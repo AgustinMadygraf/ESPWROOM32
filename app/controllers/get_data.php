@@ -32,12 +32,21 @@ try {
     $password = $_ENV['DB_PASSWORD'];
     $database = $_ENV['DB_DATABASE'];
 
-    $conn = new mysqli($servername, $username, $password, $database);
-
-    // Verificar conexión
+    // Probar conexión inicial al servidor MySQL sin especificar base de datos para verificar credenciales
+    $conn = new mysqli($servername, $username, $password);
     if ($conn->connect_error) {
-        throw new Exception("Conexión fallida a la base de datos: " . $conn->connect_error . ". Verifica que las credenciales en .env son correctas y que el servidor de base de datos está accesible.");
+        throw new Exception("Conexión fallida al servidor MySQL: " . $conn->connect_error . ". Verifica que el host, usuario y contraseña en .env son correctos.");
     }
+
+    // Verificar si la base de datos existe
+    $db_selected = $conn->select_db($database);
+    if (!$db_selected) {
+        throw new Exception("La base de datos '{$database}' no existe o no es accesible. Verifica que el nombre de la base de datos en .env sea correcto y que tengas permisos para acceder a ella.");
+    }
+
+    // Cerrar y abrir nuevamente la conexión, ahora especificando la base de datos
+    $conn->close();
+    $conn = new mysqli($servername, $username, $password, $database);
 
 } catch (Exception $e) {
     // Mostrar un mensaje de error detallado en JSON para facilitar la depuración
