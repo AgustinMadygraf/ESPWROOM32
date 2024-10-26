@@ -1,59 +1,53 @@
 <?php
-// automatizacion/app/models/db.php
+// automatizacion/app/controllers/get_data.php
 
 require_once '../../vendor/autoload.php';
+include '../models/db.php';
 
-use Dotenv\Dotenv;
+header('Content-Type: application/json'); // Aseguramos que la salida será JSON
 
 try {
-    // Ruta correcta a la raíz del proyecto
-    $dotenvPath = dirname(__DIR__, 2); // Esto apunta a la raíz "C:\AppServ\www\automatizacion"
-    $expectedEnvPath = $dotenvPath . '/.env';
-
-    if (!file_exists($expectedEnvPath)) {
-        throw new Exception("Error: El archivo de configuración .env no se encuentra en la ruta esperada: {$expectedEnvPath}. Asegúrate de que el archivo .env esté ubicado en la raíz del proyecto.");
-    }
-
-    // Cargar el archivo .env
-    $dotenv = Dotenv::createImmutable($dotenvPath);
-    $dotenv->load();
-
-    // Verificar que las variables de entorno necesarias están definidas
-    $requiredVars = ['DB_HOST', 'DB_USERNAME', 'DB_PASSWORD', 'DB_DATABASE'];
-    foreach ($requiredVars as $var) {
-        if (!isset($_ENV[$var]) || empty($_ENV[$var])) {
-            throw new Exception("Error: La variable de entorno {$var} no está definida o está vacía en el archivo .env. Revisa que todas las variables necesarias estén correctamente configuradas.");
-        }
-    }
-
-    // Conexión a la base de datos MySQL usando las variables de entorno
-    $servername = $_ENV['DB_HOST'];
-    $username = $_ENV['DB_USERNAME'];
-    $password = $_ENV['DB_PASSWORD'];
-    $database = $_ENV['DB_DATABASE'];
-
-    // Probar conexión inicial al servidor MySQL sin especificar base de datos para verificar credenciales
-    $conn = new mysqli($servername, $username, $password);
+    // Conexión a la base de datos realizada en db.php
+    // Verificar conexión global desde db.php
     if ($conn->connect_error) {
-        throw new Exception("Conexión fallida al servidor MySQL: " . $conn->connect_error . ". Verifica que el host, usuario y contraseña en .env son correctos.");
+        throw new Exception("Conexión fallida a la base de datos: " . $conn->connect_error);
     }
 
-    // Verificar si la base de datos existe
-    $db_selected = $conn->select_db($database);
-    if (!$db_selected) {
-        throw new Exception("La base de datos '{$database}' no existe o no es accesible. Verifica que el nombre de la base de datos en .env sea correcto y que tengas permisos para acceder a ella.");
+    // Consultar el último valor de la balanza y el contador
+    $sql = "SELECT balanza, contador FROM measurements ORDER BY id DESC LIMIT 1";
+    $result = $conn->query($sql);
+
+    if ($result === false) {
+        throw new Exception("Error en la consulta SQL: " . $conn->error);
     }
 
-    // Cerrar y abrir nuevamente la conexión, ahora especificando la base de datos
+    // Comprobar si hay resultados y devolver datos o mensaje de vacío
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        $data = [
+            'balanza' => (float) $row['balanza'], // Aseguramos el tipo de datos
+            'contador' => (int) $row['contador']
+        ];
+    } else {
+        // Si no hay datos, devolver valores predeterminados
+        $data = [
+            'balanza' => 0.0,
+            'contador' => 0
+        ];
+    }
+
+    // Liberar el resultado y cerrar la conexión
+    $result->free();
     $conn->close();
-    $conn = new mysqli($servername, $username, $password, $database);
+
+    // Devolver los datos en formato JSON
+    echo json_encode(['error' => false, 'data' => $data]);
 
 } catch (Exception $e) {
-    // Mostrar un mensaje de error detallado en JSON para facilitar la depuración
-    header('Content-Type: application/json');
+    // Manejo de errores y devolución en JSON
     echo json_encode([
         'error' => true,
-        'message' => 'Error al conectar con la base de datos.',
+        'message' => 'Se ha producido un error al obtener los datos.',
         'details' => $e->getMessage()
     ]);
     exit();
