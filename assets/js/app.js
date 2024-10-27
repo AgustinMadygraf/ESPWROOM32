@@ -1,4 +1,7 @@
-// assets/js/app.js
-import '../css/global.scss';
+// automatizacion/assets/js/app.js
+import { createApp } from 'vue';
+import DataFetcher from './components/DataFetcher.vue';
 
-console.log('Hello, Webpack Encore!');
+const app = createApp({});
+app.component('DataFetcher', DataFetcher);
+app.mount('#app');
