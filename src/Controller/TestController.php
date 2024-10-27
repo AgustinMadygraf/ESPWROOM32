@@ -9,8 +9,8 @@ use Symfony\Component\Routing\Annotation\Route;
 class TestController extends AbstractController
 {
     #[Route('/test-header', name: 'test_header')]
-    public function testHeader(): Response
+    public function index(): Response
     {
-        return $this->render('test/test_header.html.twig');
+        return $this->render('header/test_header.html.twig'); // Asegúrate de que existe el archivo Twig
     }
 }

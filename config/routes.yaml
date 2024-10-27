@@ -30,3 +30,7 @@ manualoperacion:
 computerVision:
     path: /computerVision
     controller: App\Controller\PageController::computerVision
+
+controllers:
+    resource: '../src/Controller/'
+    type: annotation
