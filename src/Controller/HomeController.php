@@ -18,5 +18,4 @@ class HomeController extends AbstractController
             'title' => 'Visualización de Balanza y Contador Industrial',
         ]);
     }
-
 }
