@@ -1,5 +1,5 @@
 <?php
-// automatizacion/app/controllers/get_data.php
+// automatizacion/app/controllers/get_data_2.php (dev)
 
 // Establece un nivel de error que reporta todos los errores para desarrollo
 error_reporting(E_ALL);

@@ -1,4 +1,4 @@
-// automatizacion/public/js/script.js
+// automatizacion/public/js/script.js (dev)
 
 let intervalId;
 
