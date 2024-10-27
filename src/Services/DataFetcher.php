@@ -27,8 +27,8 @@ class DataFetcher
             // Obtener la conexión a la base de datos
             $conn = $this->dbConnection->getConnection();
 
-            // Consulta para obtener los datos (modifica según tu esquema)
-            $query = "SELECT balanza, contador FROM datos ORDER BY id DESC LIMIT 1";
+            // Actualizar la consulta para reflejar el nombre real de la tabla y las columnas
+            $query = "SELECT balanza, contador FROM dm_measurements ORDER BY id DESC LIMIT 1";
             $stmt = $conn->prepare($query);
             $stmt->execute();
 
