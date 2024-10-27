@@ -7,7 +7,8 @@ ob_start(); // Captura toda la salida, incluso advertencias
 
 require_once '../../vendor/autoload.php';
 include '../services/DatabaseConnection.php';
-include '../services/ConfigChecker.php'; // Incluir la clase ConfigChecker
+include '../services/ConfigChecker.php';
+include '../services/DataFetcher.php'; // Incluir la clase DataFetcher
 
 header('Content-Type: application/json'); // Asegura que la salida será JSON
 
@@ -28,29 +29,10 @@ try {
     $dbConnection = new DatabaseConnection();
     $conn = $dbConnection->getConnection();
 
-    // Ejecutar consulta SQL
-    $sql = "SELECT balanza, contador FROM dm_measurements ORDER BY id DESC LIMIT 1";
-    $result = $conn->query($sql);
+    // Crear una instancia de DataFetcher y obtener los datos
+    $dataFetcher = new DataFetcher($conn);
+    $data = $dataFetcher->fetchLatestData();
 
-    if ($result === false) {
-        throw new Exception("Error en la consulta SQL: " . $conn->error);
-    }
-
-    // Preparar datos para la respuesta JSON
-    if ($result->num_rows > 0) {
-        $row = $result->fetch_assoc();
-        $data = [
-            'balanza' => (float) $row['balanza'],
-            'contador' => (int) $row['contador']
-        ];
-    } else {
-        $data = [
-            'balanza' => 0.0,
-            'contador' => 0
-        ];
-    }
-
-    $result->free();
     $dbConnection->close(); // Cierra la conexión usando el método close()
 
     ob_end_clean(); // Limpiar el buffer antes de la salida JSON
