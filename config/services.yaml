@@ -1,18 +1,20 @@
-# This file is the entry point to configure your own services.
-# Files in the packages/ subdirectory configure your dependencies.
+# services.yaml
 
-# Put parameters here that don't need to change on each machine where the app is deployed
-# https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
+# Este archivo configura los servicios personalizados y establece los parámetros necesarios.
+# Los archivos en el subdirectorio packages/ configuran dependencias adicionales.
+
 parameters:
+    # Define aquí parámetros que no necesitan cambiarse en cada despliegue
+    # https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
 
 services:
-    # default configuration for services in *this* file
+    # Configuración predeterminada para los servicios en este archivo
     _defaults:
-        autowire: true      # Automatically injects dependencies in your services.
-        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+        autowire: true      # Inyecta automáticamente las dependencias en los servicios
+        autoconfigure: true # Registra automáticamente servicios como comandos, suscriptores de eventos, etc.
 
-    # makes classes in src/ available to be used as services
-    # this creates a service per class whose id is the fully-qualified class name
+    # Permite el uso de clases en el directorio src/ como servicios
+    # Esto crea un servicio por cada clase cuyo id es el nombre completo de la clase
     App\:
         resource: '../src/'
         exclude:
@@ -20,5 +22,19 @@ services:
             - '../src/Entity/'
             - '../src/Kernel.php'
 
-    # add more service definitions when explicit configuration is needed
-    # please note that last definitions always *replace* previous ones
+    # Definiciones de servicios adicionales
+    # Las configuraciones más específicas sobrescriben las configuraciones anteriores
+
+    # Servicio ConfigChecker para verificar la existencia del archivo de configuración .env
+    App\Services\ConfigChecker:
+        arguments:
+            $path: '%kernel.project_dir%/.env'
+
+    # Servicio DatabaseConnection para manejar la conexión a la base de datos
+    # (se pueden agregar configuraciones adicionales si es necesario)
+    App\Services\DatabaseConnection: ~
+
+    # Servicio DataFetcher para obtener datos de la base de datos
+    App\Services\DataFetcher:
+        arguments:
+            $dbConnection: '@App\Services\DatabaseConnection'
