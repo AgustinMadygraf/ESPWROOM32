@@ -6,15 +6,15 @@ error_reporting(E_ERROR | E_PARSE);
 ob_start(); // Captura toda la salida, incluso advertencias
 
 require_once '../../vendor/autoload.php';
-include '../models/db.php';
-include '../services/ConfigChecker.php'; // Incluir la nueva clase ConfigChecker
+include '../services/DatabaseConnection.php';
+include '../services/ConfigChecker.php'; // Incluir la clase ConfigChecker
 
 header('Content-Type: application/json'); // Asegura que la salida será JSON
 
 try {
     // Instancia de ConfigChecker para verificar la existencia del archivo .env
     $configChecker = new ConfigChecker('../../.env');
-    if (!$configChecker->check()) { // Método check() devuelve false si el archivo .env no existe
+    if (!$configChecker->check()) {
         ob_end_clean(); // Limpiar el buffer antes de la respuesta
         echo json_encode([
             'error' => true,
@@ -24,10 +24,9 @@ try {
         exit();
     }
 
-    // Verificar conexión a la base de datos
-    if ($conn->connect_error) {
-        throw new Exception("Conexión fallida a la base de datos: " . $conn->connect_error);
-    }
+    // Establecer conexión a la base de datos usando DatabaseConnection
+    $dbConnection = new DatabaseConnection();
+    $conn = $dbConnection->getConnection();
 
     // Ejecutar consulta SQL
     $sql = "SELECT balanza, contador FROM dm_measurements ORDER BY id DESC LIMIT 1";
@@ -52,7 +51,7 @@ try {
     }
 
     $result->free();
-    $conn->close();
+    $dbConnection->close(); // Cierra la conexión usando el método close()
 
     ob_end_clean(); // Limpiar el buffer antes de la salida JSON
     echo json_encode(['error' => false, 'data' => $data]);
