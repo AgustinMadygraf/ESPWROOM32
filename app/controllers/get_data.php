@@ -1,8 +1,8 @@
 <?php
 // automatizacion/app/controllers/get_data.php
 
-// Establece un nivel de error que solo reporta errores críticos
-error_reporting(E_ERROR | E_PARSE);
+// Establece un nivel de error que reporta todos los errores para desarrollo
+error_reporting(E_ALL);
 ob_start(); // Captura toda la salida, incluso advertencias
 
 require_once '../../vendor/autoload.php';
@@ -13,6 +13,12 @@ include '../services/DataFetcher.php';
 // Configuración para registrar errores en un archivo de log
 ini_set('log_errors', 1);
 ini_set('error_log', __DIR__ . '/../../logs/error_log.txt'); // Ruta del log (asegúrate de que 'logs' tenga permisos de escritura)
+
+// Probar si `log_errors` está habilitado (temporal para depuración)
+var_dump(ini_get('log_errors')); // Esto debería mostrar "1" en pantalla, indica que `log_errors` está activo
+
+// Probar un mensaje de error directo para verificar si el log funciona
+error_log("Mensaje de prueba: Verificar si se puede escribir en el log.");
 
 // Configuración temporal para mostrar errores en pantalla (solo para desarrollo)
 ini_set('display_errors', 1);
