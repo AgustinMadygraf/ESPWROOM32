@@ -1,0 +1,11 @@
+{
+  "name": "automatizacion",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:AgustinMadygraf/automatizacion.git",
+  "author": "AgustinMadygraf <agustin.mtto.madygraf>",
+  "license": "MIT",
+  "devDependencies": {
+    "@symfony/webpack-encore": "^5.0.1"
+  }
+}
