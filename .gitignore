@@ -31,6 +31,8 @@ app/docs/00-Prompt-for-ProjectAnalysis.md
 .DS_Store
 Thumbs.db
 run_servidor.ps1
-
-node_modules/
 yarn.lock
+
+# Node.js dependencies
+node_modules/
+package-lock.json
