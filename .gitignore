@@ -1,12 +1,32 @@
-
-###> symfony/framework-bundle ###
+### Symfony Framework Bundle ###
 /.env.local
 /.env.local.php
 /.env.*.local
 /config/secrets/prod/prod.decrypt.private.php
 /public/bundles/
-/var/
-/vendor/
 ###< symfony/framework-bundle ###
+
+# Environment Files
+.env
+.env.*.local
+
+# Symfony Cache, Logs, and Profiler
+/var/
+/var/cache/
+/var/log/
+/var/profiler/
+
+# Dependencies
+/vendor/
+
+# Frontend Build Files
+/public/build/
+
+# Project-Specific Files
 deploy_to_main.ps1
 app/docs/00-Prompt-for-ProjectAnalysis.md
+
+# System and Editor Files
+.vscode/
+.DS_Store
+Thumbs.db

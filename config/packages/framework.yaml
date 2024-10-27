@@ -16,6 +16,9 @@ framework:
     #fragments: true
     php_errors:
         log: true
+# config/packages/framework.yaml
+    assets:
+        base_path: '%env(resolve:ASSETS_BASE_PATH)%'
 
 when@test:
     framework:

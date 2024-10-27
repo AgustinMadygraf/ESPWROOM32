@@ -1,4 +1,4 @@
 # config/routes.yaml
-get_data_2:
-  path: /automatizacion/app/controllers/get_data_2
-  controller: App\Controller\DataController::getData2
+get_data:
+    path: /automatizacion/get_data
+    controller: App\Controller\GetData2Controller::getData
