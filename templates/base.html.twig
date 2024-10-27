@@ -11,9 +11,9 @@
 <body>
     {% block body %}
     {% endblock %}
-    <script src="{{ asset('build/runtime.js') }}"></script>
-    <script src="{{ asset('build/app.js') }}"></script>
-    <script src="{{ asset('build/vue_app.js') }}"></script>
+    {{ encore_entry_script_tags('runtime') }}
+    {{ encore_entry_script_tags('app') }}
+    {{ encore_entry_script_tags('vue_app') }} {# Usa esta línea para incluir vue_app.js #}
     {% block javascripts %}
     {% endblock %}
 </body>
