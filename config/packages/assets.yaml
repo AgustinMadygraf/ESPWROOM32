@@ -1,0 +1,5 @@
+framework:
+    assets:
+        packages:
+            build:
+                base_path: '/build'
