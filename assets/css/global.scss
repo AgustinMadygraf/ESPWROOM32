@@ -1,4 +1,4 @@
 // assets/css/global.scss
-@import "~bootstrap/scss/bootstrap"; // Importación de Bootstrap
-@import "./styles";
-@import "./header";
+@use "~bootstrap/scss/bootstrap";
+@use "./styles";
+@use "./header";
