@@ -10,3 +10,6 @@ deploy_to_main.ps1
 public/docs/00-Prompt-for-ProjectAnalysis.md
 app/docs/00-Prompt-for-ProjectAnalysis.md
 var/
+run_servidor.ps1
+yarn.lock
+node_modules/
