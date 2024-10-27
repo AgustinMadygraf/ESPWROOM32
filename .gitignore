@@ -6,3 +6,4 @@ ESP32Project/__pycache__/
 vendor/
 composer.lock
 composer.phar
+deploy_to_main.ps1
