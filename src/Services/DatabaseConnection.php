@@ -3,15 +3,34 @@
 
 namespace App\Services;
 
+use PDO;
+use Exception;
+
 class DatabaseConnection
 {
-    public function getConnection()
+    private ?PDO $connection = null;
+
+    public function getConnection(): PDO
     {
-        // Aquí iría la lógica para obtener la conexión a la base de datos
+        if ($this->connection === null) {
+            try {
+                $dsn = "mysql:host=localhost;dbname=tu_base_de_datos"; // Ajusta el DSN según tus necesidades
+                $username = "tu_usuario";
+                $password = "tu_contraseña";
+                
+                // Crear una nueva conexión PDO
+                $this->connection = new PDO($dsn, $username, $password);
+                $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            } catch (Exception $e) {
+                throw new Exception("Error al conectar con la base de datos: " . $e->getMessage());
+            }
+        }
+
+        return $this->connection;
     }
 
-    public function close()
+    public function close(): void
     {
-        // Aquí iría la lógica para cerrar la conexión a la base de datos
+        $this->connection = null;
     }
 }
