@@ -1,5 +1,5 @@
-// assets/js/vue_app.js
 import { createApp } from 'vue';
+import DataFetcher from './components/DataFetcher.vue';
 
 document.addEventListener('DOMContentLoaded', () => {
     const appContainer = document.getElementById('app');
@@ -9,13 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
         appContainer.__vue_app__.unmount();
     }
 
+    // Crea la aplicación Vue con el componente DataFetcher
     const app = createApp({
-        data() {
-            return {
-                message: '¡Hola desde Vue en Symfony!'
-            };
+        components: {
+            DataFetcher
         },
-        template: `<div>{{ message }}</div>`
+        template: `<DataFetcher />`
     });
 
     // Guarda la instancia para futuras verificaciones

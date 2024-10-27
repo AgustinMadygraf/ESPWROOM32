@@ -13,18 +13,24 @@ import { ref, onMounted, onBeforeUnmount } from 'vue';
 export default {
     name: 'DataFetcher',
     setup() {
+        console.log("DataFetcher component mounted");
         const balanza = ref("Cargando...");
         const contador = ref("Cargando...");
         const errorMessage = ref(null);
         let intervalId = null;
 
         const fetchData = () => {
+            console.log("Ejecutando fetchData"); // Confirmación de ejecución
+
             fetch('/automatizacion/get_data')
                 .then(response => {
+                    console.log("Respuesta recibida:", response); // Ver el estado de la respuesta
                     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                     return response.json();
                 })
                 .then(responseData => {
+                    console.log("Datos recibidos:", responseData); // Mostrar los datos recibidos
+
                     if (responseData.error) {
                         if (responseData.redirect) {
                             window.location.href = responseData.redirect;
@@ -36,21 +42,12 @@ export default {
 
                     balanza.value = `${parseFloat(responseData.data.balanza).toFixed(2)} kg`;
                     contador.value = responseData.data.contador;
-
-                    if (!intervalId) {
-                        intervalId = setInterval(fetchData, 1000);
-                    }
                 })
                 .catch(error => {
-                    console.error("Error capturado:", error.message);
+                    console.error("Error capturado en fetchData:", error.message);
                     balanza.value = "Error de conexión";
                     contador.value = "Error de conexión";
                     errorMessage.value = error.message;
-
-                    if (intervalId) {
-                        clearInterval(intervalId);
-                        intervalId = null;
-                    }
                 });
         };
 
