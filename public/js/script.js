@@ -5,26 +5,8 @@ let intervalId;
 function fetchData() {
     fetch('/automatizacion/get_data')
         .then(response => {
-            const status = response.status;
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${status}`);
-            }
-            return response.text().then(text => {
-                if (text === "") {
-                    throw new Error("La respuesta está vacía.");
-                }
-                try {
-                    const data = JSON.parse(text);
-                    // Unificar todos los mensajes en un solo log
-                    console.log(`Respuesta completa:
-                        Estado: ${status},
-                        Texto de respuesta: ${text},
-                        Datos recibidos:`, data);
-                    return data;
-                } catch (e) {
-                    throw new Error("Error de formato JSON en la respuesta.");
-                }
-            });
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            return response.json();
         })
         .then(responseData => {
             if (responseData.error) {
@@ -33,7 +15,7 @@ function fetchData() {
                     window.location.href = '/automatizacion/setup/install.php';
                     return;
                 }
-                throw new Error(`Error fetching data: ${responseData.message} - Detalles: ${responseData.details || "No hay detalles adicionales"}`);
+                throw new Error(`Error fetching data: ${responseData.message}`);
             }
 
             const data = responseData.data;

@@ -11,12 +11,26 @@ class DataController extends AbstractController
     #[Route('/automatizacion/get_data', name: 'get_data')]
     public function getData(): JsonResponse
     {
-        // Lógica de `get_data_2.php` migrada aquí
+        // Aquí colocas la lógica real para obtener los datos.
+        // Ejemplo de valores simulados:
         $data = [
-            'balanza' => 0, // Valor simulado, reemplaza con lógica real
-            'contador' => 0, // Valor simulado, reemplaza con lógica real
+            'balanza' => 100.25, // Reemplaza con el valor real
+            'contador' => 42,    // Reemplaza con el valor real
         ];
 
-        return new JsonResponse(['error' => false, 'data' => $data]);
+        // Validación de errores, ejemplo
+        if (/* condición para error */ false) {
+            return new JsonResponse([
+                'error' => true,
+                'message' => 'Descripción del error',
+                'details' => 'Detalles adicionales, si aplica',
+            ]);
+        }
+
+        // Respuesta exitosa
+        return new JsonResponse([
+            'error' => false,
+            'data' => $data
+        ]);
     }
 }
