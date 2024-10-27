@@ -11,7 +11,7 @@ if (isset($_GET['balanza']) && isset($_GET['contador'])) {
     $contador = $_GET['contador'];
 
     // Preparar y ejecutar la consulta SQL
-    $sql = "INSERT INTO measurements (balanza, contador) VALUES ('$balanza', '$contador')";
+    $sql = "INSERT INTO dm_measurements (balanza, contador) VALUES ('$balanza', '$contador')";
     if ($conn->query($sql) === TRUE) {
         echo "Datos insertados correctamente<br>";
         echo "Balanza: $balanza<br>";

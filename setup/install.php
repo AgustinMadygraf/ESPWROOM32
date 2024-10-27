@@ -53,9 +53,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Seleccionar la base de datos
         $conn->select_db($dbDatabase);
 
-        // Crear la tabla measurements si no existe
+        // Crear la tabla dm_measurements si no existe
         $createTableQuery = "
-        CREATE TABLE IF NOT EXISTS `measurements` (
+        CREATE TABLE IF NOT EXISTS `dm_measurements` (
           `id` int(11) NOT NULL AUTO_INCREMENT,
           `balanza` float NOT NULL,
           `contador` int(11) NOT NULL,
@@ -65,20 +65,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         ";
 
         if ($conn->query($createTableQuery) === TRUE) {
-            echo "Tabla 'measurements' creada exitosamente o ya existente.<br>";
+            echo "Tabla 'dm_measurements' creada exitosamente o ya existente.<br>";
         } else {
-            throw new Exception("Error al crear la tabla 'measurements': " . $conn->error);
+            throw new Exception("Error al crear la tabla 'dm_measurements': " . $conn->error);
         }
 
         // Insertar un registro inicial con la hora actual
         $insertInitialRecordQuery = "
-        INSERT INTO `measurements` (`balanza`, `contador`, `timestamp`) VALUES (0, 0, NOW());
+        INSERT INTO `dm_measurements` (`balanza`, `contador`, `timestamp`) VALUES (0, 0, NOW());
         ";
 
         if ($conn->query($insertInitialRecordQuery) === TRUE) {
-            echo "Registro inicial insertado exitosamente en 'measurements' con la hora actual.<br>";
+            echo "Registro inicial insertado exitosamente en 'dm_measurements' con la hora actual.<br>";
         } else {
-            throw new Exception("Error al insertar el registro inicial en 'measurements': " . $conn->error);
+            throw new Exception("Error al insertar el registro inicial en 'dm_measurements': " . $conn->error);
         }
 
         $conn->close();

@@ -29,7 +29,7 @@ try {
     }
 
     // Ejecutar consulta SQL
-    $sql = "SELECT balanza, contador FROM dm_measurements ORDER BY id DESC LIMIT 1";
+    $sql = "SELECT balanza, contador FROM dm_dm_measurements ORDER BY id DESC LIMIT 1";
     $result = $conn->query($sql);
 
     if ($result === false) {

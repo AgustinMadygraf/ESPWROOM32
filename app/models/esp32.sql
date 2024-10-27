@@ -25,10 +25,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `measurements`
+-- Estructura de tabla para la tabla `dm_measurements`
 --
 
-CREATE TABLE `measurements` (
+CREATE TABLE `dm_measurements` (
   `id` int(11) NOT NULL,
   `balanza` float NOT NULL,
   `contador` int(11) NOT NULL,
@@ -36,10 +36,10 @@ CREATE TABLE `measurements` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Volcado de datos para la tabla `measurements`
+-- Volcado de datos para la tabla `dm_measurements`
 --
 
-INSERT INTO `measurements` (`id`, `balanza`, `contador`, `timestamp`) VALUES
+INSERT INTO `dm_measurements` (`id`, `balanza`, `contador`, `timestamp`) VALUES
 (1, 500, 70, '2024-08-26 18:23:46'),
 (2, 500, 72, '2024-08-26 18:25:49'),
 (3, 500, 70, '2024-08-26 18:27:18'),
@@ -279,9 +279,9 @@ INSERT INTO `tabla_2` (`id`, `contador`, `fechahora`) VALUES
 --
 
 --
--- Indices de la tabla `measurements`
+-- Indices de la tabla `dm_measurements`
 --
-ALTER TABLE `measurements`
+ALTER TABLE `dm_measurements`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -307,9 +307,9 @@ ALTER TABLE `tabla_2`
 --
 
 --
--- AUTO_INCREMENT de la tabla `measurements`
+-- AUTO_INCREMENT de la tabla `dm_measurements`
 --
-ALTER TABLE `measurements`
+ALTER TABLE `dm_measurements`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
