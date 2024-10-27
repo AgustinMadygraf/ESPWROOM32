@@ -1,72 +1,72 @@
 <?php
-// automatizacion/app/controllers/get_data_2.php (dev)
+// automatizacion/app/controllers/get_data_2.php
 
-// Establece un nivel de error que reporta todos los errores para desarrollo
+// Habilitar la captura de todos los errores durante el desarrollo
 error_reporting(E_ALL);
-ob_start(); // Captura toda la salida, incluso advertencias
+ob_start(); // Captura toda la salida, incluyendo advertencias y errores
 
+// Autoload de Composer y archivos necesarios
 require_once '../../vendor/autoload.php';
 include '../services/DatabaseConnection.php';
 include '../services/ConfigChecker.php';
 include '../services/DataFetcher.php';
 
-// Configuración para registrar errores en un archivo de log
+// Configuración de registro de errores
 ini_set('log_errors', 1);
-ini_set('error_log', __DIR__ . '/../../logs/error_log.txt'); // Ruta del log (asegúrate de que 'logs' tenga permisos de escritura)
-
-// Probar si `log_errors` está habilitado (temporal para depuración)
-var_dump(ini_get('log_errors')); // Esto debería mostrar "1" en pantalla, indica que `log_errors` está activo
-
-// Probar un mensaje de error directo para verificar si el log funciona
-error_log("Mensaje de prueba: Verificar si se puede escribir en el log.");
-
-// Configuración temporal para mostrar errores en pantalla (solo para desarrollo)
-ini_set('display_errors', 1);
+ini_set('error_log', __DIR__ . '/../../logs/error_log.txt'); // Ruta para el log de errores
+ini_set('display_errors', 1); // Muestra errores en pantalla para desarrollo
 ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 
-header('Content-Type: application/json'); // Asegura que la salida será JSON
+header('Content-Type: application/json'); // Formato JSON para la salida
 
 try {
-    // Instancia de ConfigChecker para verificar la existencia del archivo .env
+    // Verificar existencia del archivo .env
     $configChecker = new ConfigChecker('../../.env');
     if (!$configChecker->check()) {
-        ob_end_clean(); // Limpiar el buffer antes de la respuesta
-        echo json_encode([
-            'error' => true,
-            'message' => 'Falta el archivo de configuración',
-            'details' => 'El archivo .env no se encuentra en la ruta esperada. Redirigiendo a la instalación.'
-        ]);
-        exit();
+        // Si no se encuentra el archivo .env, devolver un mensaje de error claro
+        respondWithError(
+            'Falta el archivo de configuración',
+            'El archivo .env no se encuentra en la ruta esperada. Redirigiendo a la instalación.'
+        );
     }
 
-    // Establecer conexión a la base de datos usando DatabaseConnection
+    // Conectar a la base de datos
     $dbConnection = new DatabaseConnection();
     $conn = $dbConnection->getConnection();
 
-    // Crear una instancia de DataFetcher y obtener los datos
+    // Obtener los datos necesarios usando DataFetcher
     $dataFetcher = new DataFetcher($conn);
     $data = $dataFetcher->fetchLatestData();
 
-    $dbConnection->close(); // Cierra la conexión usando el método close()
+    // Cerrar la conexión de base de datos
+    $dbConnection->close();
 
-    ob_end_clean(); // Limpiar el buffer antes de la salida JSON
+    // Limpiar el buffer y responder con los datos en formato JSON
+    ob_end_clean();
     echo json_encode(['error' => false, 'data' => $data]);
 
 } catch (Exception $e) {
-    ob_end_clean(); // Limpiar el buffer si ocurre un error
+    // En caso de error, responder con un mensaje detallado
+    ob_end_clean();
+    error_log("Error en get_data_2.php: " . $e->getMessage());
+    respondWithError('Se ha producido un error al obtener los datos.', [
+        'errorMessage' => $e->getMessage(),
+        'trace' => $e->getTraceAsString()
+    ]);
+}
 
-    // Registrar el mensaje detallado del error en el archivo de log
-    error_log("Error en get_data.php: " . $e->getMessage());
-
-    // Enviar detalles del error en la respuesta JSON (para desarrollo)
+/**
+ * Función auxiliar para responder con un mensaje de error en formato JSON.
+ *
+ * @param string $message Mensaje de error simple.
+ * @param mixed $details Información adicional sobre el error (opcional).
+ */
+function respondWithError($message, $details = null)
+{
     echo json_encode([
         'error' => true,
-        'message' => 'Se ha producido un error al obtener los datos.',
-        'details' => [
-            'errorMessage' => $e->getMessage(),
-            'trace' => $e->getTraceAsString() // Agrega el stack trace para mayor contexto
-        ]
+        'message' => $message,
+        'details' => $details
     ]);
     exit();
 }

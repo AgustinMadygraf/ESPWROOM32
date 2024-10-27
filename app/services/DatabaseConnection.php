@@ -4,7 +4,6 @@
 require_once '../../vendor/autoload.php';
 
 use Dotenv\Dotenv;
-use mysqli;
 
 class DatabaseConnection
 {
