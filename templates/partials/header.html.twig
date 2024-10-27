@@ -1,0 +1,27 @@
+{# templates/partials/header.html.twig #}
+<header>
+    <div class='topnav'>
+        <ul>
+            {% set navItems = {
+                'index': 'Inicio',
+                'mantenimiento': 'Mantenimiento',
+                'electronica': 'Electrónica',
+                'sustentabilidad': 'Sustentabilidad',
+                'oee': 'OEE',
+                'manualoperacion': 'Manual de Operación',
+                'computerVision': 'Visión Artificial',
+                'phpMyAdmin': 'PHP MyAdmin'
+            } %}
+
+            {% for route, title in navItems %}
+                <li>
+                    <a href="{{ route == 'phpMyAdmin' ? '/phpMyAdmin/' : path(route) }}" 
+                       class="{{ app.request.attributes.get('_route') == route ? 'active' : '' }}" 
+                       target="{{ route == 'phpMyAdmin' ? '_blank' : '_self' }}">
+                        {{ title }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</header>

@@ -2,3 +2,31 @@
 get_data:
     path: /automatizacion/get_data
     controller: App\Controller\GetData2Controller::getData
+
+index:
+    path: /
+    controller: App\Controller\PageController::index
+
+mantenimiento:
+    path: /mantenimiento
+    controller: App\Controller\PageController::mantenimiento
+
+electronica:
+    path: /electronica
+    controller: App\Controller\PageController::electronica
+
+sustentabilidad:
+    path: /sustentabilidad
+    controller: App\Controller\PageController::sustentabilidad
+
+oee:
+    path: /oee
+    controller: App\Controller\PageController::oee
+
+manualoperacion:
+    path: /manualoperacion
+    controller: App\Controller\PageController::manualOperacion
+
+computerVision:
+    path: /computerVision
+    controller: App\Controller\PageController::computerVision

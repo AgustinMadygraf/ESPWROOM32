@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Visualización de Balanza y Contador Industrial{% endblock %}
+
+{% block body %}
+    {% include 'partials/header.html.twig' %} {# Aquí se incluye el header #}
+
+    <div class="container">
+        <h1>Visualización Balanza - Contador Industrial</h1>
+        <div class="display">
+            <div class="display-item">
+                <h2>Balanza</h2>
+                <p id="balanza-value">Cargando...</p>
+            </div>
+            <div class="display-item">
+                <h2>Contador Industrial</h2>
+                <p id="contador-value">Cargando...</p>
+            </div>
+        </div>
+    </div>
+    <script src="{{ asset('js/script.js') }}?v={{ random() }}"></script>
+{% endblock %}
