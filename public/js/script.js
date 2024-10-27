@@ -1,4 +1,4 @@
-// automatizacion/public/js/script.js
+// automatizacion/public/js/script.js (rama sympony)
 
 let intervalId;
 function fetchData() {
