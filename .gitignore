@@ -30,7 +30,6 @@ app/docs/00-Prompt-for-ProjectAnalysis.md
 .vscode/
 .DS_Store
 Thumbs.db
-run_servidor.ps1
 yarn.lock
 
 # Node.js dependencies
