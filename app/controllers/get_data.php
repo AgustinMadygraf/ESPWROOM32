@@ -7,13 +7,14 @@ ob_start(); // Captura toda la salida, incluso advertencias
 
 require_once '../../vendor/autoload.php';
 include '../models/db.php';
+include '../services/ConfigChecker.php'; // Incluir la nueva clase ConfigChecker
 
 header('Content-Type: application/json'); // Asegura que la salida será JSON
 
 try {
-    // Verificar si el archivo .env existe
-    $envPath = '../../.env';
-    if (!file_exists($envPath)) {
+    // Instancia de ConfigChecker para verificar la existencia del archivo .env
+    $configChecker = new ConfigChecker('../../.env');
+    if (!$configChecker->check()) { // Método check() devuelve false si el archivo .env no existe
         ob_end_clean(); // Limpiar el buffer antes de la respuesta
         echo json_encode([
             'error' => true,
