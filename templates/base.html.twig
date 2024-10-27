@@ -1,25 +1,18 @@
-{# templates/base.html.twig #}
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Mi aplicación Symfony{% endblock %}</title>
-
-    {# Archivo global de estilos con Bootstrap y otros CSS #}
+    <!-- ... -->
     <link rel="stylesheet" href="{{ asset('build/global.css') }}">
-    
-    {# Otros archivos de estilo personalizados si es necesario #}
-    {# <link rel="stylesheet" href="{{ asset('build/styles.css') }}"> #}
-
-    <link rel="icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon">
+    <!-- ... -->
 </head>
 <body>
     <div id="app"></div>
     {% block body %}{% endblock %}
-    {# Archivos JavaScript generados por Webpack Encore #}
+
+    <!-- Archivos JavaScript generados por Webpack Encore -->
     <script src="{{ asset('build/runtime.js') }}"></script>
     <script src="{{ asset('build/app.js') }}"></script>
-    <script src="{{ asset('build/vue_app.js') }}"></script>
+    <!-- Elimina la siguiente línea si usas 'app.js' -->
+    <!-- <script src="{{ asset('build/vue_app.js') }}"></script> -->
 </body>
 </html>
