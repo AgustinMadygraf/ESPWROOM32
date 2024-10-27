@@ -2,7 +2,6 @@
 // src/Controller/GetData2Controller.php
 namespace App\Controller;
 
-use App\Services\DatabaseConnection;
 use App\Services\DataFetcher;
 use App\Services\ConfigChecker;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
