@@ -4,9 +4,10 @@ import { createApp } from 'vue';
 const app = createApp({
     data() {
         return {
-            message: "Hello Vue with Symfony!"
+            message: '¡Hola desde Vue en Symfony!'
         };
-    }
+    },
+    template: `<div>{{ message }}</div>`
 });
 
 app.mount('#app');
