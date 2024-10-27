@@ -3,7 +3,7 @@
 let intervalId;
 
 function fetchData() {
-    fetch('/automatizacion/app/controllers/get_data.php')
+    fetch('/automatizacion/app/controllers/get_data_2.php')
         .then(response => {
             const status = response.status;
             if (!response.ok) {
