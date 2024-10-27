@@ -10,12 +10,12 @@ function fetchData() {
         })
         .then(responseData => {
             if (responseData.error) {
-                if (responseData.details && responseData.details.includes(".env")) {
-                    console.log("Redireccionando a setup/install.php debido a falta de .env");
-                    window.location.href = '/automatizacion/setup/install.php';
-                    return;
+                if (responseData.redirect) {
+                    window.location.href = responseData.redirect;
+                } else {
+                    console.error(responseData.message);
                 }
-                throw new Error(`Error fetching data: ${responseData.message}`);
+                return;
             }
 
             const data = responseData.data;
@@ -38,5 +38,4 @@ function fetchData() {
         });
 }
 
-// Llama a fetchData inmediatamente para cargar los datos al inicio
 fetchData();

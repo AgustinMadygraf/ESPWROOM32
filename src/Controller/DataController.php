@@ -11,8 +11,17 @@ class DataController extends AbstractController
     #[Route('/automatizacion/get_data', name: 'get_data')]
     public function getData(): JsonResponse
     {
-        // Aquí colocas la lógica real para obtener los datos.
-        // Ejemplo de valores simulados:
+        // Validar la existencia del archivo .env
+        $envFileExists = file_exists($this->getParameter('kernel.project_dir').'/.env');
+        if (!$envFileExists) {
+            return new JsonResponse([
+                'error' => true,
+                'message' => 'Falta el archivo .env, redireccionando...',
+                'redirect' => '/automatizacion/setup/install.php'
+            ]);
+        }
+
+        // Lógica simulada para obtener datos
         $data = [
             'balanza' => 100.25, // Reemplaza con el valor real
             'contador' => 42,    // Reemplaza con el valor real
