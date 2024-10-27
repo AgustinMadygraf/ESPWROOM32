@@ -9,3 +9,4 @@
 /vendor/
 ###< symfony/framework-bundle ###
 deploy_to_main.ps1
+app/docs/00-Prompt-for-ProjectAnalysis.md
