@@ -4,7 +4,15 @@ use App\Kernel;
 use Symfony\Component\ErrorHandler\Debug;
 use Symfony\Component\HttpFoundation\Request;
 
-require dirname(__DIR__).'/vendor/autoload.php';
+
+//require dirname(__DIR__).'/vendor/autoload.php';
+require 'C:/AppServ/www/automatizacion/vendor/autoload.php';
+
+use Symfony\Component\Dotenv\Dotenv;
+
+//(new Dotenv())->usePutenv()->loadEnv(dirname(__DIR__).'/.env');
+(new Dotenv())->usePutenv()->loadEnv('C:/AppServ/www/automatizacion/.env');
+
 
 if ($_SERVER['APP_DEBUG']) {
     umask(0000);
