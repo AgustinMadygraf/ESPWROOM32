@@ -553,7 +553,7 @@ Adjustment of the pressure of delivery pulley: turn the clutch switch of deliver
 
 Paper bags are delivered by belt, and collected on the side workbench, which is controlled by separate servo motor. Its counting method is that accelerating the belt suddenly when a certain number of bags are collected to make an obvious gap between every two contiguous batches of bags, which is very convenient for collection. Refer to Touch Screen Operation Manual for details. 
 
-### 4.7. Main Structure and Operation of Control sistema
+## 4.7. Main Structure and Operation of Control sistema
 
 The operation for control part contains two sections. One section is the operation of touch screen, (refer to Touch Screen Operation Manual for details); the other section is the operation and description of operating buttons, which will be described in detail as follows.
 
