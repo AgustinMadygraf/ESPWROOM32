@@ -35,7 +35,7 @@ require 'header.php';
         <p>este modulo incluye un microcontrolador de 32 bits con conectividad wi-fi y bluetooth,
         y es ampliamente utilizado en proyectos de internet de las cosas (Iot) y dispositivos inteligentes.</p>
 
-<       <h2>ESP32-cam </h3>
+<       <h3>ESP32-cam </h3>
 
         <p>es un modulo compacto que convina un microcontrolador ESP32 con una camara y wi-fi ideal para proyectos de vision por computadora
      e Iot.</p>
