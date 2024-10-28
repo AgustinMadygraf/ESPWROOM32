@@ -9,7 +9,7 @@ index:
 
 mantenimiento:
     path: /mantenimiento
-    controller: App\Controller\PageController::mantenimiento
+    controller: App\Controller\MantenimientoController::index
 
 electronica:
     path: /electronica
