@@ -1,6 +1,6 @@
 # Manual de Operación
 
-# 4 Estructura principal y operación de maquina
+# 4 Estructura principal y Operación de Maquina
 
 <div style="text-align: center;">
     <img src="../../docs/img/figure_01.png" alt="Figure 1. Schematic Diagram of Whole Machine" />
@@ -8,13 +8,13 @@
     <em>Figure 1. Schematic Diagram of Whole Machine</em>
 </div>
 
-1. sistema de desenrrollado 
-2. sistema de impresión 
-3. sistema de marco de sellado lateral
-4. sistema formador de tubo
-5. sistema de maquina principal
-6. sistema de colector de bolsas
-7. sistema de control
+1. Sistema de desenrrollado 
+2. Sistema de impresión 
+3. Sistema de marco de sellado lateral
+4. Sistema formador de tubo
+5. Sistema de maquina principal
+6. Sistema de colector de bolsas
+7. Sistema de control
 
 ## 4.1. Estructura principal y operación de sistema de desenrrollado
 
@@ -155,9 +155,7 @@ Blade-installed scrapping knife onto the fixing groove in the correct direction.
 ### 4.2.9. Adjustment of Ink Scraping Knife 
 Scraping knife angle adjusting wheel is used to adjust the relative angle of the ink scraping knife, while scraping knife vertical adjusting wheel is used to change the vertical position of the ink scraping knife. 
 Before adjusting the scrapping knife, remember to add ink into the ink plate and rotate the anilox roller slowly so that the anilox roller is covered with ink on its surface. Note that adjusting scrapping knife with dry anilox roller is prohibited. The pressure of the scrapping knife on the anilox roller should be proper, too big or too small may affect th printing quality. 
-It is advised that adjust the pressure to a certain value when there is no ink left on the surface of 
-Anilox roller; then decrease the pressure so that there is ink on the roller surface; finally increase the 
-Pressure a bit so that we can get evenly spreading ink on the anilox roller surface. Note that too big Pressure will damage the anilox roller, while too small pressure will cause big color difference.
+It is advised that adjust the pressure to a certain value when there is no ink left on the surface of Anilox roller; then decrease the pressure so that there is ink on the roller surface; finally increase the Pressure a bit so that we can get evenly spreading ink on the anilox roller surface. Note that too big Pressure will damage the anilox roller, while too small pressure will cause big color difference.
 During the adjustment much attention should be paid to ink streaks on the anilox roller in longitudinal direction. These streaks usually are caused by the defects of blade. 
 What’s more, make sure that the straight line of the blade is absolutely parallel to the shaft line of anilox roller, otherwise the scrapping knife only releases partial pressure on the anilox roller and the ink can not be spreading evenly. Usually this non-parallel situation is caused by loosened screws on the pressing bar of scrapping knife. 
 After the scrapping blade is unloaded and cleaned, it is advised to wipe the blade with alcohol, so that there will be no water left on the blade and the blade can have longer service life. 
@@ -171,16 +169,20 @@ This important component contains printing cylinder, pressure adjusting device, 
 
 ### 4.2.12. Mounting of Printing Plate 
 Before install the printing cylinder onto the machine, remember to mount the printing plate onto the printing cylinder with the specific printing plate mounting machine as follows: 
-    a-Adjusting Lenses: put the printing cylinder on the mounting machine, and paste any printing plate onto the cylinder meanwhile make sure that the cross mark on the plate coincides with the transverse guiding line on the cylinder, then move one of those two lenses, and adjust the parallelism between the cross mark and the sliding generatrix line of the lens. When the parallelism is confirmed, implement the adjustment onto the other lens in the same way. 
-    b-Select the printing cylinder with appropriate length, clean the surface of the printing cylinder and the printing plate. 
-    c-Obtain a piece of double sided tape, which should be wider than the printing plate by 5mm and longer the printing plate by 2mm. After the printing cylinder becomes dry totally, paste the tap on the printing cylinder flatly and press the tap onto the printing cylinder for a while so that the tap can be stuck firmly. Note that the tape pasting should be straight (you can make use of the guiding line on the printing cylinder); to eliminate the air between the tap and the cylinder, you should rotate the cylinder slowly while pasting; after rotating by one circle, cut away the redundant tape and make the connection line be smooth; if there is any air bubble between the tap and the cylinder, eliminate it with needle. 
-    d-The raw printing plate is bigger than the actual size of printing content in transverse and Longitudinal diretions. Cut the raw printing plate if the difference is too big. The trimmed plate. Should be wider than the actual size of printing content by 10mm on both sides for closing plate. And the length of the trimmed plate should be calculated as per the following formula: Printing Plate Length (Flat Status) = Printing Cylinder Gear Teeth NO.X Pitch Deformation Rate 
-    e-Positioning in Transverse Direction: predict the mapping positions of the left and right cross marks of the printing plate; remove the protective layer and clear all of foreign matters; paste one side of the printing plate by using lens, while making sure that the cross mark on the plate coincides with the transverse guiding line on the cylinder; then pull the plate to make it be flat and paste the other side of the plate onto the cylinder. 
+    (A)-Adjusting Lenses: put the printing cylinder on the mounting machine, and paste any printing plate onto the cylinder meanwhile make sure that the cross mark on the plate coincides with the transverse guiding line on the cylinder, then move one of those two lenses, and adjust the parallelism between the cross mark and the sliding generatrix line of the lens. When the parallelism is confirmed, implement the adjustment onto the other lens in the same way.
+
+    (B)-Select the printing cylinder with appropriate length, clean the surface of the printing cylinder and the printing plate.
+
+    (C)-Obtain a piece of double sided tape, which should be wider than the printing plate by 5mm and longer the printing plate by 2mm. After the printing cylinder becomes dry totally, paste the tap on the printing cylinder flatly and press the tap onto the printing cylinder for a while so that the tap can be stuck firmly. Note that the tape pasting should be straight (you can make use of the guiding line on the printing cylinder); to eliminate the air between the tap and the cylinder, you should rotate the cylinder slowly while pasting; after rotating by one circle, cut away the redundant tape and make the connection line be smooth; if there is any air bubble between the tap and the cylinder, eliminate it with needle. 
+    
+    (D)-The raw printing plate is bigger than the actual size of printing content in transverse and Longitudinal diretions. Cut the raw printing plate if the difference is too big. The trimmed plate. Should be wider than the actual size of printing content by 10mm on both sides for closing plate. And the length of the trimmed plate should be calculated as per the following formula: Printing Plate Length (Flat Status) = Printing Cylinder Gear Teeth NO.X Pitch Deformation Rate 
+    
+    (E)-Positioning in Transverse Direction: predict the mapping positions of the left and right cross marks of the printing plate; remove the protective layer and clear all of foreign matters; paste one side of the printing plate by using lens, while making sure that the cross mark on the plate coincides with the transverse guiding line on the cylinder; then pull the plate to make it be flat and paste the other side of the plate onto the cylinder. 
         Note: 
         -mark the mapping positions of the two cross marks with pen; 
         -each printing cylinder should have the plate mounted with the cross marks at the exactly same positions. 
 
-    f-Positioning in Longitudinal Direction: rotate the printing cylinder slowly and carefully after the printing plate has been positioned in transverse direction (the monitor of the plate mounting machine can display the images of the two cross marks at the same time). 
+    (F)-Positioning in Longitudinal Direction: rotate the printing cylinder slowly and carefully after the printing plate has been positioned in transverse direction (the monitor of the plate mounting machine can display the images of the two cross marks at the same time). 
         Note: 
         -The pasted plate must be flat and straight;
         -Any air bubble and wrinkle is prohibited;
@@ -189,14 +191,16 @@ Before install the printing cylinder onto the machine, remember to mount the pri
         -The two cross marks of any printing plate should coincide with the same guiding line; 
         -The lenses can not be adjusted any more while pasting the plate for mounting precision; 
         -The text section of the printing plate should not be on the connection line of the double sided tap, and this   line should not coincide with the connection line of printing plate. 
-    g-Check whether the printing plate is stuck firmly onto the printing cylinder with double sided tape; whether there is any lifting edge; whether there is any air bubble; whether the connection line of printing plate is smooth, etc. After all of the cases above are confirmed, cover the edges of printing plate to form the protection layer. 
+    
+    (G)-Check whether the printing plate is stuck firmly onto the printing cylinder with double sided tape; whether there is any lifting edge; whether there is any air bubble; whether the connection line of printing plate is smooth, etc. After all of the cases above are confirmed, cover the edges of printing plate to form the protection layer. 
     h-If you want to unmount the used printing plate, you can make it by hands. If the plate is stuck onto the cylinder too firmly, you can unmount the plate by using petrol. 
 
 ### 4.2.13. Installation of Printing Cylinder 
 According to the diameter of the printing cylinder, adjust the positions of the sliding blocks on the two sides, to make the installation hole for the printing cylinder be at the same level as the base roller. And then put the printing cylinder which has printing plate mounted into the installation hole and lock the locking pressing bar. Later check and adjust the relative transverse position of the printing cylinder to other printing cyliners. Finally check the relative positions between the anilox roller, printing cylinder and base roller when the air source is switched on and make sure that all of them are parallel. 
 
 ### 4.2.14. Adjustment of Printing Pressure 
-The key factor for the successful printing is proper printing pressure. Because that the flexographic printing plate is soft and elastic, the printing pressure can not be too big, otherwise the plate will deform and can cause bad printing quality. 
+The key factor for the successful printing is proper printing pressure. Because that the flexographic printing plate is soft and elastic, the printing pressure can not be too big, otherwise the plate will deform and can cause bad printing quality.
+ 
 -The printing pressure adjustment includes the pressure adjustment between ink scrapping knife and anilox roller, anilox roller and printing cylinder, printing cylinder and base roller.
 -The pressure between ink scrapping knife and anilox roller depends on the relative angle of the scrapping knife. So the adjustment of the scrapping knife angle is very important.
 -The pressure between anilox roller and printing cylinder can not be too big, otherwise printing deformation will appear. 
