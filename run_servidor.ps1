@@ -8,13 +8,13 @@
 cls
 
 # Detiene cualquier instancia en ejecucion del servidor Symfony
-Write-Output "Deteniendo el servidor Symfony si está en ejecucion..."
+Write-Output "Deteniendo el servidor Symfony si esta en ejecucion..."
 symfony server:stop
 
 # Pausa breve para asegurarse de que el servidor tiene tiempo de detenerse
 Start-Sleep -Seconds 2
 
-# Verifica si el servidor está detenido usando el comando `server:status`
+# Verifica si el servidor esta detenido usando el comando `server:status`
 $serverStatus = symfony server:status
 
 # Si el servidor sigue en ejecucion, intenta detener el proceso PHP-CGI manualmente
