@@ -16,11 +16,11 @@ require '../../vendor/autoload.php';
 $parsedown = new Parsedown();
 
 // Verificar si el archivo mantenimiento.md existe
-if (!file_exists('../../docs/ZD-FJ13+t 4.4 .md')) {
+if (!file_exists('../../docs/ZD-FJ13+t.md')) {
     die('Error: No se encontró el archivo mantenimiento.md');
 }
 
-$markdownContent = file_get_contents('../../docs/ZD-FJ13+t 4.4 .md');
+$markdownContent = file_get_contents('../../docs/ZD-FJ13+t.md');
 $htmlContent = $parsedown->text($markdownContent);
 ?>
 <!DOCTYPE html>
