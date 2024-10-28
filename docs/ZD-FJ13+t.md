@@ -92,13 +92,13 @@ Refer to Operation Manual of AXTEC Automatic Tension Controller for details.
 
 Refer to Operation Manual of AIBO EPC System for details.
 
-# 4.2. Printing Component 
+## 4.2. Printing Component 
 
-# 4.2.1. Structure of Inking Component 
+### 4.2.1. Structure of Inking Component 
 
 Este sistema contiene una placa entintadora, rodillo entintador, cuchilla raspadora de tinta y rodillo anilox.
 
-# 4.2.2. Installation of Inking Plate 
+### 4.2.2. Installation of Inking Plate 
 
 Ensure that Ink Plate Lift Knob is switched to Drop Mode,
  and install the ink plate on the support. 
@@ -108,11 +108,11 @@ Asegúrese de que el selector de la funcion de entintado no esté puesto, y lueg
 e instale la placa de tinta en el soporte. 
 Y luego gire la perilla al modo de elevación y asegúrese de que la placa de tinta no afecte el funcionamiento del rodillo entintador y del rodillo anilox.
 
-# 4.2.3. Funcion del rodillo entintador
+### 4.2.3. Funcion del rodillo entintador
 
 Levante el rodillo entintador hasta que los cojinetes de ambos lados del rodillo entintador encajen exactamente en la ranura de instalación.
 
-# 4.2.4. Ajuste del rodillo entintador
+### 4.2.4. Ajuste del rodillo entintador
 
 Pongan la funcion del rodillo entintador y el rodillo anilox en la máquina, 
 y ajuste manualmente la rueda de luz entre estos dos rodillos, para asegurarse de que el rodillo entintador esté cerca del rodillo anilox correctamente y que la tinta se pueda transferir desde el rodillo entintador al anilox.  
@@ -125,7 +125,7 @@ Para una máquina de impresión que adopta tinta raspadora en un rodillo entinta
 4. **Calidad de la tinta:** menor viscosidad, menor cantidad de tinta. 
 5. **Resolución del rodillo anilox:** mayor resolución, menor cantidad de tinta por unidad de tinta en el rodillo anilox.
 
-# 4.2.5. Installation of Anilox Roller 
+### 4.2.5. Installation of Anilox Roller 
 Anilox roller can be installed if and only if Anilox Idling Knob is turned to OFF and the machine is stopped: loosen the locking block and screw on the anilox roller support in printing unit, and move the anilox roller onto the support and fastern the block and. screw, then adjust anilox roller support adjusting wheel to make the anilox roller be parallel; later rotate the roller by hands to check its position precision, and remove its protection layer. 
     Note: knocking the anilox roller against other metal surface is forbidden while loading or unloading the anilox roller. Because of the special material, the anilox roller is very easy to be damaged permanently once its surface is knocked. 
 During production, the installation positions (orders) and specification of anilox rollers are determined by the printing content and quality requirements. The installation positions depends on the color orders, thus it is very common to change the positions. 
@@ -135,24 +135,24 @@ El rodillo anilox se puede instalar si y solo si la perilla de ralentí Anilox e
     rodillo anilox. Debido al material especial, es muy fácil que el rodillo anilox se dañe permanentemente una vez que se golpea su superficie. 
 Durante la producción, las posiciones de instalación (pedidos) y las especificaciones de los rodillos anilox están determinadas por el contenido de impresión y los requisitos de calidad. Las posiciones de instalación dependen de los órdenes de color, por lo que es muy común cambiar las posiciones.
 
-# 4.2.6. Selection of Anilox Roller 
+### 4.2.6. Selection of Anilox Roller 
 As the core of flexographic printing, anilox roller plays a very important role during the production. It determines the inking amount and affects the printing quality directly. Users must make themselves clear about the relationship between anilox roller LPI and printing plate LPI: usually the former should be 4-5 times the latter, otherwise the printed image will have blank point or color missing, which may cause bad printing quality. 
     Different materials to be printed have different requirements for ink amount. Thus ink absorption 
     Amount of the material must be taken into account while selecting anilox roller. For nonaabsorptio 
     Material (such as PE, PP and PET, etc.), because the ink absorption amount of the material is very Low, the LPI of the selected anilox roller should be higher than that for the absorbable material (such as paper). 
 
-# 4.2.7. Cleaning of Anilox Roller 
+### 4.2.7. Cleaning of Anilox Roller 
 After production the anilox roller should be cleaned in time, so as to make the service life of anilox roller longer. As the core component of printing machine, if the anilox roller is not cleaned well, then ink inside the holes on the surface of anilox roller will become dry and then the blockage caused will decrease the printing quality. 
 Usually it is advised to clean the anilox roller with specific cleaning machine; unload the anilox roller from the printing machine and put it into the cleaning machine. Then pour the cleaning liquid mixed with water of a certain proportion into the machine, close the cover and let the machine clean it automatically. 
 
-# 4.2.8. Installation of Ink Scraping Knife 
+### 4.2.8. Installation of Ink Scraping Knife 
 The blade should be installed properly onto the scrapping knife before the scrapping knife is 
 Installed onto the machine: loosen the screws on the pressing bar of the ink scrapping knife; then 
 Put the trimmed blade under the pressing bar and fasten the screws on the bar, finally amount the 
 Blade-installed scrapping knife onto the fixing groove in the correct direction. 
     Note: the blade should be wider than the anilox roller by 5-6mm, to avoid ink splashing at the ends of blade. 
 
-# 4.2.9. Adjustment of Ink Scraping Knife 
+### 4.2.9. Adjustment of Ink Scraping Knife 
 Scraping knife angle adjusting wheel is used to adjust the relative angle of the ink scraping knife, while scraping knife vertical adjusting wheel is used to change the vertical position of the ink scraping knife. 
 Before adjusting the scrapping knife, remember to add ink into the ink plate and rotate the anilox roller slowly so that the anilox roller is covered with ink on its surface. Note that adjusting scrapping knife with dry anilox roller is prohibited. The pressure of the scrapping knife on the anilox roller should be proper, too big or too small may affect th printing quality. 
 It is advised that adjust the pressure to a certain value when there is no ink left on the surface of 
@@ -163,13 +163,13 @@ What’s more, make sure that the straight line of the blade is absolutely paral
 After the scrapping blade is unloaded and cleaned, it is advised to wipe the blade with alcohol, so that there will be no water left on the blade and the blade can have longer service life. 
     Note: remember to wear gloves for unloading the used scrapping blade, to avoid being hurt by the sharp blade. 
 
-# 4.2.10. Selection of Ink Scraping Blade 
+### 4.2.10. Selection of Ink Scraping Blade 
 The selection of ink scrapping blade mainly depends on LPI of anilox roller. For anilox roller with high LPI, it is advised to adopt thin blade. For anilox roller with lower LPI, you’d better select thicker blade because the surface of lower LPI anilox roller causes bigger friction force. 
 
-# 4.2.11. Structure of Printing Cylinder Component 
+### 4.2.11. Structure of Printing Cylinder Component 
 This important component contains printing cylinder, pressure adjusting device, longitudinal color registration system and transverse color registration system. 
 
-# 4.2.12. Mounting of Printing Plate 
+### 4.2.12. Mounting of Printing Plate 
 Before install the printing cylinder onto the machine, remember to mount the printing plate onto the printing cylinder with the specific printing plate mounting machine as follows: 
     a-Adjusting Lenses: put the printing cylinder on the mounting machine, and paste any printing plate onto the cylinder meanwhile make sure that the cross mark on the plate coincides with the transverse guiding line on the cylinder, then move one of those two lenses, and adjust the parallelism between the cross mark and the sliding generatrix line of the lens. When the parallelism is confirmed, implement the adjustment onto the other lens in the same way. 
     b-Select the printing cylinder with appropriate length, clean the surface of the printing cylinder and the printing plate. 
@@ -192,19 +192,19 @@ Before install the printing cylinder onto the machine, remember to mount the pri
     g-Check whether the printing plate is stuck firmly onto the printing cylinder with double sided tape; whether there is any lifting edge; whether there is any air bubble; whether the connection line of printing plate is smooth, etc. After all of the cases above are confirmed, cover the edges of printing plate to form the protection layer. 
     h-If you want to unmount the used printing plate, you can make it by hands. If the plate is stuck onto the cylinder too firmly, you can unmount the plate by using petrol. 
 
-# 4.2.13. Installation of Printing Cylinder 
+### 4.2.13. Installation of Printing Cylinder 
 According to the diameter of the printing cylinder, adjust the positions of the sliding blocks on the two sides, to make the installation hole for the printing cylinder be at the same level as the base roller. And then put the printing cylinder which has printing plate mounted into the installation hole and lock the locking pressing bar. Later check and adjust the relative transverse position of the printing cylinder to other printing cyliners. Finally check the relative positions between the anilox roller, printing cylinder and base roller when the air source is switched on and make sure that all of them are parallel. 
 
-# 4.2.14. Adjustment of Printing Pressure 
+### 4.2.14. Adjustment of Printing Pressure 
 The key factor for the successful printing is proper printing pressure. Because that the flexographic printing plate is soft and elastic, the printing pressure can not be too big, otherwise the plate will deform and can cause bad printing quality. 
 -The printing pressure adjustment includes the pressure adjustment between ink scrapping knife and anilox roller, anilox roller and printing cylinder, printing cylinder and base roller.
 -The pressure between ink scrapping knife and anilox roller depends on the relative angle of the scrapping knife. So the adjustment of the scrapping knife angle is very important.
 -The pressure between anilox roller and printing cylinder can not be too big, otherwise printing deformation will appear. 
 -The pressure between printing cylinder and base roller also can not be too big; obtaining the clear printing image is enough.
 
-### 4.3. Main Structure and Operation of Side ealing Frame sistema
+## 4.3. Main Structure and Operation of Side ealing Frame sistema
 
-#### 4.3.1. Main Structure of Side Sealing Frame sistema
+### 4.3.1. Main Structure of Side Sealing Frame sistema
 
 Side sealing frame sistema is mainly constituted by side sealing machine frame (Figure 2-2). side gluing sistema (Figure 5) and side gluing control system.
 
@@ -223,7 +223,7 @@ Side sealing frame sistema is mainly constituted by side sealing machine frame (
 7. Side Glue Scrapper
 8. Driving Gear for Side Gluing
 
-#### 4.3.2. Operation of Side Gluing sistema
+### 4.3.2. Operation of Side Gluing sistema
 
 This machine adopts glue transfer method for side gluing (Figure 5). Glue transfer pulley dips into the side glue plate (Figure 5-6). The surplus glue is scrapped by side glue scrapper (Figure 5-7). then the remaining glue is transferred onto gluing pulley (Figure 5-1) and then transferred onto raw paper. The driving operation is made by driving gear for side gluing (Figure 5-8).
 
