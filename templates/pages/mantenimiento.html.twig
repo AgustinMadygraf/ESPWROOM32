@@ -1,21 +1,12 @@
-{# mantenimiento.html.twig #}
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plan de Mantenimiento</title>
-    <link rel="stylesheet" href="{{ asset('build/global.css') }}">
-</head>
-<body>
-    <header>
+{% extends 'base.html.twig' %}
+
+{% block title %}Visualización de Balanza y Contador Industrial{% endblock %}
+
+{% block body %}
+    {% include 'partials/header.html.twig' %}
+
+    <div class="container">
         <h1>Plan de Mantenimiento</h1>
-    </header>
-    <main>
-        {{ markdown_content|raw }}
-    </main>
-    <footer>
-        <p>© 2024 madygraf</p>
-    </footer>
-</body>
-</html>
+            {{ markdown_content|raw }}
+    </div>    
+{% endblock %}
