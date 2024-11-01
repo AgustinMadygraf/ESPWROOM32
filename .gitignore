@@ -13,3 +13,4 @@ var/
 run_servidor.ps1
 yarn.lock
 node_modules/
+data_extractor/src/__pycache__/

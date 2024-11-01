@@ -72,7 +72,7 @@ class MainApp:
         self.processor = processor
         self.sender = sender
         self.interval = interval  # Intervalo de tiempo entre cada chequeo (en segundos)
-        self.previous_data = None
+        self.previous_vueltas = None  # Almacena el valor previo de vueltas
 
     def run(self):
         """Ejecuta el flujo completo de obtención, procesamiento y envío de datos en un bucle infinito."""
@@ -84,16 +84,16 @@ class MainApp:
                 print("Datos procesados en diccionario:")
                 print(processed_data)
                 
-                # Enviar datos solo si hay cambios
-                if self.previous_data != processed_data:
-                    print("Cambio detectado en los datos, enviando información...")
+                # Enviar datos solo si hay cambios en el contador (Vueltas)
+                if self.previous_vueltas != processed_data["Vueltas"]:
+                    print("Cambio detectado en el contador, enviando información...")
                     self.sender.send_data(processed_data)
-                    self.previous_data = processed_data  # Actualizar los datos previos
+                    self.previous_vueltas = processed_data["Vueltas"]  # Actualizar el valor de vueltas previo
                 
             time.sleep(self.interval)  # Esperar el intervalo de tiempo antes del próximo chequeo
 
 
-if __name__ == "__main__":
+def run_main():
     os.system('cls')
     
     # URLs
