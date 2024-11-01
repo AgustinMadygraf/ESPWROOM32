@@ -16,10 +16,7 @@ if (isset($_GET['balanza']) && isset($_GET['contador'])) {
         echo "Datos insertados correctamente<br>";
         echo "Balanza: $balanza<br>";
         echo "Contador: $contador";
-        
-        // Redireccionar a index.php después de 5 segundos
-        header("refresh:5;url=index.php");
-        echo "<br>Serás redirigido a la página principal en 5 segundos...";
+
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
