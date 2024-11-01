@@ -1,0 +1,1 @@
+$env:PYTHONPATH="C:\AppServ\www\automatizacion\data_extractor;C:\AppServ\www\automatizacion\data_extractor\src"
