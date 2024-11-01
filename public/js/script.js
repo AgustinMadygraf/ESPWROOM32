@@ -37,7 +37,7 @@ function fetchData() {
             }
 
             const data = responseData.data;
-            document.getElementById('balanza-value').innerText = `${parseFloat(data.balanza).toFixed(2)} kg`;
+            document.getElementById('balanza-value').innerText = `${parseFloat(data.balanza).toFixed(2)} g`;
             document.getElementById('contador-value').innerText = data.contador;
 
             if (!intervalId) {
