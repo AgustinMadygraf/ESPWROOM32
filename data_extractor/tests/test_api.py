@@ -39,7 +39,7 @@ def test_run_main_integration(mock_fetcher, mock_processor, mock_sender):
     """Prueba integral para el flujo completo en run_main."""
     with patch("src.controller.main_controller.MainApp") as MockApp:
         mock_app_instance = MockApp.return_value
-        mock_app_instance.run.return_value = None
+        mock_app_instance.run.side_effect = lambda: None  # Evita que se bloquee
         
         # Ejecutar run_main, que utiliza los componentes de fetcher, processor, y sender
         run_main()

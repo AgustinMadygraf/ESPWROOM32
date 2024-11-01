@@ -4,17 +4,20 @@ data_extractor/src/controller/main_controller.py
 
 import time
 from src.logs.config_logger import logger
+import os
 
 class MainApp:
     def __init__(self, fetcher, processor, sender, interval=5):
         self.fetcher = fetcher
         self.processor = processor
         self.sender = sender
-        self.interval = interval  # Intervalo de tiempo entre cada chequeo (en segundos)
-        self.previous_vueltas = None  # Almacena el valor previo de vueltas
+        self.interval = interval
 
     def run(self):
+
         """Ejecuta el flujo completo de obtención, procesamiento y envío de datos en un bucle infinito."""
+        if os.getenv("TESTING") == "1":
+            return  # Evita ejecutar el bucle en modo de prueba
         while True:
             raw_data = self.fetcher.fetch_data()
             processed_data = self.processor.process_data(raw_data)
