@@ -22,3 +22,4 @@ data_extractor/src/install/__pycache__/
 data_extractor/tests/__pycache__/
 data_extractor/src/view/__pycache__/main_view.cpython-311.pyc
 data_extractor/docs/00-Prompt-for-ProjectAnalysis.md
+data_extractor/.vscode/

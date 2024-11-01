@@ -1,3 +1,6 @@
+"""
+data_extractor/src/model/data_processor.py
+"""
 from datetime import datetime
 
 class DataProcessor:
@@ -12,11 +15,19 @@ class DataProcessor:
 
         for line in data_lines:
             if "Peso:" in line:
-                peso = line.split(":")[1].strip().split(" ")[0]  # Extraer solo el número
-                datos["Peso"] = float(peso)  # Convertir a float
+                peso_str = line.split(":")[1].strip().split(" ")[0]  # Extraer solo el número
+                try:
+                    datos["Peso"] = float(peso_str)  # Intentar convertir a float
+                except ValueError:
+                    # Si no se puede convertir, saltar la asignación de 'Peso'
+                    continue
             elif "Vueltas:" in line:
-                vueltas = line.split(":")[1].strip()  # Extraer solo el número
-                datos["Vueltas"] = int(vueltas)  # Convertir a entero
+                vueltas_str = line.split(":")[1].strip()  # Extraer solo el número
+                try:
+                    datos["Vueltas"] = int(vueltas_str)  # Intentar convertir a entero
+                except ValueError:
+                    # Si no se puede convertir, saltar la asignación de 'Vueltas'
+                    continue
         
         # Agregar el valor de tiempo
         datos["Tiempo"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
