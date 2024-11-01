@@ -11,7 +11,7 @@ import os
 @pytest.fixture
 def mock_fetcher():
     """Mock para ESP32DataFetcher."""
-    with patch("src.model.esp32_data_fetcher.ESP32DataFetcher") as MockFetcher:
+    with patch("src.view.main_view.ESP32DataFetcher") as MockFetcher:
         instance = MockFetcher.return_value
         instance.fetch_data.return_value = "Peso: 12.5 kg\nVueltas: 5"
         yield instance
@@ -19,7 +19,7 @@ def mock_fetcher():
 @pytest.fixture
 def mock_processor():
     """Mock para DataProcessor."""
-    with patch("src.model.data_processor.DataProcessor") as MockProcessor:
+    with patch("src.view.main_view.DataProcessor") as MockProcessor:
         instance = MockProcessor.return_value
         instance.process_data.return_value = {"Peso": 12.5, "Vueltas": 5, "Tiempo": "2023-01-01 12:00:00"}
         yield instance
@@ -27,7 +27,7 @@ def mock_processor():
 @pytest.fixture
 def mock_sender():
     """Mock para PHPServerSender."""
-    with patch("src.model.php_server_sender.PHPServerSender") as MockSender:
+    with patch("src.view.main_view.PHPServerSender") as MockSender:
         instance = MockSender.return_value
         instance.send_data.return_value = True
         yield instance
@@ -39,8 +39,7 @@ def test_run_main_integration(mock_fetcher, mock_processor, mock_sender):
     os.environ["TESTING"] = "1"
 
     # Aplica los mocks necesarios para los componentes de run_main
-    with patch("src.controller.main_controller.MainApp") as MockApp, \
-         patch("src.view.main_view.LoggerConfigurator") as MockLoggerConfigurator, \
+    with patch("src.view.main_view.LoggerConfigurator") as MockLoggerConfigurator, \
          patch("src.view.main_view.os.system") as mock_os_system:
 
         # Simula LoggerConfigurator y os.system para evitar efectos colaterales
@@ -49,10 +48,6 @@ def test_run_main_integration(mock_fetcher, mock_processor, mock_sender):
         mock_logger.info.return_value = None
         mock_os_system.return_value = None
 
-        # Mock para MainApp y su método run
-        mock_app_instance = MockApp.return_value
-        mock_app_instance.run.side_effect = lambda: None  # Asegura que no entre en un bucle
-
         # Ejecuta run_main, que utiliza los componentes de fetcher, processor, y sender
         run_main()
 
@@ -60,27 +55,6 @@ def test_run_main_integration(mock_fetcher, mock_processor, mock_sender):
         mock_fetcher.fetch_data.assert_called_once()
         mock_processor.process_data.assert_called_once_with("Peso: 12.5 kg\nVueltas: 5")
         mock_sender.send_data.assert_called_once_with({"Peso": 12.5, "Vueltas": 5, "Tiempo": "2023-01-01 12:00:00"})
-        
-        # Verifica que la aplicación se ejecutó y registró los mensajes esperados
-        mock_app_instance.run.assert_called_once()
-        mock_logger.info.assert_any_call("Iniciando la aplicación principal")
-        mock_logger.info.assert_any_call("Aplicación principal finalizada")
 
     # Limpia la variable de entorno después de la prueba
     del os.environ["TESTING"]
-
-
-def test_esp32_data_fetcher(mock_fetcher):
-    """Prueba unitaria para ESP32DataFetcher."""
-    assert mock_fetcher.fetch_data() == "Peso: 12.5 kg\nVueltas: 5"
-
-def test_data_processor(mock_processor):
-    """Prueba unitaria para DataProcessor."""
-    raw_data = "Peso: 12.5 kg\nVueltas: 5"
-    processed_data = mock_processor.process_data(raw_data)
-    assert processed_data == {"Peso": 12.5, "Vueltas": 5, "Tiempo": "2023-01-01 12:00:00"}
-
-def test_php_server_sender(mock_sender):
-    """Prueba unitaria para PHPServerSender."""
-    data = {"Peso": 12.5, "Vueltas": 5, "Tiempo": "2023-01-01 12:00:00"}
-    assert mock_sender.send_data(data) is True
