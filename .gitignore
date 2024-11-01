@@ -16,3 +16,6 @@ node_modules/
 data_extractor/src/__pycache__/
 data_extractor/src/model/__pycache__/
 data_extractor/src/controller/__pycache__/
+data_extractor/src/logs/sistema.log
+data_extractor/src/logs/__pycache__/
+data_extractor/src/install/__pycache__/
