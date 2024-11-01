@@ -2,9 +2,8 @@
 data_extractor/src/controller/main_controller.py
 """
 
-import time
-from src.logs.config_logger import logger
 import os
+from src.logs.config_logger import logger  # Asegúrate de importar el logger adecuado
 
 class MainApp:
     def __init__(self, fetcher, processor, sender, interval=5):
@@ -12,13 +11,14 @@ class MainApp:
         self.processor = processor
         self.sender = sender
         self.interval = interval
-        self.previous_vueltas = None
+        self.previous_vueltas = None  # Inicializa previous_vueltas para evitar el error
 
     def run(self):
         """Ejecuta el flujo completo de obtención, procesamiento y envío de datos en un bucle infinito."""
         if os.getenv("TESTING") == "1":
-            return
-
+            logger.info("Modo de prueba activado. No se ejecutará el bucle infinito.")
+            return  # Evita ejecutar el bucle en modo de prueba
+        
         while True:
             raw_data = self.fetcher.fetch_data()
             processed_data = self.processor.process_data(raw_data)
@@ -29,8 +29,4 @@ class MainApp:
                 # Enviar datos solo si hay cambios en el contador (Vueltas)
                 if self.previous_vueltas != processed_data["Vueltas"]:
                     self.sender.send_data(processed_data)
-                    self.previous_vueltas = processed_data["Vueltas"]
-                else:
-                    logger.debug("No se detectaron cambios en el contador.")
-                
-            time.sleep(self.interval)
+                    self.previous_vueltas = processed_data["Vueltas"]  # Actualiza previous_vueltas

@@ -4,12 +4,9 @@ Este módulo contiene pruebas de integración para el flujo completo de la aplic
 """
 
 import pytest
-from unittest.mock import patch, MagicMock
-from src.model.esp32_data_fetcher import ESP32DataFetcher
-from src.model.data_processor import DataProcessor
-from src.model.php_server_sender import PHPServerSender
-from src.controller.main_controller import MainApp
+from unittest.mock import patch
 from src.view.main_view import run_main
+import os
 
 @pytest.fixture
 def mock_fetcher():
@@ -37,12 +34,16 @@ def mock_sender():
 
 def test_run_main_integration(mock_fetcher, mock_processor, mock_sender):
     """Prueba integral para el flujo completo en run_main."""
-    
+
+    # Configura la variable de entorno para evitar el bucle infinito en modo de prueba
+    os.environ["TESTING"] = "1"
+
+    # Aplica los mocks necesarios para los componentes de run_main
     with patch("src.controller.main_controller.MainApp") as MockApp, \
          patch("src.view.main_view.LoggerConfigurator") as MockLoggerConfigurator, \
          patch("src.view.main_view.os.system") as mock_os_system:
 
-        # Simula el LoggerConfigurator y os.system para evitar efectos colaterales
+        # Simula LoggerConfigurator y os.system para evitar efectos colaterales
         mock_logger = MockLoggerConfigurator.return_value.configure.return_value
         mock_logger.debug.return_value = None
         mock_logger.info.return_value = None
@@ -52,7 +53,7 @@ def test_run_main_integration(mock_fetcher, mock_processor, mock_sender):
         mock_app_instance = MockApp.return_value
         mock_app_instance.run.side_effect = lambda: None  # Asegura que no entre en un bucle
 
-        # Ejecutar run_main, que utiliza los componentes de fetcher, processor, y sender
+        # Ejecuta run_main, que utiliza los componentes de fetcher, processor, y sender
         run_main()
 
         # Verifica que las llamadas se realizaron en el flujo esperado
@@ -60,10 +61,14 @@ def test_run_main_integration(mock_fetcher, mock_processor, mock_sender):
         mock_processor.process_data.assert_called_once_with("Peso: 12.5 kg\nVueltas: 5")
         mock_sender.send_data.assert_called_once_with({"Peso": 12.5, "Vueltas": 5, "Tiempo": "2023-01-01 12:00:00"})
         
-        # Verifica que la aplicación se ejecutó
+        # Verifica que la aplicación se ejecutó y registró los mensajes esperados
         mock_app_instance.run.assert_called_once()
         mock_logger.info.assert_any_call("Iniciando la aplicación principal")
         mock_logger.info.assert_any_call("Aplicación principal finalizada")
+
+    # Limpia la variable de entorno después de la prueba
+    del os.environ["TESTING"]
+
 
 def test_esp32_data_fetcher(mock_fetcher):
     """Prueba unitaria para ESP32DataFetcher."""
