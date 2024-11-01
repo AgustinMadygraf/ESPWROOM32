@@ -8,6 +8,11 @@ from src.model.esp32_data_fetcher import ESP32DataFetcher
 from src.model.data_processor import DataProcessor
 from src.model.php_server_sender import PHPServerSender
 import os
+from src.logs.config_logger import LoggerConfigurator
+
+# Configuración del logger al inicio del script
+logger = LoggerConfigurator().configure()
+logger.debug("Logger configurado correctamente al inicio del servidor.")
 
 def run_main():
     os.system('cls')
@@ -21,9 +26,11 @@ def run_main():
     processor = DataProcessor()
     sender = PHPServerSender(url_php)
 
-    # Ejecutar la aplicación principal con un intervalo de 5 segundos
+    # Registro de inicio de aplicación
+    logger.info("Iniciando la aplicación principal")
     app = MainApp(fetcher, processor, sender, interval=5)
     app.run()
+    logger.info("Aplicación principal finalizada")
 
 if __name__ == "__main__":
     run_main()

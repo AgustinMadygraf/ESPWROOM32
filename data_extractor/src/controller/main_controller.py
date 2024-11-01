@@ -1,7 +1,9 @@
+"""
+data_extractor/src/controller/main_controller.py
+"""
+
 import time
-from src.model.esp32_data_fetcher import ESP32DataFetcher
-from src.model.data_processor import DataProcessor
-from src.model.php_server_sender import PHPServerSender
+from src.logs.config_logger import logger
 
 class MainApp:
     def __init__(self, fetcher, processor, sender, interval=5):
@@ -18,13 +20,14 @@ class MainApp:
             processed_data = self.processor.process_data(raw_data)
             
             if processed_data:
-                print("Datos procesados en diccionario:")
-                print(processed_data)
+                logger.debug("Datos procesados en diccionario: %s", processed_data)
                 
                 # Enviar datos solo si hay cambios en el contador (Vueltas)
                 if self.previous_vueltas != processed_data["Vueltas"]:
-                    print("Cambio detectado en el contador, enviando información...")
+                    logger.info("Cambio detectado en el contador, enviando información...")
                     self.sender.send_data(processed_data)
                     self.previous_vueltas = processed_data["Vueltas"]  # Actualizar el valor de vueltas previo
+                else:
+                    logger.debug("No se detectaron cambios en el contador.")
                 
             time.sleep(self.interval)  # Esperar el intervalo de tiempo antes del próximo chequeo
