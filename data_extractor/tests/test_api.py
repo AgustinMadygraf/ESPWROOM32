@@ -37,10 +37,21 @@ def mock_sender():
 
 def test_run_main_integration(mock_fetcher, mock_processor, mock_sender):
     """Prueba integral para el flujo completo en run_main."""
-    with patch("src.controller.main_controller.MainApp") as MockApp:
+    
+    with patch("src.controller.main_controller.MainApp") as MockApp, \
+         patch("src.view.main_view.LoggerConfigurator") as MockLoggerConfigurator, \
+         patch("src.view.main_view.os.system") as mock_os_system:
+
+        # Simula el LoggerConfigurator y os.system para evitar efectos colaterales
+        mock_logger = MockLoggerConfigurator.return_value.configure.return_value
+        mock_logger.debug.return_value = None
+        mock_logger.info.return_value = None
+        mock_os_system.return_value = None
+
+        # Mock para MainApp y su método run
         mock_app_instance = MockApp.return_value
-        mock_app_instance.run.side_effect = lambda: None  # Evita que se bloquee
-        
+        mock_app_instance.run.side_effect = lambda: None  # Asegura que no entre en un bucle
+
         # Ejecutar run_main, que utiliza los componentes de fetcher, processor, y sender
         run_main()
 
@@ -51,6 +62,8 @@ def test_run_main_integration(mock_fetcher, mock_processor, mock_sender):
         
         # Verifica que la aplicación se ejecutó
         mock_app_instance.run.assert_called_once()
+        mock_logger.info.assert_any_call("Iniciando la aplicación principal")
+        mock_logger.info.assert_any_call("Aplicación principal finalizada")
 
 def test_esp32_data_fetcher(mock_fetcher):
     """Prueba unitaria para ESP32DataFetcher."""
