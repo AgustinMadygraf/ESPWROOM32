@@ -3,7 +3,10 @@ data_extractor/src/model/php_server_sender.py
 """
 
 import requests
-from src.logs.config_logger import logger
+import logging  # Importa logging explícitamente si no se utiliza config_logger
+
+# Configura el logger explícitamente
+logger = logging.getLogger("src.model.php_server_sender")
 
 class PHPServerSender:
     def __init__(self, url):
@@ -12,7 +15,7 @@ class PHPServerSender:
     def send_data(self, data):
         """Envía los datos procesados al servidor PHP."""
         if data is None:
-            logger.warning("No hay datos para enviar.")
+            logger.warning("No hay datos para enviar.")  # Asegúrate de registrar la advertencia aquí
             return
         
         payload = {
