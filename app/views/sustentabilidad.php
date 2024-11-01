@@ -21,7 +21,7 @@ require 'header.php';
             En el caso de la industria, la sustentabilidad se refiere a la capacidad de producir bienes y 
             servicios sin dañar el medio ambiente.
 
-            la sustentabilidad:se refiere ala capacidad de una sociedad para desarollar y mantener un entorno 
+            la susentabilidad:se refiere ala capacidad de una sociedad para desarollar y mantener un entorno 
             saludable y equitativo para sus cuidadanos ahora y en el futuro
             
             la sustantibilidad ambiental: implica gestionar de manera responsable los recursos naturales para 
