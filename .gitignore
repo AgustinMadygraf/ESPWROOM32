@@ -4,7 +4,6 @@ main/docs/00-Prompt-for-ProjectAnalysis.md
 ESP32Project/__pycache__/
 .env
 vendor/
-composer.lock
 composer.phar
 deploy_to_main.ps1
 public/docs/00-Prompt-for-ProjectAnalysis.md
